@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE frutas>
+<frutas>
+    <fruta>
+        <nombre>cereza</nombre>
+    </fruta>
+    <fruta>
+        <nombre>naranja</nombre>
+    </fruta>
+</frutas>
