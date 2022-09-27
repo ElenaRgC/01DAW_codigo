@@ -7,12 +7,14 @@ Algoritmo restas_sucesivas
 	Definir cociente Como Entero
 	Definir resto Como Entero
 	Definir i Como Entero
+	Definir j Como Entero
 	
 	dividendo = 0
 	divisor = 0
 	cociente = 0
 	resto = 0
 	i = 0
+	j = 0
 	
 	Escribir "Introduce el dividendo."
 	Leer dividendo
@@ -20,13 +22,24 @@ Algoritmo restas_sucesivas
 	Escribir "Introduce el divisor."
 	Leer divisor
 	
-	Repetir
-		cociente = dividendo - divisor * i
-		
-		i = i + 1
-	Hasta Que cociente < 0
+	i = 1
+	j = 1
 	
-	Escribir cociente
+	Repetir
+		Si i > 0
+		i = dividendo - divisor * j
+		cociente = cociente + 1
+		j = j + 1
+		
+	SiNo
+		resto = -i
+		
+	FinSi
+	
+	Hasta Que i <= 0
+	
+	Escribir "El cociente es ", cociente, "."
+	Escribir "El resto es ", resto, "."
 	
 	
 FinAlgoritmo
