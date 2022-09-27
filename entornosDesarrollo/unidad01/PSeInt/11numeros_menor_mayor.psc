@@ -9,9 +9,9 @@ Algoritmo numeros_menor_mayor
 	
 	Escribir "Introduzca el primer número."
 	Leer numero1
-	Escribir "Introduzca el primer número."
+	Escribir "Introduzca el segundo número."
 	Leer numero2
-	Escribir "Introduzca el primer número."
+	Escribir "Introduzca el tercer número."
 	Leer numero3
 	
 	Si numero1 < numero2 Y numero2 < numero3

@@ -6,6 +6,7 @@ Algoritmo conversor_temperaturas
 	Definir temperatura Como Real
 	Definir resultado Como Real
 	Definir i Como Entero
+	i = 1
 	
 	Escribir "Introduzca el valor de la temperatura."
 	leer temperatura
@@ -14,16 +15,17 @@ Algoritmo conversor_temperaturas
 	Leer unidad
 	
 	Si unidad = "F"
-		i = 0
-	SiNo
-		i = 1		
+		i = 1
+	FinSi
+	Si unidad = "C"
+		i = 2		
 	FinSi
 	
 	Segun i Hacer
-		0:
+		1:
 			resultado = (temperatura - 32) * 5/9
 			Escribir temperatura," º" ,unidad, " son ", resultado, " ºC."
-		1:
+		2:
 			resultado = (temperatura * 9/5) + 32
 			Escribir temperatura, " º", unidad, " son ", resultado, " ºF."
 		De Otro Modo:
