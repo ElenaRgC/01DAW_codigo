@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE historia>
-<hechos>
+<historia>
     <hecho descripcion="IBM da a conocer el PC.">
         <fecha>
             <dia>12</dia>
@@ -22,4 +22,4 @@
             <anyo>2004</anyo>
         </fecha>
     </hecho>
-</hechos> 
+</historia> 
