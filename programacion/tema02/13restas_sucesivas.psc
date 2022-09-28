@@ -25,24 +25,22 @@ Algoritmo restas_sucesivas
 	i = 1
 	j = 1
 	
-	Repetir
+	Mientras i > 0 Hacer
 		Si i > 0
-		i = dividendo - divisor * j
-		cociente = cociente + 1
-		j = j + 1
-		
-		Si i = 0 // Un poco redundante
+			i = dividendo - divisor * j
+			cociente = cociente + 1
+			j = j + 1
+		FinSi
+			
+		Si i = 0
 			resto = 0
 		FinSi
-		
+			
 		Si i < 0
-			cociente = cociente -1
-			resto = -i
+			cociente = cociente - 1
+			resto = dividendo - divisor * (j-2)
 		FinSi
-		
-	FinSi
-	
-	Hasta Que i <= 0
+	Fin Mientras
 	
 	Escribir "El cociente es ", cociente, "."
 	Escribir "El resto es ", resto, "."
