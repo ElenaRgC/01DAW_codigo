@@ -31,8 +31,14 @@ Algoritmo restas_sucesivas
 		cociente = cociente + 1
 		j = j + 1
 		
-	SiNo
-		resto = -i
+		Si i = 0 // Un poco redundante
+			resto = 0
+		FinSi
+		
+		Si i < 0
+			cociente = cociente -1
+			resto = -i
+		FinSi
 		
 	FinSi
 	
