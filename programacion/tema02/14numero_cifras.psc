@@ -8,12 +8,14 @@ Algoritmo numero_cifras
 	Escribir "Introduzca un número."
 	Leer num1
 	
-	
 	Repetir
 		cifras = cifras + 1
 		num1 = num1 / 10
 	Hasta Que trunc(num1) / 10 = 0
 	
-	Escribir num1 * 10^(cifras), " tiene ", cifras, " cifras."
+	Escribir redon(num1 * 10^(cifras)), " tiene ", cifras, " cifras."
+	// Si hubiera definido otra variable no tendría que hacer tantas cuentas aquí.
+	// ¿Qué sería más óptimo?
+	// Probablemente solo devolver el número de cifras.
 	
 FinAlgoritmo
