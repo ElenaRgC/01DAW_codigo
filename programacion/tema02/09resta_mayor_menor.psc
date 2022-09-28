@@ -13,9 +13,12 @@ Algoritmo resta_mayor_menor
 	
 	Si numero1 > numero2
 		Escribir numero1, " es mayor que ", numero2, " y su resta es ", numero1 - numero2, "."
-		
 	SiNo
-		Escribir numero2, " es mayor que ", numero1, " y su resta es ", numero2 - numero1, "."
+		Si numero1 < numero2
+			Escribir numero2, " es mayor que ", numero1, " y su resta es ", numero2 - numero1, "."
+		SiNo
+			Escribir "Los dos números son iguales y la resta es cero."
+		FinSi
 	FinSi
 	
 FinAlgoritmo
