@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE futbol>
-<equipos>
+<futbol>
     <equipo nombre="Real Betis Balompié" ciudad="Sevilla" entrenador="">
         <jugador posicion="Portero">
             <nombre>Claudio Bravo</nombre>
@@ -21,4 +21,4 @@
             <nacionalidad>Española</nacionalidad>
         </jugador>
     </equipo>
-</equipos> 
+</futbol> 
