@@ -11,7 +11,7 @@ Algoritmo numero_cifras
 	Repetir
 		cifras = cifras + 1
 		num1 = num1 / 10
-	Hasta Que trunc(num1) / 10 = 0
+	Hasta Que trunc(num1 / 10) = 0
 	
 	Escribir redon(num1 * 10^(cifras)), " tiene ", cifras, " cifras."
 	// Si hubiera definido otra variable no tendría que hacer tantas cuentas aquí.
