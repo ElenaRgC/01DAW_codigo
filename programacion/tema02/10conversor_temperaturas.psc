@@ -6,7 +6,6 @@ Algoritmo conversor_temperaturas
 	Definir temperatura Como Real
 	Definir resultado Como Real
 	Definir i Como Entero
-	i = 1
 	
 	Escribir "Introduzca el valor de la temperatura."
 	leer temperatura
