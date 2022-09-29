@@ -13,20 +13,20 @@ Algoritmo conversor_temperaturas
 	Escribir "Introduzca F o C como unidad de la temperatura."
 	Leer unidad_temperatura
 	
-	Si unidad = "F" // Me toca hacer esto porque PSeInt no permite Switch con caracteres.
+	Si unidad_temperatura = "F" // Me toca hacer esto porque PSeInt no permite Switch con caracteres.
 		i = 1
 	FinSi
-	Si unidad = "C"
+	Si unidad_temperatura = "C"
 		i = 2		
 	FinSi
 	
 	Segun i Hacer
 		1:
-			resultado = (valor_temperatura - 32) * 5/9
-			Escribir temperatura," º" ,unidad_temperatura, " son ", temperatura_convertida, " ºC."
+			temperatura_convertida = (valor_temperatura - 32) * 5/9
+			Escribir valor_temperatura," º" ,unidad_temperatura, " son ", temperatura_convertida, " ºC."
 		2:
-			resultado = (valor_temperatura * 9/5) + 32
-			Escribir calor_temperatura, " º", unidad_temperatura, " son ", temperatura_convertida, " ºF."
+			temperatura_convertida = (valor_temperatura * 9/5) + 32
+			Escribir valor_temperatura, " º", unidad_temperatura, " son ", temperatura_convertida, " ºF."
 		De Otro Modo:
 			Escribir "Introduzca la unidad adecuadamente."
 	Fin Segun
