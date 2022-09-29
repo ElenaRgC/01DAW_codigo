@@ -10,8 +10,11 @@ Algoritmo conversor_temperaturas
 	Escribir "Introduzca el valor de la temperatura."
 	leer valor_temperatura
 	
-	Escribir "Introduzca F o C como unidad de la temperatura a convertir."
-	Leer unidad_temperatura
+	Repetir
+		Escribir "Introduzca F o C como unidad de la temperatura a convertir."
+		Leer unidad_temperatura
+	Hasta Que unidad_temperatura = "F" O unidad_temperatura = "C"
+
 	
 	Si unidad_temperatura = "F" // Me toca hacer esto porque PSeInt no permite Switch con caracteres.
 		i = 1
