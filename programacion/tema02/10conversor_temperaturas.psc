@@ -14,7 +14,7 @@ Algoritmo conversor_temperaturas
 	Escribir "Introduzca F o C como unidad de la temperatura."
 	Leer unidad
 	
-	Si unidad = "F"
+	Si unidad = "F" // Me toca hacer esto porque PSeInt no permite Switch con caracteres.
 		i = 1
 	FinSi
 	Si unidad = "C"

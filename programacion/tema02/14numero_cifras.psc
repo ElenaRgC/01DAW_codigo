@@ -17,5 +17,6 @@ Algoritmo numero_cifras
 	// Si hubiera definido otra variable no tendría que hacer tantas cuentas aquí.
 	// ¿Qué sería más óptimo?
 	// Probablemente solo devolver el número de cifras.
+	// Si hubiera una función div en PSeInt sería posible.
 	
 FinAlgoritmo
