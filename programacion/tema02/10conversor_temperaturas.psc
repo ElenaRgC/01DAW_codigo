@@ -2,16 +2,16 @@ Algoritmo conversor_temperaturas
 	// Realiza un conversor de grados Centígrados a grados Farenheit.
 	// Nuestro algoritmo debe poder hacer la conversión en ambos sentidos.
 	
-	Definir unidad Como Caracter
-	Definir temperatura Como Real
-	Definir resultado Como Real
+	Definir unidad_temperatura Como Caracter
+	Definir valor_temperatura Como Real
+	Definir temperatura_convertida Como Real
 	Definir i Como Entero
 	
 	Escribir "Introduzca el valor de la temperatura."
-	leer temperatura
+	leer valor_temperatura
 	
 	Escribir "Introduzca F o C como unidad de la temperatura."
-	Leer unidad
+	Leer unidad_temperatura
 	
 	Si unidad = "F" // Me toca hacer esto porque PSeInt no permite Switch con caracteres.
 		i = 1
@@ -22,11 +22,11 @@ Algoritmo conversor_temperaturas
 	
 	Segun i Hacer
 		1:
-			resultado = (temperatura - 32) * 5/9
-			Escribir temperatura," º" ,unidad, " son ", resultado, " ºC."
+			resultado = (valor_temperatura - 32) * 5/9
+			Escribir temperatura," º" ,unidad_temperatura, " son ", temperatura_convertida, " ºC."
 		2:
-			resultado = (temperatura * 9/5) + 32
-			Escribir temperatura, " º", unidad, " son ", resultado, " ºF."
+			resultado = (valor_temperatura * 9/5) + 32
+			Escribir calor_temperatura, " º", unidad_temperatura, " son ", temperatura_convertida, " ºF."
 		De Otro Modo:
 			Escribir "Introduzca la unidad adecuadamente."
 	Fin Segun
