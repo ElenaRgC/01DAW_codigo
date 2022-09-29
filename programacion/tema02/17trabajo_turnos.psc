@@ -35,6 +35,7 @@ Algoritmo trabajo_turnos
 	// Repetir
 		Escribir "¿Cuántas horas ha durado tu jornada?"
 		Leer horas // No he encontrado una función de PSeInt para saber de qué tipo es una variable.
+		
 	//Hasta Que Numero(horas) = Verdadero
 	
 	Si pregunta_domingo = "S"
