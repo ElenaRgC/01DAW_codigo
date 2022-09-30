@@ -6,6 +6,8 @@ Algoritmo suma_cien_numeros
 	
 	Repetir
 		conta = conta + 1
+		suma = suma + conta
+		
 	Hasta Que conta = 100
 	
 	Escribir "La suma es ", suma
