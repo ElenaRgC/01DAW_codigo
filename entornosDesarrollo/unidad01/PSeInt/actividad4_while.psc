@@ -1,4 +1,4 @@
-Algoritmo ejercicio4_while
+Algoritmo actividad4_while
 
 	Escribir "Número."
 	Leer n

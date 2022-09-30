@@ -1,10 +1,10 @@
-Algoritmo ejercicio4_for
+Algoritmo actividad4_for
 	
 	Escribir "Número."
 	Leer n
 	i = 0
 	
-	Para i <- 0 Hasta n Con Paso 2 Hacer
+	Para i <- 0 Hasta n-1 Con Paso 2 Hacer
 		Escribir i
 	Fin Para
 	
