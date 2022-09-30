@@ -26,6 +26,7 @@ Algoritmo trabajo_turnos
 		Escribir 'Introduce 4 para jornadas nocturas en domingos o festivos.'
 		Leer tipo_jornada
 	Hasta Que tipo_jornada=1 O tipo_jornada=2 O tipo_jornada=3 O tipo_jornada=4
+	
 	Escribir '¿Cuántas horas has trabajado?'
 	Leer horas_trabajadas
 	
