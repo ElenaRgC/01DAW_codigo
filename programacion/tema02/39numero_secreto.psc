@@ -18,7 +18,7 @@ Algoritmo numero_secreto
 		Escribir "Tiene 5 intentos para averiguar un número del 1 al 100."
 		numeroAleatorio = Aleatorio(1,100)
 		
-		Mientras intentos < 5 O numeroUsuario <> numeroAleatorio Hacer
+		Mientras intentos < 5 Y numeroUsuario <> numeroAleatorio Hacer
 			
 			Escribir "Introduce un número"
 			Leer numeroUsuario
@@ -45,7 +45,7 @@ Algoritmo numero_secreto
 			
 		Fin Mientras
 		
-		Escribir "¿Quiere volver a jugar? (S/N)"
+		Escribir "Introduzca S para jugar otra vez. Cualquier otro valor para parar."
 		Leer continuar
 		
 	Hasta Que continuar <> "S"
