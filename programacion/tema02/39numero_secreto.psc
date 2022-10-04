@@ -8,7 +8,6 @@ Algoritmo numero_secreto
 	Definir intentos Como Entero
 	Definir continuar Como Cadena
 	
-	intentos = 0
 	numeroAleatorio = 0
 	numeroUsuario = 0
 	continuar = ""
@@ -17,6 +16,7 @@ Algoritmo numero_secreto
 		
 		Escribir "Tiene 5 intentos para averiguar un número del 1 al 100."
 		numeroAleatorio = Aleatorio(1,100)
+		intentos = 0
 		
 		Mientras intentos < 5 Y numeroUsuario <> numeroAleatorio Hacer
 			
@@ -39,11 +39,11 @@ Algoritmo numero_secreto
 			
 			intentos = intentos + 1
 			
-			Si intentos = 5 Y numeroUsuario <> numeroAleatorio Entonces
-				Escribir "Has perdido. El número oculto era: ", numeroAleatorio, "."
-			FinSi
-			
 		Fin Mientras
+		
+		Si intentos = 5 Y numeroUsuario <> numeroAleatorio Entonces
+			Escribir "Has perdido. El número oculto era: ", numeroAleatorio, "."
+		FinSi
 		
 		Escribir "Introduzca S para jugar otra vez. Cualquier otro valor para parar."
 		Leer continuar
