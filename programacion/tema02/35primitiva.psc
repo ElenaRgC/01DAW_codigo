@@ -1,6 +1,7 @@
 Algoritmo primitiva
 	
 	// TODO: cambiar el número de apuestas y el intervalo de números por constantes.
+	// TODO: Cambiar los if por switch.
 	
 	Dimension apuesta[6] 
 	Dimension premio[6]
@@ -11,7 +12,7 @@ Algoritmo primitiva
 		
 		Escribir "Elija un número entre 1 y 49"
 		
-		x = 0 // En la primera iteraci?n no ser?a necesario, pero hace falta para poder introducir del segundo valor en adelante.
+		x = 0 // En la primera iteración no sería necesario, pero hace falta para poder introducir del segundo valor en adelante.
 		Mientras x < 1 O x > 49 Hacer
 			Leer x
 			Si x < 1 O X > 49 Entonces
@@ -40,7 +41,7 @@ Algoritmo primitiva
 					FinMientras
 					
 					apuesta[i] = x
-					j = 1 // Tenemos que devolver j al principio o no comparar?a todos los valores del array.
+					j = 1 // Tenemos que devolver j al principio o no compararía todos los valores del array.
 					
 				FinSi
 				
@@ -51,12 +52,12 @@ Algoritmo primitiva
 	FinPara
 	
 	
-	// Bucle para generar los n?meros premiados.
+	// Bucle para generar los números premiados.
 	Para i <- 1 Hasta 6 Hacer
 		
 		Si i = 1 Entonces
 			
-			premio[i] = azar(49) + 1 // Lo hacemos as? porque la m?quina podr?a generar el n?mero 0.
+			premio[i] = azar(49) + 1 // Lo hacemos así porque la máquina podría generar el número 0.
 			
 		FinSi
 		
@@ -87,14 +88,15 @@ Algoritmo primitiva
 	
 	Escribir "Los números premiados son: "
 	
-	// Bucle para mostrar al usuario los n?meros premiados.
+	// Bucle para mostrar al usuario los números premiados.
 	Para i <- 1 Hasta 6 Hacer
 		
 		Escribir premio[i]
 		
 	FinPara
 	
-	// Para cada valor que hemos introducido (i) lo comparamos con cada valor generado (j). De esta manera se comparan valores aunque no est?n en la misma posici?n.
+	// Para cada valor que hemos introducido (i) lo comparamos con cada valor generado (j).
+	// De esta manera se comparan valores aunque no estén en la misma posición.
 	
 	Para i <- 1 Hasta 6 Hacer 
 		
@@ -113,7 +115,7 @@ Algoritmo primitiva
 	
 	Si contador = 6 Entonces
 		
-		Escribir "Enhorabuena, has acertado todos los n?meros."
+		Escribir "Enhorabuena, has acertado todos los números."
 		
 	FinSi
 	
