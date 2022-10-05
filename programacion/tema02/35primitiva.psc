@@ -1,3 +1,35 @@
+Funcion apuestaJugador <- numerosJugador(cantidadNumeros, numeroMaximo)
+	Dimension apuestaJugador[cantidad_numeros]
+	Definir numeroIntroducido Como Entero
+	numeroIntroducido = 0
+	numeroMaximo = 49
+	
+
+	Mientras i < cantidadNumeros Hacer
+		
+		Repetir
+			Escribir "Elija un número entre 1 y ", numero_maximo, "."
+			Leer numeroIntroducido
+			
+			estaRepetido = numeroRepetido(apuestaJugador, numeroIntroducido)
+			
+		Hasta Que !estaRepetido Y numeroIntroducido >= 1 Y numeroIntroducido <= numeroMaximo
+		
+		
+	Fin Mientras
+	
+FinFuncion
+
+Funcion estaRepetido <- numeroRepetido(apuestaJugador, numeroIntroducido)
+	Definir estaRepetido Como Logico
+	estaRepetido = Falso
+	Para i<-0 Hasta Longitud(apuestaJugador) Con Paso 1 Hacer
+		Si apuestaJugador[i] = numeroIntroducido
+			estaRepetido = Verdadero
+		FinSi
+	Fin Para
+FinFuncion
+
 Algoritmo primitiva
 	
 	// TODO: Cambiar los if por switch.
@@ -17,7 +49,7 @@ Algoritmo primitiva
 	// Bucle para los valores introducidos por el usuario.
 	Para i <- 1 Hasta cantidad_numeros Hacer
 		
-		Escribir "Elija un número entre 1 y 49"
+		Escribir "Elija un número entre 1 y ", numero_maximo, "."
 		
 		x = 0 // En la primera iteración no sería necesario, pero hace falta para poder introducir del segundo valor en adelante.
 		Mientras x < 1 O x > numero_maximo Hacer
