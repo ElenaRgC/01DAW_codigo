@@ -105,4 +105,8 @@ Algoritmo primitiva
 	Dimension numerosPremiados[cantidadNumeros]
 	Definir numerosAcertados Como Entero
 	
+	numerosJugador = introducirNumeros(cantidadNumeros, valorMaximo)
+	numerosPremiados = generarNumeros(cantidadNumeros, valorMaximo)
+	comprobarAciertos(cantidadNumeros, numerosJugador, numerosPremiados)
+	
 FinAlgoritmo
