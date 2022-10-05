@@ -2,6 +2,8 @@ Algoritmo primitiva
 	
 	// TODO: Cambiar los if por switch.
 	// TODO: Arreglar error números repetidos.
+	// TODO: Separar en funciones.
+	
 	
 	Definir cantidad_numeros Como Entero
 	cantidad_numeros = 6 // Cantidad de números pedidos y generados. En la primitiva son 6.
@@ -21,7 +23,7 @@ Algoritmo primitiva
 		Mientras x < 1 O x > numero_maximo Hacer
 			Leer x
 			Si x < 1 O X > numero_maximo Entonces
-				Escribir "Elija un número que se encuentre entre 1 y 49."
+				Escribir "Elija un número que se encuentre entre 1 y ", numero_maximo, "."
 			FinSi
 		FinMientras
 		
