@@ -1,20 +1,23 @@
-Funcion apuestaJugador <- numerosJugador(cantidadNumeros, numeroMaximo)
-	Dimension apuestaJugador[cantidad_numeros]
+Funcion numerosJugador <- introducirNumeros(cantidadNumeros, valorMaximo)
+	Dimension numerosJugador[cantidad_numeros]
 	Definir numeroIntroducido Como Entero
 	numeroIntroducido = 0
-	numeroMaximo = 49
+	valorMaximo = 49
 	
 
 	Mientras i < cantidadNumeros Hacer
 		
 		Repetir
-			Escribir "Elija un número entre 1 y ", numero_maximo, "."
+			Escribir "Elija un número entre 1 y ", valorMaximo, "."
 			Leer numeroIntroducido
 			
 			estaRepetido = numeroRepetido(apuestaJugador, numeroIntroducido)
 			
-		Hasta Que !estaRepetido Y numeroIntroducido >= 1 Y numeroIntroducido <= numeroMaximo
+		Hasta Que !estaRepetido Y numeroIntroducido >= 1 Y numeroIntroducido <= valorMaximo
 		
+		numerosJugador[i] = numeroIntroducido
+		
+		i = i + 1
 		
 	Fin Mientras
 	
@@ -23,11 +26,37 @@ FinFuncion
 Funcion estaRepetido <- numeroRepetido(apuestaJugador, numeroIntroducido)
 	Definir estaRepetido Como Logico
 	estaRepetido = Falso
+	
 	Para i<-0 Hasta Longitud(apuestaJugador) Con Paso 1 Hacer
+		
 		Si apuestaJugador[i] = numeroIntroducido
 			estaRepetido = Verdadero
+			Escribir "Ha introducido un número repetido."
+			
 		FinSi
+		
 	Fin Para
+	
+FinFuncion
+
+Funcion numerosPremiados <- generarNumeros(cantidadNumeros, valorMaximo) 
+	Dimension numerosPremiados[cantidadNumeros]
+	
+	Mientras i < cantidadNumeros Hacer
+		
+		numeroAleatorio = Aleatorio(1, valorMaximo)
+		
+		Mientras j < cantidadNumeros Hacer
+			Si numeroAleatorio <> cantidadNumeros[i]
+				
+			FinSi
+			
+		FinMientras
+		
+		i = i + 1
+		
+	Fin Mientras
+	
 FinFuncion
 
 Algoritmo primitiva
@@ -45,51 +74,6 @@ Algoritmo primitiva
 	Dimension apuesta[cantidad_numeros] 
 	Dimension premio[cantidad_numeros]
 	Definir contador Como Entero
-	
-	// Bucle para los valores introducidos por el usuario.
-	Para i <- 1 Hasta cantidad_numeros Hacer
-		
-		Escribir "Elija un número entre 1 y ", numero_maximo, "."
-		
-		x = 0 // En la primera iteración no sería necesario, pero hace falta para poder introducir del segundo valor en adelante.
-		Mientras x < 1 O x > numero_maximo Hacer
-			Leer x
-			Si x < 1 O X > numero_maximo Entonces
-				Escribir "Elija un número que se encuentre entre 1 y ", numero_maximo, "."
-			FinSi
-		FinMientras
-		
-		Si i = 1 Entonces
-			apuesta[i] = x
-		FinSi
-		
-		Si i > 1 Entonces
-			
-			apuesta[i] = x
-			
-			Para j <- 1 Hasta i - 1 Hacer
-				
-				Si apuesta[j] = x Entonces
-					Escribir "No puede elegir dos números iguales."
-					
-					Mientras x < 1 O x > numero_maximo Hacer
-						Leer x
-						Si x < 1 O x > numero_maximo Entonces
-							Escribir "Elija un número que se encuentre entre 1 y ", numero_maximo, "."
-						FinSi
-					FinMientras
-					
-					apuesta[i] = x
-					j = 1 // Tenemos que devolver j al principio o no compararía todos los valores del array.
-					
-				FinSi
-				
-			FinPara
-			
-		FinSi
-		
-	FinPara
-	
 	
 	// Bucle para generar los números premiados.
 	Para i <- 1 Hasta cantidad_numeros Hacer
