@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE miembros>
-<root xmlns:alumnos="http://ASIR/alumnos" xmlns:profesores="http://ASIR/profesores">
-    <asistentes>
-        <alumnos:nombre>Fernando Fernández González</alumnos:nombre>
-        <alumnos:nombre>Isabel González Fernández</alumnos:nombre>
-        <alumnos:nombre>Ricardo Martínez López</alumnos:nombre>
-        <profesores:nombre>Pilar Ruiz Pérez</profesores:nombre>
-        <profesores:nombre>Tomás Rodríguez Hernández</profesores:nombre>
-    </asistentes>
-</root>
+<asistentes xmlns:alumnos="http://ASIR/alumnos" xmlns:profesores="http://ASIR/profesores">
+    <alumnos:nombre>Fernando Fernández González</alumnos:nombre>
+    <alumnos:nombre>Isabel González Fernández</alumnos:nombre>
+    <alumnos:nombre>Ricardo Martínez López</alumnos:nombre>
+    <profesores:nombre>Pilar Ruiz Pérez</profesores:nombre>
+    <profesores:nombre>Tomás Rodríguez Hernández</profesores:nombre>
+</asistentes>
