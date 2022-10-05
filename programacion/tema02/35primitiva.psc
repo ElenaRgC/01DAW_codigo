@@ -1,21 +1,26 @@
 Algoritmo primitiva
 	
-	// TODO: cambiar el número de apuestas y el intervalo de números por constantes.
 	// TODO: Cambiar los if por switch.
+	// TODO: Arreglar error números repetidos.
 	
-	Dimension apuesta[6] 
-	Dimension premio[6]
+	Definir cantidad_numeros Como Entero
+	cantidad_numeros = 6 // Cantidad de números pedidos y generados. En la primitiva son 6.
+	
+	numero_maximo = 49 // Número máximo por el que se puede apostar. En la primitiva son 49.
+	
+	Dimension apuesta[cantidad_numeros] 
+	Dimension premio[cantidad_numeros]
 	Definir contador Como Entero
 	
 	// Bucle para los valores introducidos por el usuario.
-	Para i <- 1 Hasta 6 Hacer
+	Para i <- 1 Hasta cantidad_numeros Hacer
 		
 		Escribir "Elija un número entre 1 y 49"
 		
 		x = 0 // En la primera iteración no sería necesario, pero hace falta para poder introducir del segundo valor en adelante.
-		Mientras x < 1 O x > 49 Hacer
+		Mientras x < 1 O x > numero_maximo Hacer
 			Leer x
-			Si x < 1 O X > 49 Entonces
+			Si x < 1 O X > numero_maximo Entonces
 				Escribir "Elija un número que se encuentre entre 1 y 49."
 			FinSi
 		FinMientras
@@ -33,10 +38,10 @@ Algoritmo primitiva
 				Si apuesta[j] = x Entonces
 					Escribir "No puede elegir dos números iguales."
 					
-					Mientras x < 1 O x > 49 Hacer
+					Mientras x < 1 O x > numero_maximo Hacer
 						Leer x
-						Si x < 1 O X > 49 Entonces
-							Escribir "Elija un número que se encuentre entre 1 y 49."
+						Si x < 1 O x > numero_maximo Entonces
+							Escribir "Elija un número que se encuentre entre 1 y ", numero_maximo, "."
 						FinSi
 					FinMientras
 					
@@ -53,25 +58,25 @@ Algoritmo primitiva
 	
 	
 	// Bucle para generar los números premiados.
-	Para i <- 1 Hasta 6 Hacer
+	Para i <- 1 Hasta cantidad_numeros Hacer
 		
 		Si i = 1 Entonces
 			
-			premio[i] = azar(49) + 1 // Lo hacemos así porque la máquina podría generar el número 0.
+			premio[i] = azar(numero_maximo) + 1 // Lo hacemos así porque la máquina podría generar el número 0.
 			
 		FinSi
 		
 		Si i > 1 Entonces
 			
-			premio[i] = azar(49) + 1
+			premio[i] = azar(numero_maximo) + 1
 			
 			Para j <- 1 Hasta i - 1 Hacer
 				
 				Si premio[j] = x Entonces
 					
-					Mientras x < 1 O x > 49 Hacer
+					Mientras x < 1 O x > numero_maximo Hacer
 						
-						premio[i] = azar(49) + 1
+						premio[i] = azar(numero_maximo) + 1
 						
 					FinMientras
 					
@@ -89,7 +94,7 @@ Algoritmo primitiva
 	Escribir "Los números premiados son: "
 	
 	// Bucle para mostrar al usuario los números premiados.
-	Para i <- 1 Hasta 6 Hacer
+	Para i <- 1 Hasta cantidad_numeros Hacer
 		
 		Escribir premio[i]
 		
@@ -98,9 +103,9 @@ Algoritmo primitiva
 	// Para cada valor que hemos introducido (i) lo comparamos con cada valor generado (j).
 	// De esta manera se comparan valores aunque no estén en la misma posición.
 	
-	Para i <- 1 Hasta 6 Hacer 
+	Para i <- 1 Hasta cantidad_numeros Hacer 
 		
-		Para j <- 1 Hasta 6 Hacer
+		Para j <- 1 Hasta cantidad_numeros Hacer
 			
 			Si apuesta[i] = premio[j] Entonces 
 				
@@ -113,7 +118,7 @@ Algoritmo primitiva
 	
 	Escribir "Tu número de aciertos es: " contador
 	
-	Si contador = 6 Entonces
+	Si contador = cantidad_numeros Entonces
 		
 		Escribir "Enhorabuena, has acertado todos los números."
 		
