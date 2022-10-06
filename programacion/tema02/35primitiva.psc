@@ -15,6 +15,14 @@ Funcion numerosJugador <- introducirNumeros(cantidadNumeros, valorMaximo)
 				Escribir "Ha introducido un número que ya había elegido."
 			FinSi
 			
+			Si numeroIntroducido < 1
+				Escribir "Ha introducido un número menor que 1."
+			FinSi
+			
+			Si numeroIntroducido > valorMaximo
+				Escribir "Ha introducido un número mayor que ", valorMaximo, "."
+			FinSi
+			
 		Hasta Que !estaRepetido Y numeroIntroducido >= 1 Y numeroIntroducido <= valorMaximo
 		
 		numerosJugador[i] = numeroIntroducido
