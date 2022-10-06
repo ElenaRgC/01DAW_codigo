@@ -1,9 +1,7 @@
 Funcion numerosJugador <- introducirNumeros(cantidadNumeros, valorMaximo)
 	Dimension numerosJugador[cantidad_numeros]
 	Definir numeroIntroducido Como Entero
-	numeroIntroducido = 0
-	valorMaximo = 49
-	
+	numeroIntroducido = 0	
 
 	Mientras i < cantidadNumeros Hacer
 		
@@ -53,11 +51,11 @@ Funcion numerosPremiados <- generarNumeros(cantidadNumeros, valorMaximo)
 	
 FinFuncion
 
-Funcion estaRepetido <- numeroRepetido(arrayNumeros, numeroQueComprobar, repeticiones)
+Funcion estaRepetido <- numeroRepetido(arrayNumeros, numeroQueComprobar, iteraciones)
 	Definir estaRepetido Como Logico
 	estaRepetido = Falso
 	
-	Mientras i < repeticiones
+	Mientras i < iteraciones
 		
 		Si arrayNumeros[i] = numeroQueComprobar
 			estaRepetido = Verdadero
