@@ -2,11 +2,11 @@ Algoritmo actividad8_while
 	
 	Definir multiplicacion Como Entero
 	
-	i = 0
+	i = 1
 	
 	Mientras i <= 10 Hacer
 		
-		j = 0
+		j = 1
 		
 		Escribir " "
 		Escribir "Tabla del ", i, "."
