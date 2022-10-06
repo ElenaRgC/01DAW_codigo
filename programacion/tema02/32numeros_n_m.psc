@@ -11,9 +11,9 @@ Algoritmo numeros_n_m
 	n = 0
 	m = 0
 	
-	Escribir "Introduzca un número entero."
+	Escribir "Introduzca un número entero mayor que cero."
 	Leer n
-	Escribir "Introduzca otro número entero."
+	Escribir "Introduzca otro número entero mayor que cero."
 	Leer m
 	
 	Escribir "n m"
