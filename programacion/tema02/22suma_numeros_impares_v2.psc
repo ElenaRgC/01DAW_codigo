@@ -16,11 +16,14 @@ Algoritmo suma_numeros_impares
 	Escribir "Introduce el número final."
 	Leer numero_final
 	
-	Para i<-numero_inicial Hasta numero_final Con Paso 2 Hacer
+	Para i<-numero_inicial Hasta numero_final Con Paso 1 Hacer
 		
-		suma = suma + i
+		Si i mod 2 <> 0
+			Escribir i
+			suma = suma + i
+		FinSi
 	Fin Para
 	
-	Escribir suma
+	Escribir "El total de todos estos números es: ", suma, "."
 	
 FinAlgoritmo
