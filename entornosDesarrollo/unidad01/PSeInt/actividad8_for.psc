@@ -10,13 +10,12 @@ Algoritmo actividad8_for_while
 		Escribir "Tabla del ", i, "."
 		Escribir " "
 		
-		Mientras j <= 10 Hacer
+		Para j <- 1 Hasta 10 Con Paso 1 Hacer
 			multiplicacion = i * j
 			
 			Escribir i, " x ", j, " = ", multiplicacion
 			
-			j = j + 1
-		Fin Mientras
+		Fin Para
 		
 	Fin Para
 	
