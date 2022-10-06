@@ -1,7 +1,6 @@
 Algoritmo calculadora
 	
-	Definir num Como Entero
-	
+	Definir num Como Entero	
 	Definir numero1 Como Real
 	Definir numero2 Como Real
 	
@@ -24,8 +23,7 @@ Algoritmo calculadora
 				Escribir "No es posible restar un número mayor."
 			SiNo
 				Escribir numero1 - numero2
-			FinSi
-			
+			FinSi			
 		3: 
 			Escribir numero1 * numero2
 			
