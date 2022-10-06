@@ -16,12 +16,13 @@ Algoritmo numeros_n_m
 	Escribir "Introduzca otro número entero."
 	Leer m
 	
+	Escribir "n m"
+	
 	Para i<-1 Hasta n Con Paso 1 Hacer
 		Para j<-1 Hasta m Con Paso 1 Hacer
 			Escribir i, " ", j
 		Fin Para
 	Fin Para
-	
 	
 	
 FinAlgoritmo
