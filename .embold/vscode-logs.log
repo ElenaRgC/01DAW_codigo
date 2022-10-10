@@ -16,3 +16,33 @@
 2022-10-10 09:06:31 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2022-10-10 09:06:31 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2022-10-10 09:06:31 info: Congratulations, your extension "Embold" is now active!
+2022-10-10 09:40:45 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo1
+2022-10-10 09:40:45 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:40:50 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo2
+2022-10-10 09:40:50 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:40:56 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo3
+2022-10-10 09:40:56 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:41:00 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo4
+2022-10-10 09:41:00 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:41:03 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo5
+2022-10-10 09:41:03 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:41:05 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo6
+2022-10-10 09:41:05 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:41:09 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo7
+2022-10-10 09:41:09 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:41:13 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo8
+2022-10-10 09:41:13 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:41:16 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo9
+2022-10-10 09:41:16 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:43:09 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo10/FeepWmfUoAA32C0.jfif
+2022-10-10 09:43:09 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:45:31 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html/ejemplo11/img/Super-Junior-The-Renaissance-Concept-Teaser-Images-documents-2%282%29.jpeg
+2022-10-10 09:45:31 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:58:31 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html.zip
+2022-10-10 09:58:31 error: SQLITE_ERROR: no such table: issues
+2022-10-10 09:59:01 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html_ElenaRodriguez.zip
+2022-10-10 09:59:01 error: SQLITE_ERROR: no such table: issues
+2022-10-10 10:02:15 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html.zip
+2022-10-10 10:02:15 error: SQLITE_ERROR: no such table: issues
+2022-10-10 10:02:37 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html_ElenaRodriguez.zip
+2022-10-10 10:02:37 error: SQLITE_ERROR: no such table: issues
