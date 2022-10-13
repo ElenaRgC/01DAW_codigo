@@ -39,6 +39,27 @@ fun introducirNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
 
 }
 
+fun generarNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
+    var numerosPremiados = IntArray(cantidadNumeros)
+    var numeroAleatorio: Int = 0
+    var i: Int = 0
+    var estaRepetido: Boolean
+
+    while (i < cantidadNumeros) {
+
+        numeroAleatorio = Random.nextInt(1, valorMaximo)
+        estaRepetido = estarRepetido(numerosPremiados, numeroAleatorio, i)
+
+        if (!estaRepetido) {
+            numerosPremiados[i] = numeroAleatorio
+        }
+        
+        i++
+    }
+
+    return numerosPremiados
+
+}
 
 fun estarRepetido(arrayNumeros: IntArray, numeroQueComprobar: Int, iteraciones: Int): Boolean {
     var estaRepetido: Boolean = false
