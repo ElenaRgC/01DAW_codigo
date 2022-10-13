@@ -4,7 +4,9 @@ import java.util.Scanner
 fun main() {
 
     val scanner = Scanner(System.`in`)
+    println("Introduce un número.")
     val numero = scanner.nextInt()
+    scanner.close()
 
     if (numero == 0) {
         println("El numero es cero.")
