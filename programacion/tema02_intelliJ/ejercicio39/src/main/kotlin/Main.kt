@@ -8,8 +8,11 @@ fun main() { // Elena Rodríguez Calderón
     Al final, pase lo que pase (gane o pierda), se le preguntará al usuario si quiere continuar.
      */
 
+    val numeroMinimo = 1
+    val numeroMaximo = 100
+
     var continuar : String
-    val numeroSecreto: Int = Random.nextInt(1, 100)
+    val numeroSecreto: Int = Random.nextInt(numeroMinimo, numeroMaximo)
     var numeroPedido: Int
     val scanner = Scanner(System.`in`)
     var intentos : Int
@@ -18,10 +21,10 @@ fun main() { // Elena Rodríguez Calderón
         intentos = 0 // Se asigna el valor dentro del bucle porque debe reiniciarse cada partida.
 
         do {
-            do { // Comprobamos que el número introducido por el usuario está entre 1 y 100.
-                println("Introduce un número entre 1 y 100.")
+            do { // Comprobamos que el número introducido por el usuario está dentro del intervalo.
+                println("Introduce un número entre $numeroMinimo y $numeroMaximo.")
                 numeroPedido = scanner.nextInt()
-            } while (numeroPedido < 1 || numeroPedido > 100)
+            } while (numeroPedido < numeroMinimo || numeroPedido > numeroMaximo)
 
             if (numeroPedido > numeroSecreto) {
                 println("El número secreto es mayor.")
