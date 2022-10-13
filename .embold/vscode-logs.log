@@ -46,3 +46,6 @@
 2022-10-10 10:02:15 error: SQLITE_ERROR: no such table: issues
 2022-10-10 10:02:37 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejemplos_html_ElenaRodriguez.zip
 2022-10-10 10:02:37 error: SQLITE_ERROR: no such table: issues
+2022-10-12 11:49:26 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-12 11:49:26 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-12 11:49:26 info: Congratulations, your extension "Embold" is now active!
