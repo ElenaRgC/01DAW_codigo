@@ -9,12 +9,12 @@ fun main() {
     scanner.close()
 
     if (numero == 0) {
-        println("El numero es cero.")
+        println("El número es cero.")
     } else {
         if (numero > 0) {
-            println("El numero es positivo.")
+            println("El número es positivo.")
         } else {
-            println("El numero es negativo")
+            println("El número es negativo")
         }
     }
 
