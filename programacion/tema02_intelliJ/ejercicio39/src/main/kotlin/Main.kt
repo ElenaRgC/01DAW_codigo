@@ -47,11 +47,11 @@ fun main() { // Elena Rodríguez Calderón
         }
 
         println("Introduzca S para seguir jugando, cualquier otro valor para salir.")
-        continuar = scanner.next()
+        continuar = scanner.next().lowercase()
 
         // scanner.close() si cierro el escáner, no funciona para la segunda vuelta y sucesivas.
 
-    } while (continuar == "S")
+    } while (continuar == "s" || continuar =="si" || continuar =="sí")
 
 
 }
