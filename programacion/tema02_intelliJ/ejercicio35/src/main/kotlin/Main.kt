@@ -1,10 +1,10 @@
 import kotlin.random.Random
 import java.util.Scanner
 
-fun introducirNumeros(cantidadNumeros: Int, valorMaximo: Int) {
+fun introducirNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
 
     var numeroIntroducido: Int = 0
-    val numerosJugador = IntArray(cantidadNumeros) {0}
+    var numerosJugador = IntArray(cantidadNumeros)
     var estaRepetido: Boolean
     var i = 0
     val scanner = Scanner(System.`in`)
@@ -31,11 +31,14 @@ fun introducirNumeros(cantidadNumeros: Int, valorMaximo: Int) {
 
         } while (estaRepetido && numeroIntroducido < 1 && numeroIntroducido > valorMaximo)
 
-    numerosJugador[i] = numeroIntroducido
-    i++
+        numerosJugador[i] = numeroIntroducido
+        i++
     }
 
+    return numerosJugador
+
 }
+
 
 fun estarRepetido(arrayNumeros: IntArray, numeroQueComprobar: Int, iteraciones: Int): Boolean {
     var estaRepetido: Boolean = false
@@ -52,13 +55,18 @@ fun estarRepetido(arrayNumeros: IntArray, numeroQueComprobar: Int, iteraciones: 
 }
 
 fun main() { // Elena Rodríguez Calderón
-    
+
     /* Genera una combinación al azar para la lotería primitiva.
     Los números de la lotería son 6, comprendidos del 1 al 49.
     En esta versión no importa si se repite algún número.  */
 
     val cantidadNumeros: Int = 6 // Cantidad de números pedidos y generados. En la primitiva son 6.
     val valorMaximo: Int = 49 // Número más alto que se puede seleccionar. En la primitiva es hasta el 49.
+    var numerosJugador = IntArray(cantidadNumeros)
+
+    numerosJugador = introducirNumeros(cantidadNumeros, valorMaximo)
+
+    comprobarAciertos(cantidadNumeros, numerosJugador, numerosPremiados)
 
 
 }
