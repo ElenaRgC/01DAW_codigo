@@ -53,7 +53,7 @@ fun generarNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
         if (!estaRepetido) {
             numerosPremiados[i] = numeroAleatorio
         }
-        
+
         i++
     }
 
@@ -75,6 +75,27 @@ fun estarRepetido(arrayNumeros: IntArray, numeroQueComprobar: Int, iteraciones: 
     return estaRepetido
 }
 
+fun comprobarAciertos(cantidadNumeros: Int, numerosJugador: IntArray, numerosPremiados: IntArray) {
+    var numerosAcertados: Int = 0
+
+    for (i in 1..cantidadNumeros) {
+
+        for (j in 1..cantidadNumeros) {
+            if (numerosJugador[i] == numerosPremiados[j]) {
+                numerosAcertados++
+            }
+        }
+
+    }
+
+    println("Tu número de aciertos es: $numerosAcertados")
+
+    if (numerosAcertados == cantidadNumeros) {
+        println("Enhorabuena, has acertado todos los números.")
+    }
+
+}
+
 fun main() { // Elena Rodríguez Calderón
 
     /* Genera una combinación al azar para la lotería primitiva.
@@ -84,8 +105,10 @@ fun main() { // Elena Rodríguez Calderón
     val cantidadNumeros: Int = 6 // Cantidad de números pedidos y generados. En la primitiva son 6.
     val valorMaximo: Int = 49 // Número más alto que se puede seleccionar. En la primitiva es hasta el 49.
     var numerosJugador = IntArray(cantidadNumeros)
+    var numerosPremiados = IntArray(cantidadNumeros)
 
     numerosJugador = introducirNumeros(cantidadNumeros, valorMaximo)
+    numerosPremiados = generarNumeros(cantidadNumeros, valorMaximo)
 
     comprobarAciertos(cantidadNumeros, numerosJugador, numerosPremiados)
 
