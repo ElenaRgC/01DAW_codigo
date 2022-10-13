@@ -29,7 +29,7 @@ fun introducirNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
                 println("Ha introducido un número mayor que $valorMaximo.")
             }
 
-        } while (estaRepetido && numeroIntroducido < 1 && numeroIntroducido > valorMaximo)
+        } while (estaRepetido || numeroIntroducido < 1 || numeroIntroducido > valorMaximo)
 
         numerosJugador[i] = numeroIntroducido
         i++
