@@ -1,7 +1,7 @@
 import kotlin.random.Random
 import java.util.Scanner
 
-fun main() {
+fun main() { // Elena Rodríguez Calderón
     /*
     Juego del número secreto. El ordenador ‘pensará’ un número del 1 al 100.
     El usuario tendrá 5 intentos para averiguarlo. El programa le irá dando pistas del tipo mayor o menor.
