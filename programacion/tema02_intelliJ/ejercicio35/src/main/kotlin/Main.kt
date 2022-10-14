@@ -10,7 +10,7 @@ fun introducirNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
     val scanner = Scanner(System.`in`)
 
     while (i < cantidadNumeros) {
-        do {
+        do { // Filtramos los números que puede elegir el jugador.
 
             println("Introduzca un número entre 1 y $valorMaximo.")
             numeroIntroducido = scanner.nextInt()
@@ -63,13 +63,14 @@ fun generarNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
 
 fun estarRepetido(arrayNumeros: IntArray, numeroQueComprobar: Int, iteraciones: Int): Boolean {
     var estaRepetido: Boolean = false
-    val i: Int = 0
+    var i: Int = 0
 
     while (i < iteraciones) {
         if (arrayNumeros[i] == numeroQueComprobar) {
             estaRepetido = true
             break
         }
+        i++
     }
 
     return estaRepetido
@@ -78,9 +79,9 @@ fun estarRepetido(arrayNumeros: IntArray, numeroQueComprobar: Int, iteraciones: 
 fun comprobarAciertos(cantidadNumeros: Int, numerosJugador: IntArray, numerosPremiados: IntArray) {
     var numerosAcertados: Int = 0
 
-    for (i in 1..cantidadNumeros) {
+    for (i in 0..cantidadNumeros - 1) {
 
-        for (j in 1..cantidadNumeros) {
+        for (j in 0..cantidadNumeros - 1) {
             if (numerosJugador[i] == numerosPremiados[j]) {
                 numerosAcertados++
             }
