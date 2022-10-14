@@ -52,9 +52,10 @@ fun generarNumeros(cantidadNumeros: Int, valorMaximo: Int): IntArray {
 
         if (!estaRepetido) {
             numerosPremiados[i] = numeroAleatorio
+            i++
+            println("$numeroAleatorio ha sido premiado.")
         }
 
-        i++
     }
 
     return numerosPremiados
