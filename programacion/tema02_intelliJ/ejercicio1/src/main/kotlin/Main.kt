@@ -1,12 +1,12 @@
 import java.util.Scanner
 
-fun main() {
+fun main() { // Elena Rodríguez Calderón
  // Calcula la superficie y el perímetro de un cuadrado cuyo lado pediremos por teclado.
 
     println("Introduce el lado del cuadrado.")
-    var scanner = Scanner(System.`in`)
-    var lado = scanner.nextInt()
-    var area = lado * lado
+    val scanner = Scanner(System.`in`)
+    val lado = scanner.nextInt()
+    val area = lado * lado
     println("El área es $area.")
     
 }

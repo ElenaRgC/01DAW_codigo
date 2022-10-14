@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8e2a45-c613-40ad-84a9-0dad47f4500f" name="Changes" comment="" />
+    <list default="true" id="70d36744-3be5-4935-9486-e851c63a4b57" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +22,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2G4jPSdokpKmyEx3r81zWWmCgEe" />
+  <component name="ProjectId" id="2G7hnuE6h9y3Q1YmVAGaGgI8NeL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,18 +32,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/elena/Documents/01 DAW/Programación/Tema 2 - Ejercicios comprimidos",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e8e2a45-c613-40ad-84a9-0dad47f4500f" name="Changes" comment="" />
-      <created>1665654731952</created>
+      <changelist id="70d36744-3be5-4935-9486-e851c63a4b57" name="Changes" comment="" />
+      <created>1665745705689</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665654731952</updated>
+      <updated>1665745705689</updated>
     </task>
     <servers />
   </component>

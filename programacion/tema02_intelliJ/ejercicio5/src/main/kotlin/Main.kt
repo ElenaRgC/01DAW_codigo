@@ -1,7 +1,7 @@
 // Determinar si un número leído por teclado es positivo o negativo.
 import java.util.Scanner
 
-fun main() {
+fun main() { // Elena Rodríguez Calderón
 
     val scanner = Scanner(System.`in`)
     println("Introduce un número.")
