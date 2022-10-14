@@ -7,46 +7,65 @@ Controla el posible error como la división por cero, en este caso se indicará 
 El ejercicio se debe repetir indefinidamente hasta que el usuario decida terminar.
  */
 
-fun sumar(primerNumero: Float, segundoNumero: Float) : Float {
+fun sumar(primerNumero: Double, segundoNumero: Double) : Double {
     return primerNumero + segundoNumero
 }
 
-fun restar(primerNumero: Float, segundoNumero: Float) : Float {
+fun restar(primerNumero: Double, segundoNumero: Double) : Double {
     return primerNumero - segundoNumero
 }
 
-fun multiplicar(primerNumero: Float, segundoNumero: Float) : Float {
+fun multiplicar(primerNumero: Double, segundoNumero: Double) : Double {
     return primerNumero * segundoNumero
 }
 
-fun dividir(primerNumero: Float, segundoNumero: Float) : Float {
+fun dividir(primerNumero: Double, segundoNumero: Double) : Double {
     return primerNumero / segundoNumero
 }
 
 fun main() { // Elena Rodríguez Calderón
     val scanner = Scanner(System.`in`)
-    var primerNumero: Float
-    var segundoNumero: Float
-    var operador: Float
-    var resultado: Float
+    var primerNumero: Double = 0.0
+    var segundoNumero: Double = 0.0
+    var resultado: Double = 0.0
+    var operador: Int
 
-    println("Indique la operación a realizar:")
-    println("1: Sumar.")
-    println("2: Restar.")
-    println("3: Multiplicar.")
-    println("4: Dividir.")
-    println("Cualquier otro número para salir.")
-    operador = scanner.nextInt()
+    do {
+        println("Indique la operación a realizar:")
+        println("1: Sumar.")
+        println("2: Restar.")
+        println("3: Multiplicar.")
+        println("4: Dividir.")
+        println("Cualquier otro número para salir.")
+        operador = scanner.nextInt()
 
-    println("Introduzca el primer valor.")
-    primerNumero = scanner.nextFloat()
+        println("Introduzca el primer valor.")
+        primerNumero = scanner.nextDouble()
 
-    println("Introduzca el segundo valor.")
-    segundoNumero = scanner.nextFloat()
+        println("Introduzca el segundo valor.")
+        segundoNumero = scanner.nextDouble()
 
-    when (operador){
+        when (operador) {
 
-        1 -> sumar(primerNumero, segundoNumero)
-    }
+            1 -> resultado = sumar(primerNumero, segundoNumero)
+            2 -> resultado = restar(primerNumero, segundoNumero)
+            3 -> resultado = multiplicar(primerNumero, segundoNumero)
+            4 -> {
+                if (segundoNumero == 0.0) {
+                    println("No es posible dividir por 0.")
+                } else {
+                    resultado = dividir(primerNumero, segundoNumero)
+                }
+            }
 
+            else -> {
+                println("Fin del programa.")
+            }
+        }
+
+        if (operador in 1..4) {
+            if (operador != 4 && segundoNumero != 0.0)
+            println("El resultado es $resultado")
+        }
+    } while (operador in 1..4)
 }
