@@ -1,4 +1,5 @@
 import java.util.Scanner
+
 /*
 La calculadora. Diseña un algoritmo que pida dos números y un operador
 (una operación aritmética básica: sumar, restar, multiplicar o dividir).
@@ -7,19 +8,19 @@ Controla el posible error como la división por cero, en este caso se indicará 
 El ejercicio se debe repetir indefinidamente hasta que el usuario decida terminar.
  */
 
-fun sumar(primerNumero: Double, segundoNumero: Double) : Double {
+fun sumar(primerNumero: Double, segundoNumero: Double): Double {
     return primerNumero + segundoNumero
 }
 
-fun restar(primerNumero: Double, segundoNumero: Double) : Double {
+fun restar(primerNumero: Double, segundoNumero: Double): Double {
     return primerNumero - segundoNumero
 }
 
-fun multiplicar(primerNumero: Double, segundoNumero: Double) : Double {
+fun multiplicar(primerNumero: Double, segundoNumero: Double): Double {
     return primerNumero * segundoNumero
 }
 
-fun dividir(primerNumero: Double, segundoNumero: Double) : Double {
+fun dividir(primerNumero: Double, segundoNumero: Double): Double {
     return primerNumero / segundoNumero
 }
 
@@ -28,7 +29,7 @@ fun main() { // Elena Rodríguez Calderón
     var primerNumero: Double = 0.0
     var segundoNumero: Double = 0.0
     var resultado: Double = 0.0
-    var operador: Int
+    var operador: Int = 0
 
     do {
         println("Indique la operación a realizar:")
@@ -39,11 +40,13 @@ fun main() { // Elena Rodríguez Calderón
         println("Cualquier otro número para salir.")
         operador = scanner.nextInt()
 
-        println("Introduzca el primer valor.")
-        primerNumero = scanner.nextDouble()
+        if (operador in 1..4) {
+            println("Introduzca el primer valor.")
+            primerNumero = scanner.nextDouble()
 
-        println("Introduzca el segundo valor.")
-        segundoNumero = scanner.nextDouble()
+            println("Introduzca el segundo valor.")
+            segundoNumero = scanner.nextDouble()
+        }
 
         when (operador) {
 
@@ -65,7 +68,7 @@ fun main() { // Elena Rodríguez Calderón
 
         if (operador in 1..4) {
             if (operador != 4 && segundoNumero != 0.0)
-            println("El resultado es $resultado")
+                println("El resultado es $resultado")
         }
     } while (operador in 1..4)
 }
