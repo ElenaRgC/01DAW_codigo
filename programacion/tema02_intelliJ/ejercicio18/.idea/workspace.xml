@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b0533a-ee96-4533-9d5e-80649c00154d" name="Changes" comment="" />
+    <list default="true" id="a213f768-3ee0-428e-8462-e35b50dd7d9e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +19,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2GJ4e1WOvcBTP98XsG6XdHvlVJP" />
+  <component name="ProjectId" id="2GJ833TT911fW4BiOXxSkKPHtyu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,18 +28,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/elena/Documents/01 DAW/Programación/Tema 2 - Ejercicios comprimidos",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="16b0533a-ee96-4533-9d5e-80649c00154d" name="Changes" comment="" />
-      <created>1666093449007</created>
+      <changelist id="a213f768-3ee0-428e-8462-e35b50dd7d9e" name="Changes" comment="" />
+      <created>1666095128611</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666093449007</updated>
+      <updated>1666095128611</updated>
     </task>
     <servers />
   </component>
