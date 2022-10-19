@@ -6,6 +6,16 @@ fun main() { // Elena Rodríguez Calderón
 
     pantalla()
     suma(x,y)
+
+    x = x + retornaelsiete()
+
+    println("El número es " + retornaelsiete())
+
+    suma3(2,4)
+
+    resta(x,y,2)
+
+    println("La resta es: " + resta2(y,5,x))
 }
 
 fun pantalla() {
@@ -22,5 +32,8 @@ fun retornaelsiete():Int {
 }
 
 fun suma3(x:Int, y: Int) {
-    x++
+    var x2: Int = x
+    x2++
+    x2 *= y
+    println(x2)
 }
