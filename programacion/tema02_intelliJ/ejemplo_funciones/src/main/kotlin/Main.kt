@@ -1,7 +1,26 @@
 fun main() { // Elena Rodríguez Calderón
-    println("Hello World!")
+    println("Soy el programa principal.")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    var x: Int = 2
+    var y: Int = 3
+
+    pantalla()
+    suma(x,y)
+}
+
+fun pantalla() {
+    println("Imprimo por pantalla.")
+}
+
+fun suma(x_aux: Int, y_aux: Int) {
+    println("La x vale $x_aux")
+    println("La y vale $y_aux")
+}
+
+fun retornaelsiete():Int {
+    return 7
+}
+
+fun suma3(x:Int, y: Int) {
+    x++
 }
