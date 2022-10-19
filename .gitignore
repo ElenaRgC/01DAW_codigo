@@ -177,3 +177,4 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
 *.log
+.embold/vscode-logs.log
