@@ -179,3 +179,4 @@ fabric.properties
 *.log
 .embold/vscode-logs.log
 programacion/tema02_intelliJ/ejemplo_funciones/.idea/workspace.xml
+.embold/vscode-logs.log
