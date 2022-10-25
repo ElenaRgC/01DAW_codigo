@@ -5,7 +5,14 @@ fun main() { // Elena Rodríguez Calderón
      */
 
     println("Introduce una frase.")
-    val frase: String = readln()
+    var frase: String = readln()
+
+    /* if (frase.last().isLetter()) {
+        frase = frase + " "
+    } else {
+        frase = frase.substring(0, frase.length - 1) + " "
+    } */
+
 
     var palabraMasLarga = ""
     var palabra = ""
