@@ -6,12 +6,26 @@ fun main() { // Elena Rodríguez Calderón
     Salida: El carácter 'a' se repite 4 veces.
      */
 
-    // Pedir la cadena y el carácter.
     println("Introduce una cadena: ")
-    val cadena = readln()
-    println("Introduce otra cadena: ")
-    val caracter = readln()
+    val cadena: String = readln().lowercase()
+    println("Introduce un carácter: ")
+    val caracter: String = readln().lowercase()
+
+    contarCaracteres(cadena, caracter)
+
+}
 
 
+fun contarCaracteres(cadena: String, caracter:String) {
+    var i = 0
+    var numeroCaracteres = 0
 
+    while (i < cadena.length) {
+        if (cadena[i] == caracter[0]) {
+            numeroCaracteres++
+        }
+        i++
+    }
+
+    println("La cadena tiene $numeroCaracteres $caracter.")
 }
