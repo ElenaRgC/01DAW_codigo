@@ -7,10 +7,10 @@ fun main() { // Elena Rodríguez Calderón
     println("Introduce una frase.")
     var frase: String = readln()
 
-    /* if (frase.last().isLetter()) {
+    /* if (frase.last().isLetter()) { // El programa no funcionaría correctamente, ya que no tendría en cuenta la última palabra.
         frase = frase + " "
     } else {
-        frase = frase.substring(0, frase.length - 1) + " "
+        frase = frase.substring(0, frase.length - 1) + " " // Si el último carácter es un punto (por ejemplo), no queremos tenerlo en cuenta.
     } */
 
 
