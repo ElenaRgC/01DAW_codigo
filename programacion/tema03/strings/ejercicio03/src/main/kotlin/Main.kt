@@ -3,8 +3,14 @@ fun main() { // Elena Rodríguez Calderón
 
     print("Introduce una cadena: ")
     val cadena = readln()
+
+    contarVocales(cadena)
+
+}
+
+fun contarVocales(cadena: String) {
     var i = 0
-    var numeroVocales= 0
+    var numeroVocales = 0
 
     while (i < cadena.length) {
         if (cadena[i] == 'a' || cadena[i] == 'e' || cadena[i] == 'i' || cadena[i] == 'o' || cadena[i] == 'u') {
@@ -14,5 +20,4 @@ fun main() { // Elena Rodríguez Calderón
     }
 
     println("La cadena tiene $numeroVocales vocales.")
-
 }
