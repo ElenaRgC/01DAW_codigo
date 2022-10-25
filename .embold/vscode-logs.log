@@ -68,3 +68,17 @@
 2022-10-19 10:18:17 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2022-10-19 10:18:17 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2022-10-19 10:18:17 info: Congratulations, your extension "Embold" is now active!
+2022-10-24 08:32:59 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 08:32:59 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 08:32:59 info: Congratulations, your extension "Embold" is now active!
+2022-10-24 10:08:32 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejercicios3_tablas_ampli.zip
+2022-10-24 10:08:32 error: SQLITE_ERROR: no such table: issues
+2022-10-24 12:55:33 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 12:55:33 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 12:55:33 info: Congratulations, your extension "Embold" is now active!
+2022-10-24 12:57:22 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 12:57:22 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 12:57:22 info: Congratulations, your extension "Embold" is now active!
+2022-10-24 21:14:41 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 21:14:41 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-24 21:14:41 info: Congratulations, your extension "Embold" is now active!

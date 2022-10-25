@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0e33c1b-e833-417d-9427-7a0d44fbc49a" name="Changes" comment="" />
+    <list default="true" id="67777cde-0955-43e8-8f99-c1262e5b1e7f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,20 +13,13 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin File" />
-      </list>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2GLvNNZtIXZwAOjn1qILGXChJx1" />
+  <component name="ProjectId" id="2GcjlZjkIteSx2oEvGRM1Kml1u8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,18 +28,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/elena/Documents/01 DAW/Programación/Tema 2 - Ejercicios comprimidos",
+    "last_opened_file_path": "C:/Users/elena/Documents/01 DAW/Programación/Tema 3/Ejercicios comprimidos",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a0e33c1b-e833-417d-9427-7a0d44fbc49a" name="Changes" comment="" />
-      <created>1666180640348</created>
+      <changelist id="67777cde-0955-43e8-8f99-c1262e5b1e7f" name="Changes" comment="" />
+      <created>1666694921985</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666180640348</updated>
+      <updated>1666694921985</updated>
     </task>
     <servers />
   </component>
