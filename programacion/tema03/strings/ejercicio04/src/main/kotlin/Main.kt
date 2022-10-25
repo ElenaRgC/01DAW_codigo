@@ -11,6 +11,9 @@ fun main() { // Elena Rodríguez Calderón
     println("Introduce un carácter: ")
     val caracter: String = readln().lowercase()
 
+    // Convertimos a minúsculas para contar ambos tipos de letras.
+    // Seguiría dando problemas con vocales acentuadas.
+
     contarCaracteres(cadena, caracter)
 
 }
