@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc3207a-3f86-4943-aa0d-cd410aaf3e82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ejercicio04/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ejercicio04/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicio05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicio05/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cb89f5dc-df84-4b86-9868-c81806b1d49f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,28 +24,44 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2GcpJ6mu1z2rz4XKBk87f8ToFbJ" />
+  <component name="ProjectId" id="2GcvNHDxSQVgN1Q94BgI2G8Xp7I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Elena/Estudios/1 DAW/01DAW_codigo/programacion/tema03/strings/ejercicio03",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Elena/Estudios/1 DAW/01DAW_codigo/programacion/tema03/strings/ejercicio05&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ejercicio04" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ejercicio04" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cbc3207a-3f86-4943-aa0d-cd410aaf3e82" name="Changes" comment="" />
-      <created>1666697657474</created>
+      <changelist id="cb89f5dc-df84-4b86-9868-c81806b1d49f" name="Changes" comment="" />
+      <created>1666700646341</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666697657474</updated>
+      <updated>1666700646341</updated>
     </task>
     <servers />
   </component>
