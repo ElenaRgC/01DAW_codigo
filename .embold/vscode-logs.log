@@ -82,3 +82,8 @@
 2022-10-24 21:14:41 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2022-10-24 21:14:41 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2022-10-24 21:14:41 info: Congratulations, your extension "Embold" is now active!
+2022-10-26 08:57:37 info: tempDirectory:c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-26 08:57:37 info: Extraction complete for source: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\elena\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2022-10-26 08:57:37 info: Congratulations, your extension "Embold" is now active!
+2022-10-26 09:30:29 info: file:///c%3A/Users/elena/Documents/01%20DAW/01DAW_codigo/lenguajeMarcas/unidad02/ejercicios4_formularios/ejercicio6
+2022-10-26 09:30:29 error: SQLITE_ERROR: no such table: issues
