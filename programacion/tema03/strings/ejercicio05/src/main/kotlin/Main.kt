@@ -24,8 +24,8 @@ fun buscarPalabraMasLarga(cadena:String) {
     var palabraMasLarga: String = ""
     var numeroLetras: Int = 0
     var palabra: String = ""
-    var i: Int = 0
-    var j: Int = 0
+    var i: Int = 0 // Recorre la frase.
+    var j: Int = 0 // Recorre cada palabra.
 
     frase = cadena + ' ' // Hacemos esto en lugar de lo comentado arriba para no usar funciones predefinidas.
 
