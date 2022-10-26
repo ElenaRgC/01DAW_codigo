@@ -1,4 +1,4 @@
-fun main() {
+fun main() { // Elena Rodríguez Calderón
     /*
     Diseña un programa en Java que solicite al usuario una cadena en la que buscará y
     otra que será la cadena buscada. El programa indicará cuantas veces aparece la
