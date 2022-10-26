@@ -5,10 +5,10 @@ fun main() { // Elena Rodríguez Calderón
     segunda cadena en la primera.
      */
 
-    println("Introduce un texto:")
+    println("Introduce una oracion:")
     val cadenaParaBuscar: String = readln()
 
-    println("Introduce lo que quieres buscar en el texto:")
+    println("Introduce la palabra que quieres buscar en la oración:")
     val cadenaBuscada: String = readln()
 
     buscarCadena(cadenaParaBuscar, cadenaBuscada)
@@ -16,7 +16,7 @@ fun main() { // Elena Rodríguez Calderón
 }
 
 fun buscarCadena(texto: String, busqueda: String) {
-    var texto: String = texto
+    var texto: String = texto + ' '
     var busqueda: String = busqueda
     var palabra: String = ""
     var numeroEncuentros: Int = 0
