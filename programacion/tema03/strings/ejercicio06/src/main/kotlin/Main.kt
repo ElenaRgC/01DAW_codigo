@@ -16,7 +16,7 @@ fun main() { // Elena Rodríguez Calderón
 }
 
 fun buscarCadena(texto: String, busqueda: String) {
-    var texto: String = texto + ' '
+    var texto: String = texto.lowercase() + ' '
     var busqueda: String = busqueda
     var palabra: String = ""
     var numeroEncuentros: Int = 0
@@ -24,11 +24,11 @@ fun buscarCadena(texto: String, busqueda: String) {
 
 
     while (i < texto.length) {
-        if (texto[i] != ' ') {
+        if (texto[i] != ' ') { // Si no encontramos un espacio, guardamos caracteres en la variable palabra.
             palabra = palabra + texto[i]
-        } else {
-            if (palabra == busqueda) {
-                numeroEncuentros++
+        } else { // En el caso de que encontremos un espacio, acaba la palabra.
+            if (palabra == busqueda) { // Si la palabra es la buscada,
+                numeroEncuentros++ // sumamos un encuentro.
             }
             palabra = "" // Vaciamos la variable palabra.
         }

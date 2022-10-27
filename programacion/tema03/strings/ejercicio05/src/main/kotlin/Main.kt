@@ -32,7 +32,7 @@ fun buscarPalabraMasLarga(cadena:String) {
     while (i < frase.length) {
         if (frase[i] != ' ') { // Si no es un espacio, añadimos letra a letra hasta terminar la palabra en el siguiente espacio.
             palabra = palabra + frase[i]
-            j++
+            j++ // También contamos el número de caracteres.
         } else { // Si es un espacio, estamos en una nueva palabra.
             if (j > palabraMasLarga.length) { // Comprobamos si la palabra es más larga que la anterior para almacenarla.
                 palabraMasLarga = palabra
