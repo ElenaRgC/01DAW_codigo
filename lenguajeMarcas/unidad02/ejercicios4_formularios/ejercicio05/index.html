@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+  </head>
+  <body>
+    <h2>Rellena tu CV</h2>
+    <form action="#">
+      <label for="nombre">Nombre</label> <br />
+      <input type="text" name="nombre" id="nombre" /> <br />
+      <label for="apellidos">Apellidos</label> <br />
+      <input type="text" name="apellidos" id="apellidos" size="40" /> <br />
+      <label for="contraseña">Contraseña</label> <br />
+      <input type="password" name="contraseña" id="contraseña" /> <br />
+      <label for="dni">DNI</label> <br />
+      <input type="text" name="dni" id="dni" size="10" /> <br />
+      <label for="sexo">Sexo</label> <br />
+      <input type="radio" name="sexo" id="sexo" value="hombre" checked />
+      Hombre <input type="radio" name="sexo" id="sexo" value="mujer" /> Mujer
+      <input type="radio" name="sexo" id="sexo" value="otro" /> Otro
+      <br />
+      <label for="foto">Incluir mi foto</label>
+      <input type="file" name="foto" id="foto" /> <br />
+      <input type="checkbox" name="boletin" id="boletin" checked />
+      <label for="boletin">Suscribirme al boletín de novedades</label> <br />
+      <input type="submit" value="Guardar cambios" />
+      <input type="reset" value="Borrar los datos introducidos" />
+    </form>
+  </body>
+</html>

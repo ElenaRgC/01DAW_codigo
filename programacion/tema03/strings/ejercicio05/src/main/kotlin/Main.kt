@@ -24,15 +24,15 @@ fun buscarPalabraMasLarga(cadena:String) {
     var palabraMasLarga: String = ""
     var numeroLetras: Int = 0
     var palabra: String = ""
-    var i: Int = 0
-    var j: Int = 0
+    var i: Int = 0 // Recorre la frase.
+    var j: Int = 0 // Recorre cada palabra.
 
     frase = cadena + ' ' // Hacemos esto en lugar de lo comentado arriba para no usar funciones predefinidas.
 
     while (i < frase.length) {
         if (frase[i] != ' ') { // Si no es un espacio, añadimos letra a letra hasta terminar la palabra en el siguiente espacio.
             palabra = palabra + frase[i]
-            j++
+            j++ // También contamos el número de caracteres.
         } else { // Si es un espacio, estamos en una nueva palabra.
             if (j > palabraMasLarga.length) { // Comprobamos si la palabra es más larga que la anterior para almacenarla.
                 palabraMasLarga = palabra

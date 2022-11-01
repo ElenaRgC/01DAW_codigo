@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Rellenar</legend>
+
+        <label for="color">Elige un color</label>
+        <input type="color" name="color" id="color" /><br />
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="apellidos" /><br />
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="nombre" /><br />
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" id="telefono" /><br />
+        <br />
+
+        <input type="checkbox" name="lengua" id="lengua" />
+        <label for="lengua">Lengua</label>
+        <input type="checkbox" name="matematicas" id="matematicas" />
+        <label for="matematicas">Matemáticas</label>
+        <input type="checkbox" name="historia" id="historia" />
+        <label for="historia">Historia</label>
+        <input type="checkbox" name="geografia" id="geografia" />
+        <label for="geografia">Geografía</label>
+        <br />
+        <label for="fichero">Elija un fichero:</label>
+        <input type="file" name="fichero" id="fichero" /><br />
+
+        <textarea
+          name="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Utilice este cuadro para escribir."
+        ></textarea
+        ><br />
+
+        <input type="radio" name="jpg" id="jpg" />
+        <label for="jpg">JPG</label>
+        <input type="radio" name="png" id="png" />
+        <label for="png">PNG</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Completar</legend>
+
+        <label for="nombre2">Nombre:</label>
+        <input type="text" name="nombre2" id="nombre2" /><br />
+        <label for="apellidos2">Apellidos:</label>
+        <input type="text" name="apellidos2" id="apellidos2" /><br />
+        <label for="telefono">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" /><br />
+
+        <label for="fecha">Elija una fecha:</label>
+        <input type="date" name="fecha" id="fecha" /><br />
+        <select name="puertos" id="puertos" multiple>
+          <option value="usb">USB</option>
+          <option value="paralelo">Paralelo</option>
+          <option value="ps2">PS2</option>
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>

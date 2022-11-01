@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Completar</legend>
+        <label for="color">Elija un color</label>
+        <input type="color" name="color" id="color" />
+        <br />
+        <textarea
+          name="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Por favor, escriba aquí"
+        ></textarea>
+        <br />
+        <select name="lenguaje" id="lenguaje">
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="kotlin">Kotlin</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+        <br />
+        <input type="checkbox" name="ciclo" id="asir" />
+        <label for="asir">ASIR</label>
+
+        <input type="checkbox" name="ciclo" id="dam" />
+        <label for="dam">DAM</label>
+
+        <input type="checkbox" name="ciclo" id="daw" />
+        <label for="daw">DAW</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Rellene las opciones siguientes</legend>
+        <label for="fecha">Elija una fecha: </label>
+        <input type="date" name="fecha" id="fecha" />
+        <br />
+        <label for="fichero">Elija un fichero: </label>
+        <input type="file" name="fichero" id="fichero" />
+        <br />
+
+        <select name="ciclo" id="ciclo" multiple>
+          <option value="smir">SMIR</option>
+          <option value="asir">ASIR</option>
+          <option value="dam">DAM</option>
+          <option value="daw">DAW</option>
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>

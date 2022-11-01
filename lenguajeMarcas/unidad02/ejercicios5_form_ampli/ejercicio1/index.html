@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Rellenar</legend>
+        <label for="ingles">Inglés</label>
+        <input type="radio" name="ingles" id="ingles" /> <br />
+        <label for="aleman">Alemán</label>
+        <input type="radio" name="aleman" id="aleman" /> <br />
+        <label for="frances">Francés</label>
+        <input type="radio" name="frances" id="frances" /><br />
+
+        <select name="soporte" id="soporte">
+          <option value="usb">USB</option>
+          <option value="cd">CD</option>
+          <option value="dvd">DVD</option>
+        </select>
+        <br />
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" /> <br />
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Indique sus preferencias por favor</legend>
+        <select name="genero" id="genero" multiple>
+          <option value="smir">Hombre</option>
+          <option value="asir">Mujer</option>
+        </select>
+
+        <input type="checkbox" name="sexo" id="hombre" />
+        <label for="hombre">Hombre</label><br />
+        <input type="checkbox" name="sexo" id="mujer" />
+        <label for="mujer">Mujer</label><br />
+
+        <label for="fecha">Elija una fecha</label>
+        <input type="date" name="fecha" id="fecha" />
+      </fieldset>
+    </form>
+  </body>
+</html>
