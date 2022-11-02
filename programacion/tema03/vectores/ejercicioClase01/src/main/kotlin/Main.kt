@@ -29,6 +29,14 @@ fun main() { // Elena Rodríguez Calderón
     menorNumero(arrayNumeros)
     numerosPares(arrayNumeros)
     mediaNumeros(arrayNumeros)
+    dosNumerosMasPequenos(arrayNumeros)
+
+    var k = 0
+    println("Los 10 primeros numeros en la array reordenada son:")
+    do {
+        println(arrayNumeros[k])
+        k++
+    } while (k < 9)
 }
 
 fun mayorNumero(arrayNumeros: Array<Int>) {
@@ -76,5 +84,21 @@ fun mediaNumeros(arrayNumeros: Array<Int>) {
 
     var media = suma / arrayNumeros.size
     println("La media de los numeros es: $media")
+}
+
+fun dosNumerosMasPequenos(arrayNumeros: Array<Int>) {
+    var i = 0
+    var menor = 100
+    var segundoMenor = 100
+    while (i < arrayNumeros.size) {
+        if (arrayNumeros[i] < menor) {
+            segundoMenor = menor
+            menor = arrayNumeros[i]
+        }
+        i++
+    }
+
+    arrayNumeros[0] = menor
+    arrayNumeros[1] = segundoMenor
 }
 
