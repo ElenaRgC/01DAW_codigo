@@ -6,6 +6,8 @@ fun main() { // Elena Rodríguez Calderón
     Función: mayor número del array e imprimirlos.
     Función: menor número del array e imprimirlos.
     Función: buscar los números pares e imprimirlos.
+    Recorrer el array y sacar la media de los números.
+    Buscar el número del array, buscar los dos números más pequeños y ponerlos en la posición 0  y 1.
      */
 
     val arrayNumeros = Array(50) { 0 }
@@ -26,6 +28,7 @@ fun main() { // Elena Rodríguez Calderón
     mayorNumero(arrayNumeros)
     menorNumero(arrayNumeros)
     numerosPares(arrayNumeros)
+    mediaNumeros(arrayNumeros)
 }
 
 fun mayorNumero(arrayNumeros: Array<Int>) {
@@ -62,3 +65,16 @@ fun numerosPares(arrayNumeros:Array<Int>) {
         i++
     }
 }
+
+fun mediaNumeros(arrayNumeros: Array<Int>) {
+    var i = 0
+    var suma = 0
+    while (i < arrayNumeros.size) {
+        suma += arrayNumeros[i]
+        i++
+    }
+
+    var media = suma / arrayNumeros.size
+    println("La media de los numeros es: $media")
+}
+
