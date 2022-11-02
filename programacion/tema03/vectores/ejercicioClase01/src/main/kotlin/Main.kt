@@ -36,7 +36,7 @@ fun main() { // Elena Rodríguez Calderón
     do {
         println(arrayNumeros[k])
         k++
-    } while (k < 4)
+    } while (k < 5)
 }
 
 fun mayorNumero(arrayNumeros: Array<Int>) {
