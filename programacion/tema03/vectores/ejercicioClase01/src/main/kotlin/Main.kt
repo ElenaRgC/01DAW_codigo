@@ -91,7 +91,7 @@ fun dosNumerosMasPequenos(arrayNumeros: Array<Int>) {
     var menor = 100
     var segundoMenor = 100
     while (i < arrayNumeros.size) {
-        if (arrayNumeros[i] < menor) {
+        if (arrayNumeros[i] <= menor) {
             segundoMenor = menor
             menor = arrayNumeros[i]
         }
