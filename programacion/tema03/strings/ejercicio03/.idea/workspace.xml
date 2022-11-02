@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="056c77ab-e388-44eb-a0fe-4f97ffdec331" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicio04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicio04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicio04/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicio04/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicio05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicio05/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Elena/Estudios/1 DAW/01DAW_codigo/programacion/tema03/strings/ejercicio05",
+    "last_opened_file_path": "D:/Elena/Estudios/1 DAW/01DAW_codigo/programacion/tema03/strings/ejercicio04",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
