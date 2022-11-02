@@ -17,6 +17,7 @@ fun main() { // Elena Rodríguez Calderón
     }
 
     var j = 0
+    println("Los numeros en la array son:")
     do {
         println(arrayNumeros[j])
         j++
