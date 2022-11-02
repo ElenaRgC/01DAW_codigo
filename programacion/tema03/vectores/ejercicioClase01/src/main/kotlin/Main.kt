@@ -32,11 +32,11 @@ fun main() { // Elena Rodríguez Calderón
     dosNumerosMasPequenos(arrayNumeros)
 
     var k = 0
-    println("Los 10 primeros numeros en la array reordenada son:")
+    println("Los 5 primeros numeros en la array reordenada son:")
     do {
         println(arrayNumeros[k])
         k++
-    } while (k < 9)
+    } while (k < 4)
 }
 
 fun mayorNumero(arrayNumeros: Array<Int>) {
