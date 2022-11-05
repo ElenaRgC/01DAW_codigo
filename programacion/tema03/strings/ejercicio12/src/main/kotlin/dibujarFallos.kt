@@ -18,4 +18,5 @@ fun dibujarFallos(numeroFallos: Int) {
         6 -> println(fallo6)
         7 -> println(fallo7)
     }
+    println("")
 }

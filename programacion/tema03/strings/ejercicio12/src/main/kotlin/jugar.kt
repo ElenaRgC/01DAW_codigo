@@ -16,7 +16,7 @@ fun jugar(palabraSecreta: String, numeroIntentos: Int) {
     do {
         do {
             println("Prueba una letra:")
-            letra = readln()
+            letra = readln().lowercase()
             estaRepetida = letraRepetida(letra, letrasUsadas)
         } while (estaRepetida) // Volvemos a pedir una letra si ya la ha usado antes.
 
@@ -40,11 +40,11 @@ fun jugar(palabraSecreta: String, numeroIntentos: Int) {
         } else { // Si acierta, guardamos la nueva pista y no aumentamos el contador de fallos
             pista = nuevaPista
         }
-        println(pista)
-        println("")
+        
+        println("$pista\n")
         dibujarFallos(numeroFallos)
-        println("")
 
+        // Seguimos jugando mientras no lleguemos al número máximo de fallos o acertemos todas las letras
     } while (numeroFallos < numeroIntentos && pista != solucion)
 
     if (pista == solucion) {
