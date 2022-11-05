@@ -5,42 +5,21 @@ fun main() { // Elena Rodríguez Calderón
     decida resolver. Se darán 7 intentos. El ahorcado de toa la vida, vamos.
      */
 
-    val numeroTurnos = 7
+    val numeroIntentos = 7
+    var seguirJugando: String = ""
     var letrasUsadas: String = ""
-    var letra: String = ""
 
+    do {
+        println("Introduce la palabra secreta.")
+        var palabraSecreta: String = readln()
 
-    println("Introduce la palabra secreta.")
-    var palabraSecreta: String = readln()
+        jugar(palabraSecreta,numeroIntentos)
 
-    var pista = esconderPalabra(palabraSecreta)
-
-    println("Prueba una letra:")
-    letra = readln()
-    var i = 0
-    pista = ""
-    while (i < palabraSecreta.length) {
-
-        if (letra[0] == palabraSecreta[i]) {
-            pista += letra[0]
-            pista += ' '
-        } else {
-            pista += "_ "
-        }
-        i++
-    }
-
-    println(pista)
-
+        println("¿Quiere volver a jugar")
+        seguirJugando = readln()
+    } while (seguirJugando == "s" || seguirJugando == "si" || seguirJugando == "sí")
 
 }
 
-fun esconderPalabra(palabraSecreta:String): String {
-    var pista: String = ""
-    var i: Int = 0
-    while (i < palabraSecreta.length) { // Creamos un _ por cada letra de la palabra
-        pista += "_ " // y añadimos un espacio para poder diferenciarlas
-        i++
-    }
-    return pista
-}
+
+
