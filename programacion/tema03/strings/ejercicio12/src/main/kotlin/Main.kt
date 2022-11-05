@@ -7,16 +7,15 @@ fun main() { // Elena Rodríguez Calderón
 
     val numeroIntentos = 7
     var seguirJugando: String = ""
-    var letrasUsadas: String = ""
 
     do {
         println("Introduce la palabra secreta.")
-        var palabraSecreta: String = readln()
+        var palabraSecreta: String = readln().lowercase()
 
         jugar(palabraSecreta,numeroIntentos)
 
-        println("¿Quiere volver a jugar")
-        seguirJugando = readln()
+        println("Quiere volver a jugar? (S/N)")
+        seguirJugando = readln().lowercase()
     } while (seguirJugando == "s" || seguirJugando == "si" || seguirJugando == "sí")
 
 }
