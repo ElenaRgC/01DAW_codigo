@@ -36,6 +36,7 @@ fun jugar(palabraSecreta: String, numeroIntentos: Int) {
             pista = nuevaPista
         }
 
+        dibujarFallos(numeroFallos)
         println(pista)
     } while (numeroFallos < numeroIntentos && pista != solucion)
 
