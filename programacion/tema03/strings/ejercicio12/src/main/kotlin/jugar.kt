@@ -40,7 +40,7 @@ fun jugar(palabraSecreta: String, numeroIntentos: Int) {
         } else { // Si acierta, guardamos la nueva pista y no aumentamos el contador de fallos
             pista = nuevaPista
         }
-        
+
         println("$pista\n")
         dibujarFallos(numeroFallos)
 
