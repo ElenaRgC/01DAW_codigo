@@ -1,3 +1,6 @@
+body {
+  background-image: url("../paper.jpg");
+}
 h1 {
   color: red;
   font-family: Arial;
@@ -7,4 +10,8 @@ p {
   color: gray;
   font-family: Verdana;
   size: 2rem;
+}
+img {
+  width: 100px;
+  height: 100px;
 }
