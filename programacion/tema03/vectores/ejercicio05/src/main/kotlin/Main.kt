@@ -1,6 +1,6 @@
 import kotlin.random.Random
 
-fun main(args: Array<String>) { // Elena Rodríguez Calderón
+fun main() { // Elena Rodríguez Calderón
     /* Diseña un programa que genere un vector con números al azar que oscilan entre
     [-100 y 100]. Después realiza un módulo que indique cuantos números positivos y
     cuantos negativos hay. */
