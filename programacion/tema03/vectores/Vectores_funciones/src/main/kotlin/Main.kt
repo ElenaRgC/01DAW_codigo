@@ -7,15 +7,15 @@ fun main(args: Array<String>) {
 
     rellenar(numeros)
 
-    println("Vector:")
+    imprimir("Vector:", numeros)
+    /*println("Vector:")
     for (i in 0 until numeros.size){
         print("["+ numeros[i]+ "] ")
-    }
-
+    } */
 
     var digito : Int = 0
     digito = rellenarNumero()
-    println(" El número vale: ${digito}")
+    println(" El número vale: $digito")
 
     //paso por valor, llega una copia del elemento.
     sumaNumeroAvector(numeros, digito)
@@ -30,10 +30,12 @@ fun rellenar(n:Array<Int>){
         n[i]= readln().toInt()
     }
 }
+
 fun rellenarNumero():Int{
     println ("\nDame el número")
     return (readln().toInt())
 }
+
 fun sumaNumeroAvector(n:Array<Int>, d:Int){
     for (i in n.indices){
         n[i]= n[i] + d
