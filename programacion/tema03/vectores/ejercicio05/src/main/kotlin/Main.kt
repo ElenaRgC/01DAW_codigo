@@ -5,7 +5,7 @@ fun main() { // Elena Rodríguez Calderón
     [-100 y 100]. Después realiza un módulo que indique cuantos números positivos y
     cuantos negativos hay. */
 
-    val cantidadNumeros = 5
+    val cantidadNumeros = 10
 
     var vector = Array(cantidadNumeros){0}
 
