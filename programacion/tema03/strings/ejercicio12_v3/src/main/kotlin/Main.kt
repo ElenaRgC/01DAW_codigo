@@ -5,7 +5,7 @@ fun main() { // Elena Rodríguez Calderón
     decida resolver. Se darán 7 intentos. El ahorcado de toa la vida, vamos.
      */
 
-    val numeroIntentos = 7
+    val INTENTOS = 7
     var seguirJugando: String = ""
     var palabraSecreta: String = ""
 
@@ -15,7 +15,7 @@ fun main() { // Elena Rodríguez Calderón
             palabraSecreta = readln().trim().lowercase()
         } while (palabraSecreta == "") //Evitamos que por error no se introduzca una palabra.
 
-        jugar(palabraSecreta,numeroIntentos)
+        jugar(palabraSecreta,INTENTOS)
 
         println("Quiere volver a jugar? (S/N)")
         seguirJugando = readln().trim().lowercase()
