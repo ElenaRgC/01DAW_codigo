@@ -6,6 +6,7 @@ fun jugar(palabraSecreta: String, numeroIntentos: Int) {
     var letra: String = ""
     var letrasUsadas: String = ""
     var estaRepetida: Boolean
+    var esLetra: Boolean
     var numeroFallos = 0
     var nuevaPista = ""
     // Creamos una nueva variable para controlar los aciertos del jugador
@@ -16,7 +17,10 @@ fun jugar(palabraSecreta: String, numeroIntentos: Int) {
             println("Prueba una letra:")
             letra = readln().trim().lowercase()
             estaRepetida = letraRepetida(letra, letrasUsadas)
-        } while (estaRepetida || letra == "") // Volvemos a pedir una letra si ya la ha usado antes o no ha introducido una letra.
+            esLetra = esLetra(letra)
+
+        } while (estaRepetida || !esLetra)
+        // Volvemos a pedir una letra si ya la ha usado antes o NO ha introducido un carácter válido.
 
         letrasUsadas += letra // Añadimos la letra actual a la lista de letras usadas.
 
