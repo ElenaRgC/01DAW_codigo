@@ -20,7 +20,7 @@ fun main() { // Elena Rodríguez Calderón
         }
         i++
     }
-
+    println("Esta es la matriz de $FILAS x $COLUMNAS generada:")
     for (fila in matriz) {
         println(fila?.contentToString())
     }
