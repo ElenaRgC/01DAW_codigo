@@ -32,13 +32,16 @@ fun main() { // Elena Rodríguez Calderón
     val COLELEMENTO: Int = readln().toInt() - 1
 
     i = 0
-    j = 0
 
+    println("Este es el elemento(*) con sus adyacentes:")
     while (i < FILAS) {
         j = 0
         while (j < COLUMNAS) {
             if(FILAELEMENTO == i-1 || FILAELEMENTO == i|| FILAELEMENTO == i+1) {
-                if(COLELEMENTO == i-1 || COLELEMENTO == i|| COLELEMENTO == i+1) {
+                if(COLELEMENTO == j-1 || COLELEMENTO == j|| COLELEMENTO == j+1) {
+                    if (FILAELEMENTO == i && COLELEMENTO == j) {
+                        print("*")
+                    }
                     print("[${matriz[i][j]}] ")
                 }
             }
