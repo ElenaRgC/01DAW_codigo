@@ -25,7 +25,7 @@ fun main() { // Elena Rodríguez Calderón
         println(fila?.contentToString())
     }
 
-    println("Vamos a buscar los adyacentes de un elemento.")
+    println("Vamos a buscar los adyacentes de un elemento de la matriz.")
     println("Introduzca la fila del elemento.")
     val FILAELEMENTO: Int = readln().toInt() - 1
     println("Introduzca la columna del elemento.")
