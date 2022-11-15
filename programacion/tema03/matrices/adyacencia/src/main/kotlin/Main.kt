@@ -22,7 +22,7 @@ fun main() { // Elena Rodríguez Calderón
     }
     println("Esta es la matriz de $FILAS x $COLUMNAS generada:")
     for (fila in matriz) {
-        println(fila?.contentToString())
+        println(fila.contentToString())
     }
 
     println("Vamos a buscar los adyacentes de un elemento de la matriz.")
