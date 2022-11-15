@@ -17,7 +17,7 @@ fun jugar(palabraSecreta: String, numeroIntentos: Int) {
             println("Prueba una letra:")
             letra = readln().trim().lowercase()
             estaRepetida = letraRepetida(letra, letrasUsadas)
-            esLetra = esLetra(letra)
+            esLetra = sonLetras(letra)
 
         } while (estaRepetida || !esLetra)
         // Volvemos a pedir una letra si ya la ha usado antes o NO ha introducido un carácter válido.

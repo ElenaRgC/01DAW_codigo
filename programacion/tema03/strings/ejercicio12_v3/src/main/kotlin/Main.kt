@@ -8,12 +8,14 @@ fun main() { // Elena Rodríguez Calderón
     val INTENTOS = 7
     var seguirJugando: String = ""
     var palabraSecreta: String = ""
-
+    var esPalabra: Boolean
     do {
         do {
             println("Introduce la palabra secreta.")
             palabraSecreta = readln().trim().lowercase()
-        } while (palabraSecreta == "") //Evitamos que por error no se introduzca una palabra.
+            esPalabra = sonLetras(palabraSecreta)
+        } while (palabraSecreta == "" || !esPalabra)
+        // Se vuelve a pedir una palabra secreta si se introducen caracteres no permitidos o está vacía.
 
         jugar(palabraSecreta,INTENTOS)
 
