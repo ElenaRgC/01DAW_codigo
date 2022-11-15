@@ -31,7 +31,7 @@ fun main() { // Elena Rodríguez Calderón
     println("Introduzca la columna del elemento.")
     val COLELEMENTO: Int = readln().toInt() - 1
 
-    println("Buscamos los adyacentes de [${matriz[FILAELEMENTO][COLELEMENTO]}] que está en la posición ($FILAELEMENTO, $COLELEMENTO).")
+    println("Buscamos los adyacentes de [${matriz[FILAELEMENTO][COLELEMENTO]}] que esta en la posicion ($FILAELEMENTO, $COLELEMENTO).")
     println("Estos son los adyacentes del elemento (*):")
 
     i = 0
