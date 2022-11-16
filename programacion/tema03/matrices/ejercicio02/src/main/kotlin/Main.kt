@@ -4,16 +4,18 @@ fun main(args: Array<String>) {
     y encuentre la primera ocurrencia del valor en la matriz.
      */
 
-    println("Cuantas filas van a tener tus matrices?")
+    println("Cuantas filas va a tener tu matriz?")
     val FILAS = readln().toInt()
 
-    println("Cuantas columnas van a tener tus matriz?")
+    println("Cuantas columnas va a tener tu matriz?")
     val COLUMNAS = readln().toInt()
 
     var matriz = Array(FILAS) { IntArray(COLUMNAS) { 0 } }
 
-    rellenarMatriz(matriz, FILAS, COLUMNAS)
-    mostrarMatriz(matriz)
+    println("Que número entero quieres buscar?")
+    val NUMERO = readln().toInt()
 
+    rellenarMatriz(matriz)
+    mostrarMatriz(matriz)
 
 }
