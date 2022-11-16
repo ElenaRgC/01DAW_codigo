@@ -17,15 +17,15 @@ fun main() { // Elena Rodríguez Calderón
     var matrizC = Array(FILAS) { IntArray(COLUMNAS) { 0 } }
 
     println("Esta es la primera matriz:")
-    rellenarMatriz(matrizA,FILAS, COLUMNAS)
+    rellenarMatriz(matrizA)
     mostrarMatriz(matrizA)
 
     println("Esta es la segunda matriz:")
-    rellenarMatriz(matrizB,FILAS, COLUMNAS)
+    rellenarMatriz(matrizB)
     mostrarMatriz(matrizB)
 
     println("Esta es la matriz suma:")
-    sumarMatrices(matrizA, matrizB, matrizC, FILAS, COLUMNAS)
+    sumarMatrices(matrizA, matrizB, matrizC)
     mostrarMatriz(matrizC)
 
 }

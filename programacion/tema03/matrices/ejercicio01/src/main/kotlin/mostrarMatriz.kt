@@ -4,7 +4,7 @@ fun mostrarMatriz(matriz: Array<IntArray>) {
 
     while (i < matriz.size) {
         j = 0
-        while (j < matriz.size) {
+        while (j < matriz[0].size) {
             print("[${matriz[i][j]}] ")
             j++
         }
