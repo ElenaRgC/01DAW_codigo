@@ -4,7 +4,7 @@ fun main() { // Elena Rodríguez Calderón
     Por ejemplo, si introducimos 30303 es capicúa, si introducimos 30430 no es capicúa.
     Utiliza vectores para resolver el problema. */
 
-    println("Introduce un número.")
+    println("Introduce un numero.")
     val NUMERO = readln()
     val VECTOR = Array(NUMERO.length) { 0 }
 
@@ -16,14 +16,14 @@ fun main() { // Elena Rodríguez Calderón
     }
 
     if (esCapicua(VECTOR)) {
-        println("El número $NUMERO es capicua.")
+        println("El numero $NUMERO es capicua.")
     } else {
-        println("El número $NUMERO no es capicua.")
+        println("El numero $NUMERO no es capicua.")
     }
 
 }
 
-fun esCapicua (vector:Array): Boolean {
+fun esCapicua (vector:Array<Int>): Boolean {
     var i = 0
     var j = vector.size
 
