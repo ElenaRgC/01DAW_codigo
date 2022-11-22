@@ -17,6 +17,8 @@ fun main() { // Elena Rodríguez Calderón
     val MINIMOCIFRAS = 2
     val MAXIMOCIFRAS = 7
 
+    val PORCENTAJESALIDA = 75
+
     // Determinamos el número de cifras máximo de los números generados
     val CIFRAS = Random.nextInt(MINIMOCIFRAS, MAXIMOCIFRAS)
 
@@ -49,7 +51,7 @@ fun main() { // Elena Rodríguez Calderón
             }
         }
 
-        porcentajeDemon = contadorSeis * 100 / MAXIMOCIFRAS
+        porcentajeDemon = contadorSeis * 100 / CIFRAS
 
         if (porcentajeDemon > 0) {
             contadorDemon++
@@ -57,9 +59,14 @@ fun main() { // Elena Rodríguez Calderón
             contadorNoDemon++
         }
 
+        //println("Numero: $numeroGenerado, Porcentaje demoniaco: $porcentajeDemon%")
+        // Se descarta imprimir por línea, ya que nos piden un informe,
+        // pero es útil para saber si el programa se está ejecuntando.
         informe += "Numero: $numeroGenerado, Porcentaje demoniaco: $porcentajeDemon% \n"
 
-    } while (porcentajeDemon < 25)
+    } while (porcentajeDemon < PORCENTAJESALIDA)
+    /* NOTA: para pruebas con números con muchas cifras se recomienda bajar el porcentaje de salida
+    porque puede tardar en completarse la ejecución */
 
     println(informe)
     println("Total de numeros demoniacos: $contadorDemon")
