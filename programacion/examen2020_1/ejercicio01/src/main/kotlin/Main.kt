@@ -61,7 +61,7 @@ fun main() { // Elena Rodríguez Calderón
 
         //println("Numero: $numeroGenerado, Porcentaje demoniaco: $porcentajeDemon%")
         // Se descarta imprimir por línea, ya que nos piden un informe,
-        // pero es útil para saber si el programa se está ejecuntando.
+        // pero es útil para saber si el programa se está ejecutando.
         informe += "Numero: $numeroGenerado, Porcentaje demoniaco: $porcentajeDemon% \n"
 
     } while (porcentajeDemon < PORCENTAJESALIDA)
