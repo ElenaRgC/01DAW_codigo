@@ -45,7 +45,7 @@
     fwrite($archivo, "\n");
     fclose($archivo);
 
-    echo "Nombre almacenado correctamente.<br>\n";
+    echo "Nombre $nombre almacenado correctamente.<br>\n";
 
     /* mysqli_close($conexion); */
     ?>
