@@ -43,9 +43,14 @@ fun main() { //Elena Rodríguez Calderón
 
     /* Rellenar una matriz con números aleatorios entre MIN y MAX */
 
+    llenarMatrizRandom(matriz, MIN, MAX)
+
+    imprimirMatriz(matriz)
+
     /* Llenar una matriz con valores pedidos al usuario */
 
     llenarMatrizUsuario(matriz)
+
     imprimirMatriz(matriz)
 
     /* Modificar adyacentes de un elemento i,j */
