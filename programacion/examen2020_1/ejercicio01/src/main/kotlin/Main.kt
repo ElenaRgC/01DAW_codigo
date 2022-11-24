@@ -4,7 +4,7 @@ import kotlin.random.Random
 fun main() { // Elena Rodríguez Calderón
     /*
     Vamos a crear un programa que genere números aleatorios hasta n cifras,
-    que le parasemos como argumento a la función, una vez generado el número,
+    que le pasaremos como argumento a la función, una vez generado el número,
     se mirara cuanto de demoniaco tiene, a mayores números de 6 más demoniaco es.
     Al final nos dará en tanto por ciento su grado de demoniaco.
     Deberá estar generando números hasta que encuentre un número demoniaco mayor de 75%,
@@ -21,6 +21,8 @@ fun main() { // Elena Rodríguez Calderón
 
     // Determinamos el número de cifras máximo de los números generados
     val CIFRAS = Random.nextInt(MINIMOCIFRAS, MAXIMOCIFRAS)
+
+    println("Los números que vamos a generar son de máximo $CIFRAS cifras.")
 
     // Determinamos el mínimo valor de nuestro generador de números aleatorios
     val valorMin = 10.0.pow(MINIMOCIFRAS.toDouble()).toInt()/10
