@@ -57,31 +57,27 @@ fun main() { //Elena Rodríguez Calderón
 
     imprimirMatriz(matriz)
 
-    /* Modificar adyacentes de un elemento i,j */
-    // En este ejemplo se le suma 1 al valor
-    // de la posición i,j y a las adyacentes
+    /* Modificar adyacentes de un elemento */
+    // En este ejemplo se le suma 1 al valor de los adyacentes al elemento x, y
 
+    val X = 1
+    val Y = 1
 
+    modificarAdyacentes(matriz, X, Y)
+    imprimirMatriz(matriz)
 
     /* Modificar los NO adyacentes de un elemento i,j */
+    // En este ejemplo se les cambia el valor a 0 a los valores no adyacentes al elemento x, y
 }
 
-/* Función para modificar adyacentes de un elemento i,j */
-// En este ejemplo se le suma 1 al valor
-// de la posición i,j y a las adyacentes
-
-fun modificarAdyacentes(matriz: Array<IntArray>, i: Int, j: Int) {
-    matriz[i][j] = matriz[i][j] + 1
-    if (i > 0) {
-        matriz[i-1][j] = matriz[i-1][j] + 1
+/* Funcion para crear una matriz de adyacentes dada una matriz y un elemento de la misma */
+fun crearMatrizAdyacentes (matriz: Array<IntArray>, i: Int, j: Int): Array<IntArray> {
+    val matrizAdyacentes = Array(3) { IntArray(3) }
+    for (x in 0..2) {
+        for (y in 0..2) {
+            matrizAdyacentes[x][y] = matriz[i-1+x][j-1+y]
+        }
     }
-    if (i < matriz.size - 1) {
-        matriz[i+1][j] = matriz[i+1][j] + 1
-    }
-    if (j > 0) {
-        matriz[i][j-1] = matriz[i][j-1] + 1
-    }
-    if (j < matriz.size - 1) {
-        matriz[i][j+1] = matriz[i][j+1] + 1
-    }
+    return matrizAdyacentes
 }
+
