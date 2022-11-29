@@ -39,7 +39,7 @@ fun main() { //Elena Rodríguez Calderón
 
     imprimirMatriz(matriz)
 
-    /* Crear una matriz con su número de filas y columnas */
+    /* TODO: Crear una matriz con su número de filas y columnas */
 
     /* Rellenar una matriz con números aleatorios entre MIN y MAX */
 
