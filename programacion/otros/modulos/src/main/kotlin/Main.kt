@@ -39,7 +39,11 @@ fun main() { //Elena Rodríguez Calderón
 
     imprimirMatriz(matriz)
 
-    /* TODO: Crear una matriz con su número de filas y columnas */
+    /* Crear una matriz dado su número de filas y columnas */
+    val FILAS = 4
+    val COLUMNAS = 4
+
+    var matriz2 = crearMatriz(FILAS, COLUMNAS)
 
     /* Rellenar una matriz con números aleatorios entre MIN y MAX */
 
@@ -54,6 +58,30 @@ fun main() { //Elena Rodríguez Calderón
     imprimirMatriz(matriz)
 
     /* Modificar adyacentes de un elemento i,j */
+    // En este ejemplo se le suma 1 al valor
+    // de la posición i,j y a las adyacentes
+
+
 
     /* Modificar los NO adyacentes de un elemento i,j */
+}
+
+/* Función para modificar adyacentes de un elemento i,j */
+// En este ejemplo se le suma 1 al valor
+// de la posición i,j y a las adyacentes
+
+fun modificarAdyacentes(matriz: Array<IntArray>, i: Int, j: Int) {
+    matriz[i][j] = matriz[i][j] + 1
+    if (i > 0) {
+        matriz[i-1][j] = matriz[i-1][j] + 1
+    }
+    if (i < matriz.size - 1) {
+        matriz[i+1][j] = matriz[i+1][j] + 1
+    }
+    if (j > 0) {
+        matriz[i][j-1] = matriz[i][j-1] + 1
+    }
+    if (j < matriz.size - 1) {
+        matriz[i][j+1] = matriz[i][j+1] + 1
+    }
 }
