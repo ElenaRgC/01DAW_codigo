@@ -1,5 +1,3 @@
-import kotlin.random.Random
-
 fun main() { // Elena Rodríguez Calderón
     println("Cuantas filas va a tener tu matriz?")
     val FILAS = readln().toInt()
