@@ -16,10 +16,53 @@ fun main() { // Elena Rodríguez Calderón
     var i: Int = -1
     var j: Int = -1
 
+    var f = 2
+    var c = 2
+
+    var f_aux = 0
+    var c_aux = 0
+
     while (i < 2) {
         j = -1
         while (j < 2) {
-            print("($i, $j) ")
+            // print("($i, $j) ")
+            f_aux  = f + i
+            c_aux = c + j
+
+            if (i == 0 && j == 0) {
+                print("[*] ")
+            } else {
+                print("[${m[f_aux][c_aux]}] ")
+            }
+
+            j++
+        }
+        println("")
+        i++
+    }
+
+    println("")
+
+    f = 0
+    c = 0
+
+    i = -1
+
+    while (i < 2) {
+        j = -1
+        while (j < 2) {
+            // print("($i, $j) ")
+            if (!(i == 0 && j == 0)) {
+                f_aux  = f + i
+                c_aux = c + j
+
+                if (f_aux >= 0 && f_aux<m.size && c_aux >=0 && c_aux < m.size) {
+                print("[${m[f_aux][c_aux]}] ")
+                } else {
+                    print("ERROR ")
+                }
+            }
+
             j++
         }
         println("")
