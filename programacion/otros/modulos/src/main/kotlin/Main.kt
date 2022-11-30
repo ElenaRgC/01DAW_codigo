@@ -66,18 +66,11 @@ fun main() { //Elena Rodríguez Calderón
     modificarAdyacentes(matriz, X, Y)
     imprimirMatriz(matriz)
 
-    /* Modificar los NO adyacentes de un elemento i,j */
+    /* Modificar los NO adyacentes de un elemento */
     // En este ejemplo se les cambia el valor a 0 a los valores no adyacentes al elemento x, y
-}
+    modificarNoAdyacentes(matriz, X, Y)
 
-/* Funcion para crear una matriz de adyacentes dada una matriz y un elemento de la misma */
-fun crearMatrizAdyacentes (matriz: Array<IntArray>, i: Int, j: Int): Array<IntArray> {
-    val matrizAdyacentes = Array(3) { IntArray(3) }
-    for (x in 0..2) {
-        for (y in 0..2) {
-            matrizAdyacentes[x][y] = matriz[i-1+x][j-1+y]
-        }
-    }
-    return matrizAdyacentes
+    /* Crear una matriz de adyacentes */
+    crearMatrizAdyacentes(matriz, X, Y)
 }
 
