@@ -4,7 +4,7 @@ fun imprimirMatriz(matriz: Array<IntArray>) {
 
     while (i < matriz.size) {
         j = 0
-        while (j < matriz.size) {
+        while (j < matriz[i].size) {
             print("[${matriz[i][j]}] ")
             j++
         }

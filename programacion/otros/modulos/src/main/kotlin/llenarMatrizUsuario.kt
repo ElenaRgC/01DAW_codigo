@@ -4,7 +4,7 @@ fun llenarMatrizUsuario(matriz: Array<IntArray>) {
 
     while (i < matriz.size) {
         j = 0
-        while (j < matriz.size) {
+        while (j < matriz[i].size) {
             println("Introduce un numero para la posicion (${i+1}, ${j+1})")
             matriz[i][j] = readln().toInt()
             j++

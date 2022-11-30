@@ -6,7 +6,7 @@ fun llenarMatrizRandom(matriz: Array<IntArray>, minimo:Int, maximo: Int) {
 
     while (i < matriz.size) {
         j = 0
-        while (j < matriz.size) {
+        while (j < matriz[i].size) {
             matriz[i][j] = Random.nextInt(minimo, maximo)
             j++
         }
