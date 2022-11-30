@@ -8,11 +8,18 @@
     <title>Formulario</title>
     <style>
       body {
-        line-height: 2rem; /* Espaciado doble entre líneas */
+        /* Espaciado doble entre líneas */
+        line-height: 2rem;
       }
       #nombre,
       #usuario {
-        width: 5rem; /* Reducir el tamaño de los inputs nombre y usuario */
+        /* Reducir el tamaño de los inputs nombre y usuario */
+        width: 5rem;
+      }
+      .sin-serifa {
+        /* Modificar el tipo de letra de algunas etiquetas */
+        font-family: sans-serif;
+        font-size: 0.9rem;
       }
     </style>
   </head>
@@ -27,10 +34,10 @@
       <label for="comentarios">Comentarios:</label> <br />
       <textarea id="comentarios" cols="30" rows="10"></textarea> <br />
 
-      <label for="email">Correo electrónico:</label>
+      <label for="email" class="sin-serifa">Correo electrónico:</label>
       <input type="email" name="email" id="email" /> <br />
 
-      <label for="url">URL:</label>
+      <label for="url" class="sin-serifa">URL:</label>
       <input
         type="url"
         name="url"
@@ -39,32 +46,32 @@
       />
       <br />
 
-      <label for="fecha">Fecha: </label>
+      <label for="fecha" class="sin-serifa">Fecha: </label>
       <input type="date" name="fecha" id="fecha" /> <br />
 
-      <label for="tiempo">Tiempo:</label>
+      <label for="tiempo" class="sin-serifa">Tiempo:</label>
       <input type="time" name="tiempo" id="tiempo" /> <br />
 
-      <label for="fecha-hora">Fecha y hora:</label>
+      <label for="fecha-hora" class="sin-serifa">Fecha y hora:</label>
       <input type="datetime-local" name="fecha-hora" id="fecha-hora" /> <br />
 
-      <label for="mes">Mes:</label>
+      <label for="mes" class="sin-serifa">Mes:</label>
       <input type="month" name="mes" id="mes" />
       <br />
 
-      <label for="semana">Semana:</label>
+      <label for="semana" class="sin-serifa">Semana:</label>
       <input type="week" name="semana" id="semana" />
       <br />
 
-      <label for="numero">Número (min -10, max 10):</label>
+      <label for="numero" class="sin-serifa">Número (min -10, max 10):</label>
       <input type="number" name="numero" id="numero" min="-10" max="10" />
       <br />
       <br />
 
-      <label for="telefono">Teléfono:</label>
+      <label for="telefono" class="sin-serifa">Teléfono:</label>
       <input type="tel" name="telefono" id="telefono" /> <br />
 
-      <label for="color">Color favorito:</label>
+      <label for="color" class="sin-serifa">Color favorito:</label>
       <input type="color" name="color" id="color" /> <br />
 
       <label for="servicio-musica">Servicio Música:</label>
