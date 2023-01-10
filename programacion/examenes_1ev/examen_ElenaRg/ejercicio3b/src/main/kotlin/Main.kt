@@ -3,7 +3,7 @@ import kotlin.random.Random
 fun main(args: Array<String>) { // Elena Rodríguez Calderón
     val N = 3
     val ENERGIAINICIAL = 100
-    var campamento = Array(N*N){ENERGIAINICIAL}
+    var campamento = Array(N * N) { ENERGIAINICIAL }
     var zona = -1
     var cantidadRestada = 0
 
@@ -20,7 +20,7 @@ fun main(args: Array<String>) { // Elena Rodríguez Calderón
             }
             imprimirCampamento(campamento)
             println("Atacando el campamento:")
-            ataqueCampamento(campamento, Random.nextInt(1,20))
+            ataqueCampamento(campamento, Random.nextInt(1, 20))
             imprimirCampamento(campamento)
             aumentarEnergia(zona, campamento, 15)
         } else {
@@ -35,8 +35,8 @@ fun atacarZona(zona: Int, campamento: Array<Int>) {
     println("Energía de la zona atacada: ${campamento[zona]}")
     if (zona == campamento.size) {
         campamento[zona] -= 50
-    } else if ((zona +1) % 2 == 0){
-        campamento[zona] = campamento[zona]/2
+    } else if ((zona + 1) % 2 == 0) {
+        campamento[zona] = campamento[zona] / 2
     } else {
         campamento[zona] -= 7
     }
@@ -45,12 +45,11 @@ fun atacarZona(zona: Int, campamento: Array<Int>) {
 }
 
 fun alerta(): Int {
-    return Random.nextInt(-1,9)
+    return Random.nextInt(-1, 9)
 }
 
-fun ataqueCampamento(campamento: Array<Int>, cantidad:Int) {
+fun ataqueCampamento(campamento: Array<Int>, cantidad: Int) {
     var zona = 0
-
     while (zona < campamento.size) {
         if (campamento[zona] != 0) {
             campamento[zona] -= cantidad
@@ -63,7 +62,7 @@ fun nivelZona(zona: Int, campamento: Array<Int>): Int {
     return campamento[zona]
 }
 
-fun aumentarEnergia(zona: Int, campamento: Array<Int>, cantidad: Int){
+fun aumentarEnergia(zona: Int, campamento: Array<Int>, cantidad: Int) {
     campamento[zona] += cantidad
 }
 
