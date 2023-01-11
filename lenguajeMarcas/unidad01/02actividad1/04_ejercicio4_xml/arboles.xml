@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arbolarium>
+<arboles>
+    <arbol nombre="Acer monspessulanum" nombre_comun="Arce de Montpellier, Arce menor" vegetacion="Caducifolio" altura="De 6 a 10 metros" forma_estructura="Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante." color_primavera="Haz verde brillante, envés verde blanquecino." resistencia_heladas="Heladas fuertes (hasta -15 ºC)"></arbol>
+    <arbol nombre="Olea europea" nombre_comun="Olivo" vegetacion="Perenne" altura="De 8 a 15 metros" forma_estructura="Copa irregular. Tronco principal irregular con bifurcaciones."></arbol>
+    <arbol nombre="Ramaje tortuoso" color_primavera="Haz verde oscuro, envés verde plateado" resistencia_heladas="Heladas medias (hasta -10 ºC)"></arbol>
+    <arbol nombre="Platanus orientalis" nombre_comun="Plátano" vegetacion="Caducifolio" altura="De 20 a 25 metros" forma_estructura="Copa ovoidal. Tronco principal recto. Ramaje expandido." color_primavera="Haz verde medio, enves verde claro" color_otono="Ocre" resistencia_heladas="Heladas fuertes (hasta -20 ºC)"></arbol>
+    <arbol nombre="Quercus ilex" nombre_comun="Encina" vegetacion="Perenne" altura="En torno a 25 metros" forma_estructura="Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso." color_primavera="Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro. Envés plateado." resistencia_heladas="Heladas fuertes (hasta -15 ºC)"> </arbol>
+</arboles>
