@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol>
+<futbol>
+    <equipo nombre="Real Betis Balompié" ciudad="Sevilla" entrenador="">
+        <jugador posicion="Portero">
+            <nombre>Claudio Bravo</nombre>
+            <nacionalidad>Española</nacionalidad>
+        </jugador>
+        <jugador posicion="Centrocampista">
+            <nombre>Nabil Fekir</nombre>
+            <nacionalidad>Argelina</nacionalidad>
+        </jugador>
+    </equipo>
+    <equipo nombre="Sevilla Fútbol Club" ciudad="Sevilla" entrenador="">
+        <jugador posicion="Portero">
+            <nombre>Marko Dmitrovic</nombre>
+            <nacionalidad>Serbia</nacionalidad>
+        </jugador>
+        <jugador posicion="Centrocampista">
+            <nombre>Óliver Torres Muñoz</nombre>
+            <nacionalidad>Española</nacionalidad>
+        </jugador>
+    </equipo>
+</futbol> 
