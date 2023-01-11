@@ -179,3 +179,4 @@ fabric.properties
 *.log
 .embold/vscode-logs.log
 *.xml
+*.iml
