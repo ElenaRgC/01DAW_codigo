@@ -9,7 +9,7 @@ fun imprimirTablero(tablero: Array<IntArray>) {
 
             when (tablero[fila][col]) {
                 0 -> print("   ")
-                1 -> print(" # ")
+                1 -> print("###")
                 2 -> print(" O ")
             }
 
