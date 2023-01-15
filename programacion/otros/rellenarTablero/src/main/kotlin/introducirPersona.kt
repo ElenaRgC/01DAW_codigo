@@ -1,6 +1,6 @@
 import kotlin.random.Random
 
-fun introducirPersona(tablero: Array<IntArray>) {
+fun introducirPersona(tablero: Array<IntArray>, posicionPersona: IntArray) {
     val LADO = tablero.size
     var fila = 0
     var col = 0
@@ -19,6 +19,9 @@ fun introducirPersona(tablero: Array<IntArray>) {
         if (tablero[fila][col] == 0) {
             tablero[fila][col] = 2
             cabePersona = true
+
+            posicionPersona[0] = fila
+            posicionPersona[1] = col
         }
     }
 

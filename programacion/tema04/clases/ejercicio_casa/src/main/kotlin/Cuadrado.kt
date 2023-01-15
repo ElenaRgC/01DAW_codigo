@@ -7,9 +7,14 @@ class Cuadrado {
             field = value
         }
 
+    constructor() {
+        this.lado = 0
+    }
+
     constructor(lado: Int) {
         this.lado = lado
     }
+
 
     var perimetro = 4 * lado
         get() {

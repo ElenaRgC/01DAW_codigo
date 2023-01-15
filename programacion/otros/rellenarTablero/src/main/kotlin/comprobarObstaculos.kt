@@ -1,4 +1,4 @@
-fun comprobarObstaculos(tablero: Array<IntArray>): Boolean {
+fun comprobarObstaculos(tablero: Array<IntArray>, huecoVacio: IntArray): Boolean {
     var fila = 0
     var col = 0
 
@@ -6,9 +6,9 @@ fun comprobarObstaculos(tablero: Array<IntArray>): Boolean {
         col = 0
         while (col < tablero[fila].size) {
 
-            if (!comprobarAdyacentes(tablero, fila, col)) {
+            if (!comprobarAdyacentes(tablero, fila, col, huecoVacio)) {
                 limpiarTablero(tablero)
-                println("Regenerando obstáculos.")
+                println("Se regenerado el tablero porque se han encontrado zonas aisladas a las que no se puede acceder.")
                 return false
             }
 

@@ -4,13 +4,18 @@ fun imprimirTablero(tablero: Array<IntArray>) {
 
     while (fila < tablero.size) {
         col = 0
+        /*if (fila == 0) {
+            println("________________")
+        }*/
         print("|")
         while (col < tablero[fila].size) {
 
             when (tablero[fila][col]) {
                 0 -> print("   ")
-                1 -> print("###")
+                1 -> print("[#]")
                 2 -> print(" O ")
+                3 -> print(" · ")
+                4 -> print(" * ")
             }
 
             col++
@@ -18,6 +23,9 @@ fun imprimirTablero(tablero: Array<IntArray>) {
         print("|")
         println("")
         fila++
+        /*if (fila == tablero.size) {
+            println("-------------")
+        }*/
     }
     println()
 }

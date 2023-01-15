@@ -7,6 +7,10 @@ class Circulo {
             field = value
         }
 
+    constructor() {
+        this.radio = 0
+    }
+
     constructor(radio: Int) {
         this.radio = radio
     }
@@ -25,6 +29,10 @@ class Circulo {
 
     fun setradio(radio: Int) {
         this.radio = radio
+    }
+
+    fun getradio(): Int  {
+        return radio
     }
 
     fun imprimirPerimetro() {
