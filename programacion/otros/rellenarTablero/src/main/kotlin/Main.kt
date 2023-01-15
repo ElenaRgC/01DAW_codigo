@@ -27,4 +27,20 @@ fun main() { // Ines, Ramón y Elena
 
 }
 
+fun comprobarAdyacenteN(tablero: Array<IntArray>, elemento: IntArray, lado: Int): Boolean {
+    val fila = elemento[0]
+    val col = elemento[1]
+    var n = 0
+
+    while (n <= lado) {
+        if (fila >= n && tablero[fila - n][col] == 0) return true
+        if (fila < tablero.size - n  && tablero[fila + n][col] == 0) return true
+        if (col >= n && tablero[fila][col - n] == 0) return true
+        if (col < tablero[fila].size - n && tablero[fila][col + n] == 0) return true
+        n++
+    }
+    return false
+}
+
+
 
