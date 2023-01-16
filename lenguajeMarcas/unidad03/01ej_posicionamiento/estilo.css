@@ -1,0 +1,33 @@
+div#enlaces {
+    position: fixed;
+    left: 0px;
+    width: 25%;
+}
+div#lema {
+    float: fixed;
+    width: 75%;
+    top: 0;
+    text-align: center;
+}
+div#contenedor_central {
+    position: absolute;
+    left: 25%;
+    width: 75%;
+    margin-right: 0px;
+}
+div#contenido {
+    font-family: Helvetica;
+    float: left;
+    width: 50%;
+}
+div#publi {
+    margin-right: 0px;
+    float: right;
+    width: 25%;
+}
+div#copyright {
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+}
