@@ -1,6 +1,6 @@
 fun main() { // Ines, Ramón y Elena
-    // 0 vacio, 1 obstaculo, 2 persona, 3 ya ha pasado
-    // espacio, [#], O, ·
+    // Valores: 0 vacio, 1 obstaculo, 2 persona, 3 ya ha pasado
+    // Representación: 0 espacio, 1 [#], 2 O, 3 ·
 
     val LADO = tamanoTablero()
     var tablero = Array(LADO) { IntArray(LADO) }
