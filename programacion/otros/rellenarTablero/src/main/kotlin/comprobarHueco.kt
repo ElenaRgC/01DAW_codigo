@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 fun comprobarHueco(tablero: Array<IntArray>, posicionPersona: IntArray, posicionHuecoVacio: IntArray): Boolean {
     var fila = posicionPersona[0]
     var col = posicionPersona[1]
@@ -16,8 +18,8 @@ fun comprobarHueco(tablero: Array<IntArray>, posicionPersona: IntArray, posicion
             }
             1 -> {
                 i = fila + 1
-                j = col + 1
-                hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,-1,-1)
+                j = col - 1
+                hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,-1,1)
             }
             2 -> {
                 i = fila - 1
@@ -26,14 +28,39 @@ fun comprobarHueco(tablero: Array<IntArray>, posicionPersona: IntArray, posicion
             }
             3 -> {
                 i = fila + 1
-                j = col - 1
-                hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,-1,1)
+                j = col + 1
+                hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,-1,-1)
+            }
+            4 -> {
+                when (Random.nextInt(0, 4)) {
+                    0 -> {
+                        i = fila - 1
+                        j = col - 1
+                        hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,1,1)
+                    }
+                    1 -> {
+                        i = fila + 1
+                        j = col - 1
+                        hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,-1,1)
+                    }
+                    2 -> {
+                        i = fila - 1
+                        j = col + 1
+                        hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,1,-1)
+                    }
+                    3 -> {
+                        i = fila + 1
+                        j = col + 1
+                        hayHueco = recorrerHueco(tablero,i,j,fila,col,posicionHuecoVacio,-1,-1)
+                    }
+
+                }
             }
 
         }
         n++
 
-    } while (!hayHueco && n < 4)
+    } while (!hayHueco && n < 5)
 
         return hayHueco || tablero[posicionHuecoVacio[0]][posicionHuecoVacio[1]] == 3
 

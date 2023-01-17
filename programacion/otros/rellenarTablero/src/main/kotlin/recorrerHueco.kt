@@ -11,8 +11,8 @@ fun recorrerHueco(
     var i = i
     var j = j
 
-    while ((i <= fila + 1)) {
-        while ((j <= col + 1)) {
+    while ((i <= fila + 1 && fila >= fila -1)) {
+        while ((j <= col + 1 && j >= col -1)) {
             if (i >= 0 && i < tablero.size && j >= 0 && j < tablero[i].size) {
                 if (!(i == fila && j == col)) {
                     if (tablero[i][j] == 0) {

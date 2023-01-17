@@ -23,6 +23,7 @@ fun main() { // Ines, Ramón y Elena
     var recorrido = "(${posicionPersona[0] + 1}, ${posicionPersona[1] + 1}) "
 
     recorrido = recorrerTablero(tablero, posicionPersona, huecoVacio, recorrido)
+
     println(recorrido)
 
 }

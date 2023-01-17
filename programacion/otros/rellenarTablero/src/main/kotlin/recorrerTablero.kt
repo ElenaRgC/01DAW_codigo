@@ -8,7 +8,7 @@ fun recorrerTablero(
     var estaVacio = false
 
     var contador = 0
-    val LIMITE = tablero.size * tablero.size * 3
+    val LIMITE = tablero.size * tablero.size * 2
 
     do {
 
