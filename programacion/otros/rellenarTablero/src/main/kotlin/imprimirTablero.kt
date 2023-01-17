@@ -4,9 +4,6 @@ fun imprimirTablero(tablero: Array<IntArray>) {
 
     while (fila < tablero.size) {
         col = 0
-        /*if (fila == 0) {
-            println("________________")
-        }*/
         print("|")
         while (col < tablero[fila].size) {
 
@@ -23,9 +20,6 @@ fun imprimirTablero(tablero: Array<IntArray>) {
         print("|")
         println("")
         fila++
-        /*if (fila == tablero.size) {
-            println("-------------")
-        }*/
     }
     println()
 }

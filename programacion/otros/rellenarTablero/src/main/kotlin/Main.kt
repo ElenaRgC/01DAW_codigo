@@ -27,6 +27,9 @@ fun main() { // Ines, Ramón y Elena
 
 }
 
+
+/* Esta función se creó para mejorar comprobarAdyacentes(),
+   pero no está en uso porque no está completa */
 fun comprobarAdyacenteN(tablero: Array<IntArray>, elemento: IntArray, lado: Int): Boolean {
     val fila = elemento[0]
     val col = elemento[1]

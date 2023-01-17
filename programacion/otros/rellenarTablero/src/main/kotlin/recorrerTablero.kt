@@ -1,5 +1,3 @@
-import kotlin.random.Random
-
 fun recorrerTablero(
     tablero: Array<IntArray>,
     posicionPersona: IntArray,
@@ -10,6 +8,7 @@ fun recorrerTablero(
     var estaVacio = false
 
     var contador = 0
+    val LIMITE = tablero.size * tablero.size * 3
 
     do {
 
@@ -30,9 +29,15 @@ fun recorrerTablero(
         }
 
         contador++
-        println(contador)
 
-    } while (!comprobarTableroLleno(tablero) && contador < 100 )
+    } while (!comprobarTableroLleno(tablero) && contador < LIMITE )
+
+    if (contador == LIMITE) {
+    println("Se ha interrumpido la ejecución tras $contador movimientos.")
+
+    } else {
+        println("Se ha recorrido todo el tablero tras $contador movimientos.")
+    }
 
     return recorrido
 
