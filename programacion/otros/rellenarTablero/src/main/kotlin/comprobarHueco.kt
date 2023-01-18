@@ -9,6 +9,10 @@ fun comprobarHueco(tablero: Array<IntArray>, posicionPersona: IntArray, posicion
 
     var n = 0
 
+    // La función original era solo la opción 0 del when.
+    // El problema que surgía es que entraba en un bucle infinito si no había casillas sin pasar cerca.
+    // El problema nuevo es que al ir de forma aleatoria, no tiene por qué ir en dirección al hueco sin pasar.
+
     do {
         when (n) {
             0 -> {
