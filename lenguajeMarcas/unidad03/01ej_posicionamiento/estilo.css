@@ -16,6 +16,7 @@ img {
 
 div#enlaces {
     position: fixed;
+    margin-left: 20px;
     left: 0;
     width: 25%;
 }
@@ -38,7 +39,7 @@ div#contenido {
 }
 
 div#publi {
-    margin-right: 0px;
+    margin-right: 20px;
     float: right;
     width: 25%;
 }
