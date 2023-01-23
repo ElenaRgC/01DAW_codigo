@@ -1,9 +1,14 @@
+body {
+    background-image: url(./img/fondo-cifp.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 div#lema {
     float: fixed;
     width: 75%;
     top: 0;
     text-align: center;
-    background-color: blanchedalmond;
     clear: both;
 }
 
@@ -24,10 +29,7 @@ img {
 div#enlaces {
     position: fixed;
     margin-left: 20px;
-    right: 0;
-    /* width: 25%; */
-    background-color: aquamarine;
-    z-index: 1;
+    left: 0;
     clear: both;
 }
 
@@ -41,7 +43,6 @@ div#contenedor_central {
     left: 25%;
     width: 75%;
     margin-right: 0px;
-    background-color: violet;
     clear: both;
 }
 
@@ -49,7 +50,6 @@ div#contenido {
     font-family: Helvetica;
     float: left;
     width: 50%;
-    background-color: cadetblue;
     clear: both;
     /*text-align: center;*/
 }
@@ -67,5 +67,4 @@ div#copyright {
     position: relative;
     margin-top: 100vh;
     bottom: 0;
-    background-color: darkseagreen;
 }
