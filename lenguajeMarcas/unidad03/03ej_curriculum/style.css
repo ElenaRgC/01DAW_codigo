@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100%;
+}
+
+.info-personal {
+    background-color: navy;
+    color: white;
+
+    padding-inline: 1rem;
+}
+
+.info-personal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.habilidades ul {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+i {
+    font-size: 0.8rem;
+}
+
+img {
+    width: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: solid 1px white;
+    margin: 2rem auto 0;
+}
+
+.contenido {
+    background-color: whitesmoke;
+    padding-inline: 1rem;
+}
+
+.experiencia {
+    display: grid;
+    grid-template-areas:
+        "cargo periodo"
+        "empresa ."
+        "funcion funcion";
+    align-items: baseline;
+}
+
+.experiencia :is(h2, h3, h4, h5) {
+    margin: 0;
+}
+
+.cargo {
+    grid-area: cargo;
+}
+
+.periodo {
+    grid-area: periodo;
+    text-align: right;
+}
+
+.empresa {
+    grid-area: empresa;
+}
+
+.funcion {
+    grid-area: funcion;
+}
+
+.practicas {
+    text-align: right;
+}
