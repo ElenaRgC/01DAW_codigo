@@ -168,6 +168,18 @@ footer a {
     object-fit: cover;
 }
 
+.oferta-principal {
+    position: relative;
+}
+
+.oferta-principal img::before {
+    background-image: linear-gradient(to top right, #1a1a1a, transparent);
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 .ofertas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
