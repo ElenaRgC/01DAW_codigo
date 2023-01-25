@@ -151,7 +151,7 @@ footer a {
 
 .home {
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: auto 1fr auto;
     gap: 2rem;
 }
 
@@ -173,10 +173,11 @@ footer a {
 }
 
 .oferta-principal img::before {
-    background-image: linear-gradient(to top right, #1a1a1a, transparent);
+    background-color: var(--color-black);
     content: "";
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
     position: absolute;
 }
 
