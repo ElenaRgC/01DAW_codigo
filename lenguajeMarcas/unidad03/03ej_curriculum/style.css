@@ -6,16 +6,22 @@
 body {
     margin: 0;
     padding: 0;
+
+    background-color: #333;
 }
 
 main {
+    width: 60%;
+    min-width: 600px;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: auto 1fr;
     height: 100%;
 }
 
 .info-personal {
-    background-color: navy;
+    background-color: rgb(15, 15, 65);
     color: white;
 
     padding-inline: 1rem;
@@ -48,17 +54,27 @@ img {
     padding-inline: 1rem;
 }
 
-.experiencia {
+.grid {
     display: grid;
+    align-items: baseline;
+}
+
+.grid :is(h2, h3, h4, h5) {
+    margin: 0;
+}
+
+.experiencia {
     grid-template-areas:
         "cargo periodo"
         "empresa ."
         "funcion funcion";
-    align-items: baseline;
 }
 
-.experiencia :is(h2, h3, h4, h5) {
-    margin: 0;
+.formacion {
+    grid-template-areas:
+        "titulo titulo"
+        "centro periodo"
+        "conocimientos conocimientos";
 }
 
 .cargo {
@@ -80,4 +96,12 @@ img {
 
 .practicas {
     text-align: right;
+}
+
+.centro {
+    grid-area: centro;
+}
+
+.conocimientos {
+    grid-area: conocimientos;
 }

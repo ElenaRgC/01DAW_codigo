@@ -2,25 +2,49 @@
 /* font-family: 'Jura', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
+/* Reglas generales */
+
 :root {
     --color-accent: #e21c21;
     --color-white: #fff;
     --color-grey: #999;
     --color-black: #000;
+    --color-border: #2e528f;
+}
+
+.accent-color {
+    color: var(--color-accent, firebrick);
 }
 
 * {
     box-sizing: border-box;
 }
 
+html,
+body {
+    min-height: 1vw;
+}
+
 body {
     font-family: "Raleway", sans-serif;
+    position: relative;
+    padding-bottom: 6rem;
 }
 
 header,
 main {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* Cabecera */
@@ -36,8 +60,6 @@ header button {
     background-color: var(--color-accent, firebrick);
     color: var(--color-white, white);
 
-    font-size: 18px;
-    font-weight: bold;
     text-transform: uppercase;
 
     border: none;
@@ -47,7 +69,7 @@ header button {
 
     position: absolute;
     right: 10%;
-    top: 20px;
+    top: 0.2rem;
 }
 
 header button:hover {
@@ -59,10 +81,6 @@ header .logo {
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
     font-size: 2.5rem;
-}
-
-.accent-color {
-    color: var(--color-accent, firebrick);
 }
 
 header nav {
@@ -94,7 +112,7 @@ nav a {
 /* Pie de página */
 
 footer {
-    width: 100%;
+    height: 5.5rem;
     background-color: var(--color-black, black);
     color: var(--color-white, white);
 
@@ -102,6 +120,8 @@ footer {
 
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
 
     display: flex;
     justify-content: space-between;
@@ -117,10 +137,92 @@ footer .rrss {
 }
 
 footer .logo {
+    display: inline;
     width: 40px;
     margin: 0.5rem;
 }
 
 footer a {
     text-decoration: none;
+}
+
+/* Home */
+/* Columna principal */
+
+.home {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    gap: 2rem;
+}
+
+.home > * {
+    border: solid 0.2rem var(--color-border);
+}
+
+.principal {
+    padding: 0.5rem;
+}
+
+.principal img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.ofertas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.oferta-card {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.oferta-card ul {
+    list-style-type: none;
+    padding-left: 0.5rem;
+    font-weight: bold;
+
+    height: 30%;
+}
+
+.oferta-card li:first-child {
+    color: var(--color-accent);
+}
+
+.oferta-card img {
+    height: 35%;
+}
+
+.oferta-card button {
+    text-transform: uppercase;
+    padding: 0.5rem 2.5rem;
+
+    margin-block: 1rem;
+
+    color: var(--color-white);
+    background-color: var(--color-black);
+
+    border: none;
+    border-radius: 32rem;
+
+    align-self: flex-end;
+}
+
+.oferta-card button:hover {
+    background-color: var(--color-accent);
+    cursor: pointer;
+}
+
+/* Columnas laterales home */
+
+.test,
+.review {
+    padding: 0.5rem;
+}
+
+.test h2,
+.review h2 {
+    text-align: center;
 }
