@@ -2,12 +2,14 @@ import kotlin.random.Random
 
 fun main() { // Elena Rodríguez Calderón
 
-    var tiempo = 0
+    var tiempo = 0 // segundos = año
     val TIEMPOMAX = 5 // minutos
 
     var nido = Nido()
 
     do {
+        nido.envejecenSerpientes()
+
         if (tiempo % 5 == 0) {
             var nuevasSerpientes = Random.nextInt(1, 5)
             println("\n Nacen $nuevasSerpientes serpientes.")
@@ -17,13 +19,9 @@ fun main() { // Elena Rodríguez Calderón
             }
         }
 
-        nido.envejecenSerpientes()
-
         if (tiempo % 10 == 0) {
             nido.muerenSerpientes(ataqueMangosta())
         }
-
-        tiempo++
 
         println("\n En el nido hay ${nido.serpientes.size} serpientes vivas.")
 
@@ -35,7 +33,10 @@ fun main() { // Elena Rodríguez Calderón
             i++
         }
 
-        println("\n Pasa un segundo.")
+        /*Thread.sleep(1000)*/
+        println("\n Pasa un anyo.")
+        tiempo++
+
     } while (tiempo < TIEMPOMAX * 60)
 
     println("Han pasado $TIEMPOMAX minutos.")

@@ -2,7 +2,7 @@ import kotlin.random.Random
 
 class Serpiente {
     var cuerpo = ArrayList<Anilla>()
-    var edad = 0
+    private var edad = 0
 
     constructor() {
         for (i in 0..Random.nextInt(1, 6)) {
