@@ -1,4 +1,3 @@
-import kotlin.concurrent.thread
 import kotlin.random.Random
 
 fun main() { // Elena Rodríguez Calderón
