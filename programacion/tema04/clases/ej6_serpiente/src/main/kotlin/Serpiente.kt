@@ -51,7 +51,7 @@ class Serpiente {
         }
     }
 
-    fun morir() {
+    private fun morir() {
         cuerpo.removeAll { true }
     }
 
