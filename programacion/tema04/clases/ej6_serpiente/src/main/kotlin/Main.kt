@@ -40,17 +40,6 @@ fun main() { // Elena Rodríguez Calderón
 
     println("Han pasado $TIEMPOMAX minutos.")
 
-    /*do {
-        serpiente1.envejecer()
-        println(serpiente1)
-
-        if (Random.nextInt(0, 10) >= 9) {
-            println("Has sido atacado por una mangosta.")
-            serpiente1.morir()
-        }
-
-    } while (serpiente1.cuerpo.isNotEmpty())*/
-
 }
 
 fun ataqueMangosta(): Int {
@@ -63,3 +52,16 @@ fun ataqueMangosta(): Int {
     }
 
 }
+
+// Ejercicio original sin nido
+
+/*do {
+        serpiente1.envejecer()
+        println(serpiente1)
+
+        if (Random.nextInt(0, 10) >= 9) {
+            println("Has sido atacado por una mangosta.")
+            serpiente1.morir()
+        }
+
+    } while (serpiente1.cuerpo.isNotEmpty())*/
