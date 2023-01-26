@@ -38,7 +38,7 @@ class Serpiente {
 
     private fun decrecer() {
         if (cuerpo.size > 1) {
-        cuerpo.removeAt(cuerpo.size - 1)
+            cuerpo.removeAt(cuerpo.size - 1)
         } else {
             morir()
         }
@@ -56,7 +56,13 @@ class Serpiente {
     }
 
     override fun toString(): String {
-        return "$cuerpo, edad = $edad"
+        var patronColores = ""
+
+        for (anilla in cuerpo) {
+            patronColores += anilla
+        }
+
+        return "Anillas = $patronColores, edad = $edad"
     }
 
 }
