@@ -12,7 +12,7 @@ body {
 
 main {
     width: 60%;
-    min-width: 600px;
+    min-width: 700px;
     margin: 0 auto;
 
     display: grid;
@@ -24,7 +24,7 @@ main {
     background-color: rgb(15, 15, 65);
     color: white;
 
-    padding-inline: 1rem;
+    padding-left: 1rem;
 }
 
 .info-personal ul {
@@ -42,10 +42,9 @@ i {
 }
 
 img {
-    width: 80%;
+    width: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: solid 1px white;
     margin: 2rem auto 0;
 }
 
