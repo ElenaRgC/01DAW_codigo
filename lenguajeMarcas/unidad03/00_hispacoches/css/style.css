@@ -40,7 +40,7 @@ main {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 button {
@@ -172,10 +172,6 @@ footer a {
     position: relative;
 }
 
-.oferta-principal img {
-    width: 100%;
-}
-
 .oferta-principal img::before {
     background-color: var(--color-black);
     content: "";
@@ -243,3 +239,5 @@ footer a {
 .review h2 {
     text-align: center;
 }
+
+/* Sobre nosotros */
