@@ -27,8 +27,7 @@ body {
 
 body {
     font-family: "Raleway", sans-serif;
-    position: relative;
-    padding-bottom: 6rem;
+    display: grid;
 }
 
 header,
@@ -112,14 +111,13 @@ nav a {
 /* Pie de página */
 
 footer {
-    width: 100%;
+    width: 100vw;
     height: 5.5rem;
     background-color: var(--color-black, black);
     color: var(--color-white, white);
 
     padding-inline: 15%;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
 
     display: flex;
     justify-content: space-between;
@@ -164,9 +162,11 @@ footer a {
 .principal img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    width: 100%;
 }
 
 .oferta-principal {
+    width: 100%;
     position: relative;
 }
 
