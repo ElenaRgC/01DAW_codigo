@@ -1,7 +1,7 @@
 open class Cuenta {
     var titulares = ArrayList<Persona>(3)
     var numeroCuenta: Int = 0
-    var saldo: Double = 0.0
+    private var saldo: Double = 0.0
     var comision = true
 
     fun addTitular(titular: Persona) {
@@ -12,7 +12,39 @@ open class Cuenta {
         }
     }
 
-    //fun borrartitular
+    fun delTitular(titular: Persona) {
+        if (titulares.size <= 1) {
+            println("Debe haber al menos un titular.")
+        } else if (titulares.remove(titular)){
+            println("Titular eliminado correctamente.")
+        } else {
+            println("Imposible borrar.")
+        }
+    }
+
+    fun delTitular(dni: Int) {
+        if (titulares.size <= 1) {
+            println("Debe haber al menos un titular.")
+        } else {
+            for (persona in titulares) {
+                if (persona.dni == dni && titulares.remove(persona)) {
+                    println("Titular eliminado correctamente.")
+                }
+            }
+        }
+    }
+
+    fun ingresarDinero(cantidad: Double) {
+        if (cantidad > 0) {
+            this.saldo += cantidad
+        }
+    }
+
+    override fun toString(): String {
+        return "Cuenta(titulares=$titulares, numeroCuenta=$numeroCuenta, saldo=$saldo, comision=$comision)"
+    }
+
+
     //fun ingresardinero
     //fun sacardinero
     //fun cantidadtitulares
