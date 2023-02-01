@@ -4,4 +4,5 @@ class Persona {
     var apellido2 = ""
     var telefono = 0
     var edad = 0
+    var dni = 0
 }
