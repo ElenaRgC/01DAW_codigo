@@ -24,7 +24,7 @@ main {
     background-color: rgb(15, 15, 65);
     color: white;
 
-    padding-left: 1rem;
+    padding-inline: 1rem;
 }
 
 .info-personal ul {
@@ -45,7 +45,7 @@ img {
     width: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
-    margin: 2rem auto 0;
+    margin: 2rem 0;
 }
 
 .contenido {
