@@ -21,7 +21,7 @@ fun main() {
 
         if (soldadoCristiano.fuerza > soldadoIslamico.fuerza) {
             ejercitoIslamico.soldados.remove(soldadoIslamico)
-            soldadoCristiano.vida = soldadoCristiano.fuerza - soldadoIslamico.fuerza
+            soldadoCristiano.vida -= soldadoCristiano.fuerza - soldadoIslamico.fuerza
             println("Ha ganado ${soldadoCristiano.nombre} y le queda ${soldadoCristiano.vida} puntos de vida")
             if (soldadoCristiano.vida <= 0){
                 ejercitoCristiano.soldados.remove(soldadoCristiano)
@@ -29,7 +29,7 @@ fun main() {
             }
         }else{
             ejercitoCristiano.soldados.remove(soldadoCristiano)
-            soldadoIslamico.vida = soldadoIslamico.fuerza - soldadoCristiano.fuerza
+            soldadoIslamico.vida -= soldadoIslamico.fuerza - soldadoCristiano.fuerza
             println("Ha ganado ${soldadoIslamico.nombre} y le queda ${soldadoIslamico.vida} puntos de vida")
             if (soldadoIslamico.vida <= 0){
                 ejercitoIslamico.soldados.remove(soldadoIslamico)
