@@ -147,7 +147,10 @@ footer a {
 
 .home {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns:
+        minmax(min-content, 10%)
+        minmax(0, 1fr)
+        minmax(min-content, 10%);
     gap: 2rem;
 }
 
@@ -159,15 +162,15 @@ footer a {
     padding: 0.5rem;
 }
 
-.principal img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    width: 100%;
-}
-
 .oferta-principal {
     width: 100%;
     position: relative;
+}
+
+.oferta-principal img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
 }
 
 .oferta-principal img::before {
@@ -180,12 +183,14 @@ footer a {
 }
 
 .ofertas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
 .oferta-card {
+    flex: 1;
+
     display: flex;
     flex-flow: row wrap;
 }
@@ -209,8 +214,6 @@ footer a {
 .oferta-card button {
     text-transform: uppercase;
     padding: 0.5rem 2.5rem;
-
-    margin-block: 1rem;
 
     color: var(--color-white);
     background-color: var(--color-black);
@@ -249,10 +252,12 @@ footer a {
     margin-bottom: 0.5rem;
 }
 
-.sobre-nosotros hr {
+.separador {
     width: 2rem;
     position: relative;
     left: -47%;
 
     border: solid 3px var(--color-accent);
 }
+
+/* Contacto */
