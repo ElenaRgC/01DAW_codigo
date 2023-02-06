@@ -2,7 +2,7 @@ open class Cuenta {
     var titulares = ArrayList<Persona>(3)
     var numeroCuenta: Int = 0
     private var saldo: Double = 0.0
-    var comision = true
+    open var comision = true
 
     fun addTitular(titular: Persona) {
         if (titulares.size < 3) {
@@ -34,10 +34,22 @@ open class Cuenta {
         }
     }
 
-    fun ingresarDinero(cantidad: Double) {
+    open fun ingresarDinero(cantidad: Double) {
         if (cantidad > 0) {
             this.saldo += cantidad
         }
+    }
+
+    fun sacarDinero(cantidad: Double) {
+        if (cantidad > 0 && cantidad <= saldo) {
+            saldo -= cantidad
+        } else {
+            println("No ha podido realizarse la operación.")
+        }
+    }
+
+    fun getSaldo(): Double {
+        return saldo
     }
 
     override fun toString(): String {
@@ -45,8 +57,6 @@ open class Cuenta {
     }
 
 
-    //fun ingresardinero
-    //fun sacardinero
     //fun cantidadtitulares
     //get, set
 }
