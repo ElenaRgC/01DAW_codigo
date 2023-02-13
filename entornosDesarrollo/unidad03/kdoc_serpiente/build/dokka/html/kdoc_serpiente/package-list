@@ -1,0 +1,23 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/kdoc_serpiente/[root]/index.html
+$dokka.location://ataqueMangosta/#/PointingToDeclaration/kdoc_serpiente/[root]/ataque-mangosta.html
+$dokka.location://main/#/PointingToDeclaration/kdoc_serpiente/[root]/main.html
+$dokka.location:/Anilla///PointingToDeclaration/kdoc_serpiente/[root]/-anilla/index.html
+$dokka.location:/Anilla/Anilla/#/PointingToDeclaration/kdoc_serpiente/[root]/-anilla/-anilla.html
+$dokka.location:/Anilla/toString/#/PointingToDeclaration/kdoc_serpiente/[root]/-anilla/to-string.html
+$dokka.location:/Nido.Companion///PointingToDeclaration/kdoc_serpiente/[root]/-nido/-companion/index.html
+$dokka.location:/Nido.Companion/poblacion/#/PointingToDeclaration/kdoc_serpiente/[root]/-nido/-companion/poblacion.html
+$dokka.location:/Nido///PointingToDeclaration/kdoc_serpiente/[root]/-nido/index.html
+$dokka.location:/Nido/Nido/#/PointingToDeclaration/kdoc_serpiente/[root]/-nido/-nido.html
+$dokka.location:/Nido/envejecenSerpientes/#/PointingToDeclaration/kdoc_serpiente/[root]/-nido/envejecen-serpientes.html
+$dokka.location:/Nido/muerenSerpientes/#kotlin.Int/PointingToDeclaration/kdoc_serpiente/[root]/-nido/mueren-serpientes.html
+$dokka.location:/Nido/nacenSerpientes/#/PointingToDeclaration/kdoc_serpiente/[root]/-nido/nacen-serpientes.html
+$dokka.location:/Nido/serpientes/#/PointingToDeclaration/kdoc_serpiente/[root]/-nido/serpientes.html
+$dokka.location:/Serpiente///PointingToDeclaration/kdoc_serpiente/[root]/-serpiente/index.html
+$dokka.location:/Serpiente/Serpiente/#/PointingToDeclaration/kdoc_serpiente/[root]/-serpiente/-serpiente.html
+$dokka.location:/Serpiente/cuerpo/#/PointingToDeclaration/kdoc_serpiente/[root]/-serpiente/cuerpo.html
+$dokka.location:/Serpiente/envejecer/#/PointingToDeclaration/kdoc_serpiente/[root]/-serpiente/envejecer.html
+$dokka.location:/Serpiente/toString/#/PointingToDeclaration/kdoc_serpiente/[root]/-serpiente/to-string.html
+
+

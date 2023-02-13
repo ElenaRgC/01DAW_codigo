@@ -1,0 +1,10 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/[root]/package-summary.html
+$dokka.location:/Anilla///PointingToDeclaration/[root]/Anilla.html
+$dokka.location:/MainKt///PointingToDeclaration/[root]/MainKt.html
+$dokka.location:/Nido.Companion///PointingToDeclaration/[root]/Nido.Companion.html
+$dokka.location:/Nido///PointingToDeclaration/[root]/Nido.html
+$dokka.location:/Serpiente///PointingToDeclaration/[root]/Serpiente.html
+
+
