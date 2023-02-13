@@ -10,6 +10,7 @@ font-family: 'Raleway', sans-serif; */
     --color-grey: #999;
     --color-black: #000;
     --color-border: #2e528f;
+    --color-form: #333;
 }
 
 .accent-color {
@@ -261,3 +262,99 @@ footer a {
 }
 
 /* Contacto */
+
+.flex-contacto {
+    display: flex;
+    flex-flow: row wrap;
+
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.flex-contacto > * {
+    flex: 1;
+    gap: 0.5rem;
+}
+
+.datos-contacto {
+    font-size: 25px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto > :is(:not(label)) {
+    color: var(--color-white);
+    background-color: var(--color-form);
+    min-height: 2rem;
+
+    border: none;
+}
+
+.formulario-contacto :is([for="si"], [for="no"]) {
+    margin-left: 2rem;
+}
+
+.formulario-contacto::placeholder {
+    color: var(--color-grey);
+}
+
+.formulario-contacto [type="button"] {
+    width: 7rem;
+    align-self: flex-end;
+}
+
+@media (max-width: 800px) {
+    .flex-contacto > * {
+        flex: 100%;
+    }
+}
+
+/* Adquisición */
+
+.compra {
+    display: flex;
+    flex-flow: row wrap;
+
+    gap: 2rem;
+}
+
+.compra > * {
+    flex: 1;
+}
+
+.formulario-compra > * {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.formulario-compra label {
+    font-size: 65%;
+    color: var(--color-grey);
+}
+
+.formulario-compra input:is(:not([type="reset"])) {
+    border: none;
+    border-bottom: solid 2px var(--color-grey);
+}
+
+.formulario-compra [type="reset"] {
+    width: auto;
+
+    color: var(--color-white);
+    background-color: var(--color-black);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding: 0.75rem 4rem;
+
+    border: none;
+    border-radius: 32rem;
+
+    float: right;
+
+    cursor: pointer;
+}
