@@ -43,6 +43,33 @@
                 <input type="tel" name="telefono" id="telefono" />
                 <label for="codigo-postal">Código Postal</label>
                 <input type="text" name="codigo-postal" id="codigo-postal" />
+                <div class="formas-pago">
+                    <label for="pago">Formas de pago</label>
+                    <label for="pago"
+                        ><input
+                            type="radio"
+                            name="paypal"
+                            id="tarjeta"
+                            value="tarjeta"
+                        />Tarjeta</label
+                    >
+                    <label for="pago"
+                        ><input
+                            type="radio"
+                            name="paypal"
+                            id="paypal"
+                            value="paypal"
+                        />Paypal</label
+                    >
+                    <label for="pago"
+                        ><input
+                            type="radio"
+                            name="pago"
+                            id="transferencia"
+                            value="transferencia"
+                        />Transferencia</label
+                    >
+                </div>
                 <input type="reset" value="Pagar" onclick="pagar();" />
             </form>
             <article>
