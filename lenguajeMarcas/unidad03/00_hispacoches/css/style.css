@@ -341,6 +341,12 @@ footer a {
     border-bottom: solid 2px var(--color-grey);
 }
 
+.formulario-compra .formas-pago > * {
+    display: inline;
+    width: auto;
+    display: flex;
+}
+
 .formulario-compra [type="reset"] {
     width: auto;
 
