@@ -34,37 +34,65 @@
         <main>
             <h1>Contacto</h1>
             <hr class="separador" />
-            <article class="datos-contacto">
-                <ul>
-                    <li>Email: hispacoches@hispacoches.es</li>
-                    <li>Tel: 666-777-666</li>
-                </ul>
-            </article>
-            <form action="#" method="post">
-                <input
-                    type="text"
-                    name="nombre"
-                    id="nombre"
-                    placeholder="Nombre"
-                />
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                />
-                <input
-                    type="tel"
-                    name="telefono"
-                    id="telefono"
-                    placeholder="Teléfono"
-                />
-                <textarea
-                    name="comentarios"
-                    id="comentarios"
-                    placeholder="Escribe aquí tu mensaje"
-                ></textarea>
-            </form>
+            <div class="flex-contacto">
+                <article class="datos-contacto">
+                    <ul>
+                        <li>Email: hispacoches@hispacoches.es</li>
+                        <li>Tel: 666-777-666</li>
+                    </ul>
+                </article>
+                <form class="formulario-contacto" action="#" method="post">
+                    <input
+                        type="text"
+                        name="nombre"
+                        id="nombre"
+                        placeholder="Nombre"
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                    />
+                    <input
+                        type="tel"
+                        name="telefono"
+                        id="telefono"
+                        placeholder="Teléfono"
+                    />
+                    <textarea
+                        name="comentarios"
+                        id="comentarios"
+                        placeholder="Escribe aquí tu mensaje"
+                    ></textarea>
+                    <!-- Radiobutton "¿Es la primera vez que contactas con nosotros?"-->
+                    <label for="primera vez"
+                        >¿Es la primera vez que contactas con nosotros?</label
+                    >
+                    <label for="si">
+                        <input
+                            type="radio"
+                            name="primera-vez"
+                            id="si"
+                        />Sí</label
+                    >
+                    <label for="no">
+                        <input
+                            type="radio"
+                            name="primera-vez"
+                            id="no"
+                        />No</label
+                    >
+                    <label for="acepto">
+                        <input
+                            type="checkbox"
+                            name="acepto"
+                            id="acepto"
+                        />Acepto la política de privacidad</label
+                    >
+                    <input type="button" value="Submit" />
+                </form>
+            </div>
         </main>
         <footer>
             <p class="copyright">© 2022 by HispaCoches.es</p>
