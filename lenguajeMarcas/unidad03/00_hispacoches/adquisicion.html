@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="script.js"></script>
+        <title>HispaCoches - Información de Interés</title>
+    </head>
+    <body>
+        <header>
+            <button>Llamanos al 666777666</button>
+            <p class="logo"><span class="accent-color">Hispa</span>Coches.es</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./informacion-interes.html"
+                            >Información de Interés</a
+                        >
+                    </li>
+                    <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="compra">
+            <form class="formulario-compra" action="#" method="post">
+                <!-- Nombre, apellido, email, dirección, número teléfono, código postal-->
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" />
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion" />
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" />
+                <label for="codigo-postal">Código Postal</label>
+                <input type="text" name="codigo-postal" id="codigo-postal" />
+                <input type="reset" value="Pagar" onclick="pagar();" />
+            </form>
+            <article>
+                Enhorabuena el coche es casi suyo, solo tendrá que rellenar este
+                formulario con sus datos personales para proceder al pago del
+                vehículo.
+            </article>
+        </main>
+        <footer>
+            <p class="copyright">© 2022 by HispaCoches.es</p>
+            <div class="rrss">
+                <p>Nuestras redes sociales</p>
+                <a href="www.facebook.com">
+                    <img
+                        class="logo"
+                        src="./img/fb-logo.png"
+                        alt="Logo Facebook"
+                    />
+                </a>
+                <a href="www.instagram.com">
+                    <img
+                        class="logo"
+                        src="./img/insta-logo.png"
+                        alt="Logo Instagram"
+                    />
+                </a>
+                <a href="www.twitter.com">
+                    <img
+                        class="logo"
+                        src="./img/tw-logo.png"
+                        alt="Logo Twitter"
+                    />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
