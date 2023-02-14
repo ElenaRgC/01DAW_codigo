@@ -1,0 +1,9 @@
+-classpath 'C:\\Users\\elena\\Documents\\01 DAW\\01DAW_codigo\\entornosDesarrollo\\unidad03\\javaDoc_geometria\\build\\classes\\java\\main;C:\\Users\\elena\\Documents\\01 DAW\\01DAW_codigo\\entornosDesarrollo\\unidad03\\javaDoc_geometria\\build\\resources\\main'
+-d 'C:\\Users\\elena\\Documents\\01 DAW\\01DAW_codigo\\entornosDesarrollo\\unidad03\\javaDoc_geometria\\build\\docs\\javadoc'
+-doctitle 'javaDoc_geometria 1.0-SNAPSHOT API'
+-notimestamp 
+-quiet 
+-windowtitle 'javaDoc_geometria 1.0-SNAPSHOT API'
+'C:\\Users\\elena\\Documents\\01 DAW\\01DAW_codigo\\entornosDesarrollo\\unidad03\\javaDoc_geometria\\src\\main\\java\\Circulo.java'
+'C:\\Users\\elena\\Documents\\01 DAW\\01DAW_codigo\\entornosDesarrollo\\unidad03\\javaDoc_geometria\\src\\main\\java\\Main.java'
+'C:\\Users\\elena\\Documents\\01 DAW\\01DAW_codigo\\entornosDesarrollo\\unidad03\\javaDoc_geometria\\src\\main\\java\\Rectangulo.java'
