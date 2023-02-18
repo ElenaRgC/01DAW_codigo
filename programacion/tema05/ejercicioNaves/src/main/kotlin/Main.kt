@@ -12,6 +12,7 @@ fun main() { // Elena Rodríguez Calderón
  *  - Tiene una parrilla de 9x9 cuadrantes.
  *
  * Cuadrante:
+ *  - Posiciones X e Y
  *  - Tiene entre 1-3 drones.
  *  - Tiene un mecánico (Jack)
  *  - Tiene una supervisora (Vika)
