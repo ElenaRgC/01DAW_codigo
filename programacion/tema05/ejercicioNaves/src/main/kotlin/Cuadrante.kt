@@ -1,7 +1,7 @@
 class Cuadrante {
     private var filaCuadrante: Int
     private var columnaCuadrante: Int
-    var flotaDrones = arrayOf<Dron>(3)
+    var flotaDrones = arrayListOf<Dron>()
 
     // Dado que en el enunciado no se menciona que sean Vika y Jack quienes reparen
     // se les considerará como un simple atributo
