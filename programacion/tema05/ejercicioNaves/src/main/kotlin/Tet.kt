@@ -1,8 +1,13 @@
 class Tet {
-    var almacenDrones = arrayOf<Dron>(200)
+    private var almacenDrones = arrayListOf<Dron>()
+    private val TAMANOALMACEN = 200
+
+    constructor() {
+        rellenarTet()
+    }
 
     private fun rellenarTet() {
-        for (i in 1..200) {
+        for (i in 1..TAMANOALMACEN) {
             almacenDrones.add(Dron())
         }
     }
