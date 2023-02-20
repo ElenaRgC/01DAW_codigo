@@ -11,4 +11,8 @@ class Dron {
         cantidadDronesCreados++
         numDron = cantidadDronesCreados
     }
+
+    fun estropearse() {
+        estado = "Inactivo"
+    }
 }

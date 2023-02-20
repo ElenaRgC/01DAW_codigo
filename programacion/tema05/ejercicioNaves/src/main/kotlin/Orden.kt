@@ -1,16 +1,15 @@
 open class Orden {
 
     companion object {
-        cantidadOrdenes = 0
+        var cantidadOrdenes = 0
     }
 
     var completado = false
     var pendiente = true
-    var fecha: Int
+    var fecha: Int = 0
 
-    constructor(fecha: Int) {
+    constructor() {
         cantidadOrdenes++
-        this.fecha = fecha
     }
 
     fun mostrarInfo() {

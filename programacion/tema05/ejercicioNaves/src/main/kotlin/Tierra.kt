@@ -1,8 +1,9 @@
-class Tierra {
+class Planeta {
     private var parrilla = 3 // si la parrilla es N, tendremos NxN cuadrantes
-    private var cuadrantes = arrayListOf<Cuadrante>()
+    var cuadrantes = arrayListOf<Cuadrante>()
 
-    constructor() {
+    constructor(parrilla: Int) {
+        this.parrilla = parrilla
         generarCuadrantes()
     }
 

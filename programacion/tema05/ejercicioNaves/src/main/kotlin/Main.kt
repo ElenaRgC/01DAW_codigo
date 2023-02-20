@@ -1,14 +1,14 @@
 fun main() { // Elena Rodríguez Calderón
 
     val TET = Tet()
-    val TIERRA = Tierra()
+    val TIERRA = Planeta(3)
 
     val TIEMPOMAX = 2 // minutos
     var tiempoTranscurrido = 0 // segundos
 
     do {
         if (tiempoTranscurrido % 4 == 0) {
-            // se estropean drones con un 20% de posibilidad
+            TET.recorrerCuadrante(TIERRA)
         }
 
         if (tiempoTranscurrido % 10 == 0) {

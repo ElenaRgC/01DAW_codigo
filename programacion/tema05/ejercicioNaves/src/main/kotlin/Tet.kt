@@ -12,4 +12,11 @@ class Tet {
         }
     }
 
+    fun recorrerCuadrante(planeta: Planeta) {
+
+        for (cuadrante in planeta.cuadrantes) {
+            cuadrante.estropearDrones()
+        }
+    }
+
 }

@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 class Cuadrante {
     private var filaCuadrante: Int
     private var columnaCuadrante: Int
@@ -15,6 +17,19 @@ class Cuadrante {
 
         mecanico += "$fila$col"
         supervisora += "$fila$col"
+    }
+
+    fun estropearDrones() {
+        for (dron in flotaDrones) {
+            var prob = Random.nextInt(0,10)
+            if (prob < 2) {
+                dron.estropearse()
+            }
+        }
+    }
+
+    fun recorrerDrones() {
+
     }
 
 }
