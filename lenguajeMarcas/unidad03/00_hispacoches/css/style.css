@@ -42,9 +42,22 @@ img {
     max-width: 100%;
 }
 
-button {
+button,
+[type="submit"],
+[type="reset"] {
     font-size: 18px;
     font-weight: bold;
+
+    border: none;
+    border-radius: 32rem;
+
+    text-transform: uppercase;
+}
+
+button:hover,
+[type="submit"]:hover,
+[type="reset"]:hover {
+    cursor: pointer;
 }
 
 /* Cabecera */
@@ -69,12 +82,11 @@ header button {
 
     position: absolute;
     right: 10%;
-    top: 0.2rem;
+    top: 0.5rem;
 }
 
 header button:hover {
     background-color: var(--color-black, black);
-    cursor: pointer;
 }
 
 header .logo {
@@ -93,6 +105,13 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-wrap: wrap;
+    }
 }
 
 nav li {
@@ -112,7 +131,7 @@ nav a {
 /* Pie de página */
 
 footer {
-    width: 100vw;
+    width: 100%;
     height: 5.5rem;
     background-color: var(--color-black, black);
     color: var(--color-white, white);
@@ -149,9 +168,9 @@ footer a {
 .home {
     display: grid;
     grid-template-columns:
-        minmax(min-content, 10%)
-        minmax(0, 1fr)
-        minmax(min-content, 10%);
+        auto
+        55%
+        auto;
     gap: 2rem;
 }
 
@@ -159,8 +178,37 @@ footer a {
     border: solid 0.2rem var(--color-border);
 }
 
+.home button {
+    text-transform: uppercase;
+    padding: 0.5rem 2.5rem;
+    margin-top: 0.5rem;
+
+    color: var(--color-white);
+    background-color: var(--color-black);
+
+    border: none;
+    border-radius: 32rem;
+
+    align-self: flex-end;
+}
+
+.home button:hover {
+    background-color: var(--color-accent);
+}
+
 .principal {
     padding: 0.5rem;
+    position: relative;
+}
+
+.principal a {
+    text-decoration: none;
+}
+
+.principal .boton-flotante {
+    position: absolute;
+    top: 7%;
+    left: 70%;
 }
 
 .oferta-principal {
@@ -174,13 +222,27 @@ footer a {
     width: 100%;
 }
 
-.oferta-principal img::before {
-    background-color: var(--color-black);
+.oferta-principal::before {
     content: "";
-    height: 100px;
-    width: 100px;
-    z-index: 1;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 0) 31%,
+        rgba(0, 0, 0, 0) 100%
+    );
     position: absolute;
+    inset: 0;
+}
+
+.oferta-principal::after {
+    content: "Seat Alteca 1.5 TSi 110kW 150CV SS FR Edition 5p.";
+    color: var(--color-white, white);
+    text-align: center;
+    font-size: large;
+
+    position: absolute;
+    inset: 1rem 0 0 0;
 }
 
 .ofertas {
@@ -212,24 +274,6 @@ footer a {
     height: 35%;
 }
 
-.oferta-card button {
-    text-transform: uppercase;
-    padding: 0.5rem 2.5rem;
-
-    color: var(--color-white);
-    background-color: var(--color-black);
-
-    border: none;
-    border-radius: 32rem;
-
-    align-self: flex-end;
-}
-
-.oferta-card button:hover {
-    background-color: var(--color-accent);
-    cursor: pointer;
-}
-
 /* Columnas laterales home */
 
 .test,
@@ -259,6 +303,24 @@ footer a {
     left: -47%;
 
     border: solid 3px var(--color-accent);
+}
+
+/* Información de interés */
+
+.informacion-interes {
+    width: 50%;
+    min-width: 500px;
+    margin-inline: auto;
+}
+
+.etiquetas-medioambientales {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.etiquetas-medioambientales > * {
+    align-self: center;
 }
 
 /* Contacto */
@@ -325,6 +387,17 @@ footer a {
     flex: 1;
 }
 
+.compra article {
+    font-size: larger;
+    padding-inline: 10%;
+}
+
+.compra img {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
 .formulario-compra > * {
     display: block;
     width: 100%;
@@ -347,20 +420,24 @@ footer a {
     display: flex;
 }
 
+.formulario-compra .formas-pago :not(:is(:first-child)) {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    vertical-align: middle;
+}
+
 .formulario-compra [type="reset"] {
     width: auto;
 
     color: var(--color-white);
     background-color: var(--color-black);
-    font-weight: bold;
-    text-transform: uppercase;
 
     padding: 0.75rem 4rem;
 
-    border: none;
-    border-radius: 32rem;
-
     float: right;
+}
 
-    cursor: pointer;
+.formulario-compra [type="reset"]:hover {
+    color: var(--color-white);
+    background-color: var(--color-accent);
 }
