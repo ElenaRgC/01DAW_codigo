@@ -13,7 +13,7 @@ class Anilla {
      * v = verde
      * a = amarillo
      */
-    private var color: String = elegirColor()
+    var color: String = elegirColor()
 
     /**
      * Elegir color

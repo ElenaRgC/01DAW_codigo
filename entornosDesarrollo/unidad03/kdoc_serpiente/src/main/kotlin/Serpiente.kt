@@ -18,7 +18,7 @@ class Serpiente {
      *
      * Edad de la serpiente
      */
-    private var edad = 0
+    var edad = 0
 
     constructor() {
         for (i in 0..Random.nextInt(1, 6)) {
