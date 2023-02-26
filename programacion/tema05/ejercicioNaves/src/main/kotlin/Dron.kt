@@ -1,6 +1,6 @@
 class Dron {
     var estado: String = "Operativo" // Operativo, Inactivo o Fallido
-    private var numDron: Int
+    var numDron: Int
 
     companion object {
         var cantidadDronesCreados = 0
