@@ -11,13 +11,13 @@ class OrdenReparacion(dron: Dron) : Orden() {
         numOrden = super.cantidadOrdenes
         numDron = dron.numDron
         estadoInicial = dron.estado
-        estadoFinal = reparar(dron)
+        estadoFinal = reparar()
     }
 
-    private fun reparar(dron: Dron): String {
+    private fun reparar(): String {
         pendiente = false
 
-        return if(Random.nextBoolean()) {
+        return if (Random.nextBoolean()) {
             "Operativo"
         } else {
             "Fallido"
