@@ -36,7 +36,6 @@ class Tet {
         for (cuadrante in planeta.cuadrantes) {
             var i = 0
             while (i < cuadrante.numeroDrones()) {
-                println(cuadrante.flotaDrones[i].estado)
                 if (cuadrante.flotaDrones[i].estado == "Fallido" && almacenDrones.isNotEmpty()) {
                     "Se va a reemplazar el dron ${cuadrante.flotaDrones[i].numDron} por el dron ${almacenDrones.last().numDron}."
                     cuadrante.flotaDrones.removeAt(i)
