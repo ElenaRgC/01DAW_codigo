@@ -1,8 +1,6 @@
-import kotlin.random.Random
+class OrdenReparacion(dron: Dron, tiempo: Int) : Orden() {
 
-class OrdenReparacion(dron: Dron) : Orden() {
-
-    private var numDron = 0
+    var numDron = 0
     private var estadoInicial = ""
     private var estadoFinal = ""
 
@@ -11,18 +9,12 @@ class OrdenReparacion(dron: Dron) : Orden() {
         numOrden = super.cantidadOrdenes
         numDron = dron.numDron
         estadoInicial = dron.estado
-        estadoFinal = reparar()
+        fecha = tiempo
+        tipo = "Reparación"
     }
 
-    private fun reparar(): String {
-        pendiente = false
-
-        return if (Random.nextBoolean()) {
-            "Operativo"
-        } else {
-            "Fallido"
-        }
-
+    fun actualizarEstado(dron: Dron) {
+        estadoFinal = dron.reparar(this)
     }
 
 }

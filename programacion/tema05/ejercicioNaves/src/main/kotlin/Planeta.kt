@@ -15,9 +15,9 @@ class Planeta {
             j = 0
             while (j < parrilla) {
                 cuadrantes.add(Cuadrante(i,j))
-                i++
+                j++
             }
-           j++
+           i++
         }
     }
 
