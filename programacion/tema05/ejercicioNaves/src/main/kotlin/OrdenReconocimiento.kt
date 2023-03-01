@@ -18,7 +18,8 @@ class OrdenReconocimiento(tiempo: Int): Orden() {
             2 -> encontrado = "Vegetales"
             else -> encontrado = "Radiación"
         }
-        completado = true
+        // println("Se ha encontrado $encontrado en el area $areaRecorrer.")
+        this.completar()
     }
 
 }

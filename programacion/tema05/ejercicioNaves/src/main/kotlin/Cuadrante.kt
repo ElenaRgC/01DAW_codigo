@@ -4,7 +4,6 @@ class Cuadrante {
     private var filaCuadrante: Int
     private var columnaCuadrante: Int
     var flotaDrones = arrayListOf<Dron>()
-    var dronesEstropeados = arrayListOf<Dron>()
 
     // Dado que en el enunciado no se menciona que sean Vika y Jack quienes reparen
     // se les considerará como un simple atributo
@@ -22,15 +21,13 @@ class Cuadrante {
 
     fun estropearDrones() {
         for (dron in flotaDrones) {
-            var prob = Random.nextInt(0,10)
-            if (prob < 2) {
+            if (Random.nextInt(0,10) < 2) {
                 dron.estropearse()
             }
         }
     }
 
-    fun recorrerDrones() {
-
+    fun numeroDrones(): Int {
+        return flotaDrones.size
     }
-
 }

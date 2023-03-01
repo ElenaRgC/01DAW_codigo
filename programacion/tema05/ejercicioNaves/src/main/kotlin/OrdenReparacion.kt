@@ -13,8 +13,16 @@ class OrdenReparacion(dron: Dron, tiempo: Int) : Orden() {
         tipo = "Reparación"
     }
 
-    fun actualizarEstado(dron: Dron) {
-        estadoFinal = dron.reparar(this)
+    fun ejecutarOrden(dron: Dron): Boolean {
+        if (pendiente) {
+            if (numDron == dron.numDron && dron.estado == "Inactivo") {
+                dron.reparar()
+                completar()
+                return true
+            }
+        }
+        return false
     }
+
 
 }

@@ -4,10 +4,9 @@ class Planeta {
 
     constructor(parrilla: Int) {
         this.parrilla = parrilla
-        generarCuadrantes()
     }
 
-    private fun generarCuadrantes() {
+    fun generarCuadrantes() {
         var i = 0
         var j = 0
 

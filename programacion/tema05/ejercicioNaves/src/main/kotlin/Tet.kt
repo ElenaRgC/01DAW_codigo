@@ -1,7 +1,7 @@
 import kotlin.random.Random
 
 class Tet {
-    private var almacenDrones = arrayListOf<Dron>()
+    var almacenDrones = arrayListOf<Dron>()
     private val TAMANOALMACEN = 200
     private var ordenesReparacion = arrayListOf<OrdenReparacion>()
     private var ordenesReconocimiento = arrayListOf<OrdenReconocimiento>()
@@ -16,15 +16,42 @@ class Tet {
         }
     }
 
+    fun repartirDrones(planeta: Planeta) {
+        for (cuadrante in planeta.cuadrantes) {
+            for (i in 0..Random.nextInt(0, 3)) {
+                cuadrante.flotaDrones.add(almacenDrones.last())
+                almacenDrones.remove(almacenDrones.last())
+            }
+        }
+    }
+
     fun recorrerCuadrante(planeta: Planeta) {
         for (cuadrante in planeta.cuadrantes) {
             cuadrante.estropearDrones()
         }
+        println("")
+    }
+
+    fun reemplazarDrones(planeta: Planeta) {
+        for (cuadrante in planeta.cuadrantes) {
+            var i = 0
+            while (i < cuadrante.numeroDrones()) {
+                println(cuadrante.flotaDrones[i].estado)
+                if (cuadrante.flotaDrones[i].estado == "Fallido" && almacenDrones.isNotEmpty()) {
+                    "Se va a reemplazar el dron ${cuadrante.flotaDrones[i].numDron} por el dron ${almacenDrones.last().numDron}."
+                    cuadrante.flotaDrones.removeAt(i)
+                    cuadrante.flotaDrones.add(almacenDrones.last())
+                    almacenDrones.remove(almacenDrones.last())
+                    i--
+                }
+                i++
+            }
+        }
     }
 
     fun crearOrdenesReconocimiento(tiempo: Int) {
-        val NUMORDENES = Random.nextInt(5,11)
-        for (i in 1.. NUMORDENES) {
+        val NUMORDENES = Random.nextInt(5, 11)
+        for (i in 1..NUMORDENES) {
             val ORDEN = OrdenReconocimiento(tiempo)
             ordenesReconocimiento.add(ORDEN)
         }
@@ -36,7 +63,6 @@ class Tet {
                 if (dron.estado == "Inactivo") {
                     val ORDEN = OrdenReparacion(dron, tiempo)
                     ordenesReparacion.add(ORDEN)
-                    cuadrante.dronesEstropeados.add(dron)
                 }
             }
         }
@@ -44,12 +70,10 @@ class Tet {
 
     fun ejecutarOrdenesReparacion(planeta: Planeta): Int {
         var ordenesCompletadas = 0
-        for (orden in ordenesReparacion) {
-            for (cuadrante in planeta.cuadrantes) {
-                for (dron in cuadrante.dronesEstropeados) {
-                    if(orden.numDron == dron.numDron) {
-                        dron.reparar(orden)
-                        ordenesReparacion.remove(orden)
+        for (cuadrante in planeta.cuadrantes) {
+            for (dron in cuadrante.flotaDrones) {
+                for (orden in ordenesReparacion) {
+                    if (orden.ejecutarOrden(dron)) {
                         ordenesCompletadas++
                     }
                 }
@@ -61,9 +85,10 @@ class Tet {
     fun ejecutarOrdenesReconocimiento(): Int {
         var ordenesCompletadas = 0
         for (orden in ordenesReconocimiento) {
-            orden.rastrear()
-            ordenesReconocimiento.remove(orden)
-            ordenesCompletadas++
+            if (orden.pendiente) {
+                orden.rastrear()
+                ordenesCompletadas++
+            }
         }
         return ordenesCompletadas
     }

@@ -15,16 +15,20 @@ class Dron {
 
     fun estropearse() {
         estado = "Inactivo"
+        println("Se ha estropeado el dron $numDron.")
     }
 
-    fun reparar(orden: OrdenReparacion): String {
-        orden.pendiente = false
-
-        return if (Random.nextBoolean()) {
-            "Operativo"
+    fun reparar() {
+        if (Random.nextBoolean()) {
+            estado = "Operativo"
+            println("Se ha reparado el dron $numDron.")
         } else {
-            "Fallido"
+            estado = "Fallido"
+            println("Ha fallado la reparación del dron $numDron.")
         }
+    }
 
+    override fun toString(): String {
+        return "$numDron se encuentra en estado $estado."
     }
 }
