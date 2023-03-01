@@ -43,7 +43,6 @@ fun main() { // Elena Rodríguez Calderón
 
 // Finalmente, cerramos la conexión a la base de datos y la sentencia preparada
 
-
     } catch (ex: SQLException) {
         ex.printStackTrace()
     } finally {
