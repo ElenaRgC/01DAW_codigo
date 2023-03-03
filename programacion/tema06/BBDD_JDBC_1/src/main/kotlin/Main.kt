@@ -28,20 +28,39 @@ fun main(args: Array<String>) {
             val descripcion = rs.getString("descripcion")
             println("Código de grupo: $cod_grupo, Descripción: $descripcion")
         }
+
+        val query = "SELECT * from categorias WHERE (cod_grupo = ?)"
+
+        preparedStatement = conn.prepareStatement(query)
+        preparedStatement.setInt(1, 2)
+        var resultado = preparedStatement.executeQuery()
+
+        println("__________")
+
+        while (resultado.next()) {
+            var grupo = rs.getString("cod_grupo")
+            var desc = rs.getString("descripcion")
+            println("Código de grupo: $grupo, Descripción: $desc")
+        }
+
+
+
+        /*
         //ejemplo de PreparedStatement
         // Creamos una sentencia preparada (PreparedStatement) para insertar datos en la tabla
         val query = "INSERT INTO categorias (cod_grupo, descripcion) VALUES (?, ?)"
         preparedStatement = conn.prepareStatement(query)
 
-       // Luego, asignamos los valores que queremos insertar a los parámetros de la sentencia preparada
+        // Luego, asignamos los valores que queremos insertar a los parámetros de la sentencia preparada
 
         preparedStatement.setInt(1, 5) //Cada vez que lo cambies cambia el número, para no producir error
         preparedStatement.setString(2, "Alimentos")
 
-// Ejecutamos la sentencia preparada para insertar los datos en la tabla
+        // Ejecutamos la sentencia preparada para insertar los datos en la tabla
         preparedStatement.executeUpdate()
 
-// Finalmente, cerramos la conexión a la base de datos y la sentencia preparada
+        // Finalmente, cerramos la conexión a la base de datos y la sentencia preparada
+        */
 
 
     } catch (ex: SQLException) {
