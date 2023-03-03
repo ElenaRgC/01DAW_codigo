@@ -29,6 +29,7 @@ body {
 body {
     font-family: "Raleway", sans-serif;
     display: grid;
+    margin: 0;
 }
 
 header,
