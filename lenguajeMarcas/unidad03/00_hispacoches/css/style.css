@@ -11,6 +11,7 @@ font-family: 'Raleway', sans-serif; */
     --color-black: #000;
     --color-border: #2e528f;
     --color-form: #333;
+    --color-background: #f5f5f5;
 }
 
 .accent-color {
@@ -30,6 +31,7 @@ body {
     font-family: "Raleway", sans-serif;
     display: grid;
     margin: 0;
+    background-color: var(--color-background, whitesmoke);
 }
 
 header,
@@ -268,7 +270,7 @@ footer a {
 }
 
 .oferta-card li:first-child {
-    color: var(--color-accent);
+    color: var(--color-accent, firebrick);
 }
 
 .oferta-card img {
@@ -303,7 +305,7 @@ footer a {
     position: relative;
     left: -47%;
 
-    border: solid 3px var(--color-accent);
+    border: solid 3px var(--color-accent, firebrick);
 }
 
 /* Información de interés */
@@ -349,8 +351,8 @@ footer a {
 }
 
 .formulario-contacto > :is(:not(label)) {
-    color: var(--color-white);
-    background-color: var(--color-form);
+    color: var(--color-white, white);
+    background-color: var(--color-form, darkgrey);
     min-height: 2rem;
 
     border: none;
@@ -361,12 +363,13 @@ footer a {
 }
 
 .formulario-contacto::placeholder {
-    color: var(--color-grey);
+    color: var(--color-grey, grey);
 }
 
-.formulario-contacto [type="button"] {
+.formulario-contacto [type="reset"] {
     width: 7rem;
     align-self: flex-end;
+    border-radius: 0;
 }
 
 @media (max-width: 800px) {
@@ -407,12 +410,12 @@ footer a {
 
 .formulario-compra label {
     font-size: 65%;
-    color: var(--color-grey);
+    color: var(--color-grey, grey);
 }
 
 .formulario-compra input:is(:not([type="reset"])) {
     border: none;
-    border-bottom: solid 2px var(--color-grey);
+    border-bottom: solid 2px var(--color-grey, grey);
 }
 
 .formulario-compra .formas-pago > * {
@@ -430,8 +433,8 @@ footer a {
 .formulario-compra [type="reset"] {
     width: auto;
 
-    color: var(--color-white);
-    background-color: var(--color-black);
+    color: var(--color-white, white);
+    background-color: var(--color-black, black);
 
     padding: 0.75rem 4rem;
 
@@ -439,6 +442,6 @@ footer a {
 }
 
 .formulario-compra [type="reset"]:hover {
-    color: var(--color-white);
-    background-color: var(--color-accent);
+    color: var(--color-white, white);
+    background-color: var(--color-accent, firebrick);
 }
