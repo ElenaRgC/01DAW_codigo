@@ -44,7 +44,7 @@ class CategoriaDAOImpl : CategoriaDAO {
             ps?.setString(2, categoria.descripcion)
             result = ps?.executeUpdate()
         } catch (e: SQLException) {
-            println("Error en la inserción.")
+            println(e.message)
         } finally {
             ps?.close()
             conexion.desconectar()
