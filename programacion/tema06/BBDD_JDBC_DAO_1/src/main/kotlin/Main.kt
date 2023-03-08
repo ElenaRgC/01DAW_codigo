@@ -21,7 +21,7 @@ fun main() {
 
 
     // Insertar una nueva categoria
-    val nuevaCategoria = Categoria(6, "Frutas")
+    val nuevaCategoria = Categoria(5, "Helados")
     if (categoriaDAO.insertCategoria(nuevaCategoria)) {
         println("Se insertó correctamente la categoria $nuevaCategoria")
     } else {
@@ -43,4 +43,18 @@ fun main() {
     } else {
         println("No se pudo eliminar la categoria con codigo $codigoAEliminar")
     }
+
+    // Recibir varias categorías
+    val listaCodigos = arrayListOf(1,4,7)
+    categoriaDAO.getListCategorias(listaCodigos)
+
+    // Insertar varias categorías
+    val listaCategorias = arrayListOf<Categoria>()
+    for (i in 0..3) {
+        listaCategorias.add(Categoria(11,"Electrónica"))
+        listaCategorias.add(Categoria(12,"Pescado"))
+        listaCategorias.add(Categoria(13,"Refrescos"))
+    }
+
+
 }
