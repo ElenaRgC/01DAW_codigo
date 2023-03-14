@@ -3,6 +3,33 @@ import java.sql.*
 class CategoriaDAOImpl : CategoriaDAO {
     private val conexion = ConexionBD()
 
+    override fun insertListCategorias(listaCategorias: ArrayList<Categoria>): ArrayList<Categoria> {
+        conexion.conectar()
+        var result: Int? = null
+        var ps: PreparedStatement? = null
+        var query = "INSERT INTO categorias (cod_grupo, descripcion) VALUES (?, ?)"
+        var listaNoInsertados = ArrayList<Categoria>()
+
+        ps = conexion.getPreparedStatement(query)
+
+        for (categoria in listaCategorias) {
+            try{
+                ps?.setInt(1, categoria.codigo)
+                ps?.setString(2, categoria.descripcion)
+                result = ps?.executeUpdate()
+            } catch (e: SQLException) {
+                // println(e.message)
+                listaNoInsertados.add(categoria)
+            }
+        }
+
+        ps?.close()
+        conexion.desconectar()
+
+        return listaNoInsertados
+
+    }
+
     override fun getCategoriaByCodigo(codigo: Int): Categoria? {
         conexion.conectar()
         val query = "SELECT * FROM categorias WHERE cod_grupo = ?"
@@ -70,7 +97,7 @@ class CategoriaDAOImpl : CategoriaDAO {
             return result == 1
     }
 
-    override fun insertListCategorias(listaCategorias: ArrayList<Categoria>) {
+    /*override fun insertListCategorias(listaCategorias: ArrayList<Categoria>) {
         var result: Int? = null
         var ps: PreparedStatement? = null
         try {
@@ -92,7 +119,7 @@ class CategoriaDAOImpl : CategoriaDAO {
             ps?.close()
             conexion.desconectar()
         }
-    }
+    }*/
 
     override fun updateCategoria(categoria: Categoria): Boolean {
         conexion.conectar()

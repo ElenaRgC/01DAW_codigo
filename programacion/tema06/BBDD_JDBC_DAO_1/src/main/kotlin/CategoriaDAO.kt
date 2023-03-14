@@ -6,5 +6,5 @@ interface CategoriaDAO {
     fun deleteCategoria(codigo: Int): Boolean
 
     fun getListCategorias(listaCodigos: ArrayList<Int>)
-    fun insertListCategorias(listaCategorias: ArrayList<Categoria>)
+    fun insertListCategorias(listaCategorias: ArrayList<Categoria>): ArrayList<Categoria>
 }

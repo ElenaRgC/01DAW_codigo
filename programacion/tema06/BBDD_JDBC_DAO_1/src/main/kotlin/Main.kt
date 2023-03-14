@@ -1,10 +1,12 @@
 fun main() {
     val categoriaDAO = CategoriaDAOImpl()
+    val categoriaProductoDAO = CategoriaProductoDAOImpl()
 
+    /*
     // Obtener todas las categorias
     val categorias = categoriaDAO.getAllCategorias()
     println("Lista de categorias:")
-    /*categorias.forEach { println(it) }*/
+    *//*categorias.forEach { println(it) }*//*
     for (categoria in categorias) {
         println(categoria)
     }
@@ -46,15 +48,31 @@ fun main() {
 
     // Recibir varias categorías
     val listaCodigos = arrayListOf(1,4,7)
-    categoriaDAO.getListCategorias(listaCodigos)
+    categoriaDAO.getListCategorias(listaCodigos)*/
 
     // Insertar varias categorías
     val listaCategorias = arrayListOf<Categoria>()
-    for (i in 0..3) {
-        listaCategorias.add(Categoria(11,"Electrónica"))
-        listaCategorias.add(Categoria(12,"Pescado"))
-        listaCategorias.add(Categoria(13,"Refrescos"))
+    /*listaCategorias.add(Categoria(11,"Electrónica"))
+    listaCategorias.add(Categoria(12,"Pescado"))
+    listaCategorias.add(Categoria(13,"Refrescos"))*/
+
+    /*for (i in 1..9) {
+        var cat = Categoria(i, "Info $i")
+        listaCategorias.add(cat)
     }
 
+    var cat = Categoria(90, "Naranjas")
+    listaCategorias.add(cat)
+
+    var aux = categoriaDAO.insertListCategorias(listaCategorias)
+
+    for (categoria in aux) {
+        println("No se ha insertado: $categoria")
+    }*/
+
+    var cat = Categoria(3, "Ejemplo")
+
+    categoriaProductoDAO.deleteCategoriaProducto(1)
+    categoriaProductoDAO.deleteCategoriaProducto(cat)
 
 }
