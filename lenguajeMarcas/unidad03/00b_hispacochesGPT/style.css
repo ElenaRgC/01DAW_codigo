@@ -71,6 +71,12 @@ header nav a.activo {
 }
 
 /* Estilos para la sección de etiquetas medioambientales */
+
+main {
+    margin: 0 10%;
+    text-align: center;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
