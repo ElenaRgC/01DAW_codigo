@@ -140,28 +140,39 @@ header nav a.activo {
 /* Footer */
 
 footer {
-    background-color: var(--color-form);
+    background-color: var(--color-black);
     color: var(--color-white);
-    padding: 20px;
+    padding: 30px 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    font-size: 14px;
 }
 
-footer p {
+.footer-left p {
     margin: 0;
 }
 
-.redes-sociales {
+.footer-right {
+    margin-top: 20px;
     display: flex;
+    align-items: center;
 }
 
-.redes-sociales img {
+.social-links a {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links img {
     width: 30px;
-    margin-left: 10px;
+    height: 30px;
+    object-fit: contain;
+    margin: 0 10px;
 }
 
-.redes-sociales img:first-child {
-    margin-left: 0;
+.social-links img:hover {
+    opacity: 0.7;
 }
