@@ -180,3 +180,7 @@ fabric.properties
 .embold/vscode-logs.log
 *.xml
 lenguajeMarcas/.embold/issues.db
+
+## Added by me
+
+/entornosDesarrollo/unidad04/*
