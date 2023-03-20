@@ -9,14 +9,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
     margin: 0;
     padding: 0;
     background-color: var(--color-background);
     color: var(--color-black);
 }
 
+/* Estilos para el header */
+
 header {
+    position: relative; /* agregamos esta propiedad */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,17 +61,21 @@ header nav a.activo {
 }
 
 .btn-llamar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: fixed;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 9999;
     border-radius: 30px;
     border: 2px solid var(--color-accent);
     background-color: var(--color-accent);
     color: var(--color-white);
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: Raleway, sans-serif;
 }
 
 /* Estilos para la sección de etiquetas medioambientales */
@@ -95,20 +103,24 @@ main {
     display: table;
 }
 
-.row h2 {
+.row h1 {
     color: var(--color-black);
-    font-size: 36px;
+    font-size: 43px;
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
+    font-family: Raleway, sans-serif;
 }
 
-.row h3 {
-    color: var(--color-grey);
-    font-size: 24px;
+.row h2 {
+    color: var(--color-black);
+    font-size: 34px;
     font-weight: bold;
-    margin: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Raleway, sans-serif;
 }
 
 .row hr {
