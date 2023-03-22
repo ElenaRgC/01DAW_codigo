@@ -1,0 +1,2 @@
+Autores.Autores(id=7, nombre='Gabriel García Márquez', nacionalidad='Colombiana')
+Autores.Autores(id=8, nombre='Isabel Allende', nacionalidad='Chilena')
