@@ -20,13 +20,14 @@ body {
 /* Estilos para el header */
 
 header {
-    position: relative; /* agregamos esta propiedad */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-border);
+    position: relative;
+    z-index: 1;
 }
 
 header img {
@@ -62,10 +63,8 @@ header nav a.activo {
 
 .btn-llamar {
     position: fixed;
-    bottom: -20px;
-    right: 50%;
-    transform: translateX(50%);
-    z-index: 9999;
+    top: 20px;
+    right: 20px;
     border-radius: 30px;
     border: 2px solid var(--color-accent);
     background-color: var(--color-accent);
@@ -76,6 +75,7 @@ header nav a.activo {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Raleway, sans-serif;
+    z-index: 9999;
 }
 
 /* Estilos para la sección de etiquetas medioambientales */
