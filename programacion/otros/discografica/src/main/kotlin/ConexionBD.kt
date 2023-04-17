@@ -2,7 +2,7 @@ import java.sql.*
 
 class ConexionBD {
     var url = "jdbc:mysql://localhost/discografica"
-    var user = "root"
+    var user = "kotlin"
     var password = ""
 
     val forname="com.mysql.cj.jdbc.Driver"
@@ -13,9 +13,9 @@ class ConexionBD {
     constructor()
 
     constructor(ur:String,us:String,pa:String){
-        this.url=ur
-        this.user=us
-        this.password=pa
+        this.url = ur
+        this.user = us
+        this.password = pa
     }
 
     fun conectar() {

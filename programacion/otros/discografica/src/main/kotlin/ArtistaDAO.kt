@@ -9,8 +9,8 @@ interface ArtistaDAO {
     fun insertArtist(artista: Artista): Boolean
     fun insertArtists(artistas: ArrayList<Artista>): ArrayList<Artista>
 
-    fun updateArtist(cod: Int, campo: String, nuevoValor: String): Boolean
-    fun updateArtistName(cod: Int, nuevoNombre: String): Boolean
+    fun updateArtist(campo: String, antiguoValor:String, nuevoValor: String): Boolean
+    fun updateArtistName(antiguoNombre:String, nuevoNombre: String): Boolean
 
     fun deleteArtist(cod: Int): Boolean
 

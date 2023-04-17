@@ -21,9 +21,10 @@ class ArtistaDAOImp: ArtistaDAO {
                     rs.getInt("cod"),
                     rs.getString("nombre_artistico"),
                     rs.getString("apellido"),
-                    rs.getString("nombre"))
+                    rs.getString("nombre")
+                )
                 listaArtistas.add(artista)
-                // println(listaArtistas.last())
+                println(listaArtistas.last())
             }
 
             result = true
@@ -54,7 +55,8 @@ class ArtistaDAOImp: ArtistaDAO {
                     rs.getInt("cod"),
                     rs.getString("nombre_artistico"),
                     rs.getString("apellido"),
-                    rs.getString("nombre"))
+                    rs.getString("nombre")
+                )
 
                 println(artista)
             }
@@ -86,8 +88,11 @@ class ArtistaDAOImp: ArtistaDAO {
             ps?.setString(4, nombre)
             result = ps?.executeUpdate()
 
-        } catch(e: Exception) {
+            println("Se ha insertado correctamente a $nombre_artistico con el código $cod.")
+
+        } catch (e: Exception) {
             println(e.message)
+            println("No se ha podido insertar al artista con el código $cod.")
         } finally {
             ps?.close()
             conexion.desconectar()
@@ -96,31 +101,6 @@ class ArtistaDAOImp: ArtistaDAO {
         return result == 1
     }
 
-    /*
-    override fun insertarLista(c:ArrayList<Autores>):ArrayList<Autores>{
-        conexion.conectar()
-        var result:Int?=null
-        var ps: PreparedStatement? = null
-        var listaNoInsertados = ArrayList<Autores>()
-
-        val query = Constantes.autores_sql_insert
-        ps = conexion.getPreparedStatement(query)
-        for (i in c){
-            try {
-                ps?.setInt(1, i.id)
-                ps?.setString(2, i.nombre)
-                ps?.setString(3, i.nacionalidad)
-                result = ps?.executeUpdate()
-            }catch (e:Exception){
-                //println("no Se puede insertar ${i.codigo}")
-                listaNoInsertados.add(i)
-            }
-        }
-        ps?.close()
-        conexion.desconectar()
-        return listaNoInsertados
-    }
-     */
     override fun insertArtist(artista: Artista): Boolean {
         var result: Int? = null
         var ps: PreparedStatement? = null
@@ -135,8 +115,12 @@ class ArtistaDAOImp: ArtistaDAO {
             ps?.setString(4, artista.nombre)
             result = ps?.executeUpdate()
 
-        } catch(e: Exception) {
+            println("Se ha insertado correctamente a ${artista.nombre_artistico} con el código ${artista.cod}.")
+
+        } catch (e: Exception) {
             println(e.message)
+            println("No se ha podido insertar al artista con el código ${artista.cod}.")
+
         } finally {
             ps?.close()
             conexion.desconectar()
@@ -146,18 +130,126 @@ class ArtistaDAOImp: ArtistaDAO {
     }
 
     override fun insertArtists(artistas: ArrayList<Artista>): ArrayList<Artista> {
-        TODO("Not yet implemented")
+        conexion.conectar()
+        var ps: PreparedStatement? = null
+        val query = "INSERT INTO artista (cod, nombre_artistico, apellido, nombre) VALUES (?, ?, ?, ?)"
+        ps = conexion.getPreparedStatement(query)
+        var listaNoInsertados = ArrayList<Artista>()
+
+        for (artista in artistas) {
+            try {
+                ps?.setInt(1, artista.cod)
+                ps?.setString(2, artista.nombre_artistico)
+                ps?.setString(3, artista.apellido)
+                ps?.setString(4, artista.nombre)
+                ps?.executeUpdate()
+            } catch (e: Exception) {
+                println("No se ha podido insertar al artista con el código ${artista.cod}")
+                listaNoInsertados.add(artista)
+            }
+        }
+
+        ps?.close()
+        conexion.desconectar()
+
+        return listaNoInsertados
     }
 
-    override fun updateArtist(cod: Int, campo: String, nuevoValor: String): Boolean {
-        TODO("Not yet implemented")
+    override fun updateArtist(campo: String, antiguoValor: String, nuevoValor: String): Boolean {
+        var result = false
+        var ps: PreparedStatement? = null
+        var query = ""
+
+        try {
+            conexion.conectar()
+
+            when (campo) {
+                "nombre_artistico", "apellido", "nombre" -> {
+                    query = "UPDATE artista SET $campo = ? WHERE $campo LIKE ?"
+                    ps = conexion.connection.prepareStatement(query)
+                    ps.setString(1, nuevoValor)
+                    ps.setString(2, antiguoValor)
+                    ps.executeUpdate()
+                    result = true
+                }
+
+                "cod" -> {
+                    query = "UPDATE artista SET $campo = ? WHERE $campo = ?"
+                    ps = conexion.connection.prepareStatement(query)
+                    ps.setInt(1, nuevoValor.toInt())
+                    ps.setInt(2, antiguoValor.toInt())
+                    ps.executeUpdate()
+                    result = true
+                }
+
+                else -> result = false
+            }
+
+            println("Se ha modificado correctamente el campo $campo.")
+
+        } catch (e: Exception) {
+            println(e.message)
+            println("No se ha podido modificar el campo $campo.")
+        } finally {
+            ps?.close()
+            conexion.desconectar()
+        }
+
+        return result
     }
 
-    override fun updateArtistName(cod: Int, nuevoNombre: String): Boolean {
-        TODO("Not yet implemented")
+
+    override fun updateArtistName(antiguoNombre: String, nuevoNombre: String): Boolean {
+        var result: Int? = null
+        var ps: PreparedStatement? = null
+        var query = "UPDATE artista SET nombre = ? WHERE nombre LIKE ?"
+
+        try {
+            conexion.conectar()
+
+            ps = conexion.getPreparedStatement(query)
+            ps?.setString(1,nuevoNombre)
+            ps?.setString(2, antiguoNombre)
+
+            result = ps?.executeUpdate()
+
+            println("Se ha actualizado correctamente el nombre.")
+
+        } catch (e: Exception) {
+            println(e.message)
+            println("No se ha podido actualizar el nombre.")
+
+        } finally {
+            ps?.close()
+            conexion.desconectar()
+        }
+
+        return result == 1
     }
 
     override fun deleteArtist(cod: Int): Boolean {
-        TODO("Not yet implemented")
+        var result = false
+        var ps: PreparedStatement? = null
+        val query = "DELETE FROM artista WHERE cod = ?"
+
+        try {
+            conexion.conectar()
+
+            ps = conexion.connection.prepareStatement(query)
+            ps.setInt(1, cod)
+
+            result = true
+
+            println("Se ha eliminado correctamente al artista con código $cod.")
+        } catch (e: Exception) {
+            println(e.message)
+            println("No ha sido posible eliminar al artista con código $cod.")
+        } finally {
+            ps?.close()
+            conexion.desconectar()
+        }
+
+        return result
     }
+
 }

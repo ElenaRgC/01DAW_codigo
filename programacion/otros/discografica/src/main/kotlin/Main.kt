@@ -1,7 +1,13 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    var artistaImp = ArtistaDAOImp()
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    artistaImp.selectAllArtists()
+    // artistaImp.selectArtist(9)
+
+    artistaImp.insertArtist(10,"Sungmin", "Lee", "Sungmin")
+
+    //artistaImp.updateArtist("apellido", "Lee", "Liu")
+    artistaImp.updateArtist("apellido", "Liu", "Lee")
+
+    artistaImp.deleteArtist(10)
 }

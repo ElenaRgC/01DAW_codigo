@@ -14,7 +14,7 @@ class Artista {
     }
 
     override fun toString(): String {
-        return "$nombre_artistico: COD= $cod, Nombre = $apellido $nombre"
+        return "$nombre_artistico: COD = $cod, Nombre = $apellido $nombre."
     }
 
 }
