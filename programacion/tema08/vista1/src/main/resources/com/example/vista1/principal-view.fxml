@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vista1.PrincipalController">
+   <children>
+      <TextField fx:id="txtNumero1" alignment="CENTER_RIGHT" layoutX="131.0" layoutY="34.0" promptText="0" />
+      <Label layoutX="54.0" layoutY="38.0" text="Número 1" />
+      <Label layoutX="54.0" layoutY="79.0" text="Número 2" />
+      <Label layoutX="54.0" layoutY="122.0" text="Solución" />
+      <TextField fx:id="txtNumero2" alignment="CENTER_RIGHT" layoutX="131.0" layoutY="75.0" promptText="0" />
+      <TextField fx:id="txtSolucion" alignment="CENTER_RIGHT" layoutX="131.0" layoutY="118.0" promptText="0" />
+      <Button fx:id="btnSumar" layoutX="54.0" layoutY="175.0" mnemonicParsing="false" onAction="#sumar" text=" + " />
+      <Button fx:id="btnRestar" layoutX="106.0" layoutY="175.0" mnemonicParsing="false" onAction="#restar" text=" - " />
+      <Button fx:id="btnMultiplicar" layoutX="155.0" layoutY="175.0" mnemonicParsing="false" onAction="#multiplicar" text=" X " />
+      <Button fx:id="btnDividir" layoutX="205.0" layoutY="175.0" mnemonicParsing="false" onAction="#dividir" text=" / " />
+      <Button fx:id="btnLimpiar" layoutX="253.0" layoutY="175.0" mnemonicParsing="false" onAction="#limpiar" text=" C " />
+   </children>
+</Pane>

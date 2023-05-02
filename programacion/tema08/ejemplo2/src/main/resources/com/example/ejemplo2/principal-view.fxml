@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejemplo2.PrincipalController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="45.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button fx:id="btnPulsar" layoutX="114.0" layoutY="297.0" mnemonicParsing="false" text="Púlsame" />
+      <TextField fx:id="txtNombre" layoutX="71.0" layoutY="88.0" />
+   </children>
+</Pane>
