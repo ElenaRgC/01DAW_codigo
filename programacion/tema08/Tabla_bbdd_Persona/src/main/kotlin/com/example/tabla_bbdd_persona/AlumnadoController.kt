@@ -47,12 +47,15 @@ class AlumnadoController: Initializable {
         colId.setCellValueFactory { cellData ->
             SimpleObjectProperty(cellData.value.id)
         }
+
         colNombre.setCellValueFactory { cellData ->
             SimpleStringProperty(cellData.value.nombre)
         }
+
         colEdad.setCellValueFactory { cellData ->
             SimpleObjectProperty(cellData.value.edad)
         }
+
         colMatriculado.setCellValueFactory { cellData ->
             SimpleBooleanProperty(cellData.value.matriculado)
         }
