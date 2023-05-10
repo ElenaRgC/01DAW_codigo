@@ -4,19 +4,22 @@ import javafx.collections.ObservableList
 import javafx.fxml.FXML
 import BaseDatos.*
 import Servicio.*
-import javafx.beans.binding.Bindings
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
+import javafx.fxml.FXMLLoader
 import javafx.fxml.Initializable
+import javafx.scene.Parent
+import javafx.scene.Scene
 import javafx.scene.control.Button
 
 import javafx.scene.control.TableColumn
 import javafx.scene.control.TableView
+import javafx.stage.Modality
+import javafx.stage.Stage
 import java.net.URL
 import java.time.ZoneId
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 class AlumnadoController: Initializable {
@@ -36,7 +39,10 @@ class AlumnadoController: Initializable {
     @FXML
     private lateinit var tablaAlumno: TableView<Alumnado>
 
-    //private lateinit var btnEliminar: Button
+    @FXML
+    private lateinit var btnEliminar: Button
+    @FXML
+    private lateinit var btnAlta: Button
 
     private lateinit var obLista: ObservableList<Alumnado>
     private val alumnoService = AlumnadoServicio()
@@ -86,5 +92,29 @@ class AlumnadoController: Initializable {
             alumnoService.borrarAlumnado(personaSeleccionada.id)
             tablaAlumno.refresh() //actualiza la tabla, en este caso no se necesita, pero por si acaso
         }
+    }
+
+    private fun btnAltaPulsado() {
+
+        val alumnoSeleccionado = tablaAlumno.selectionModel.selectedItem
+
+        try {
+            val loader = FXMLLoader(javaClass.getResource("secondary-view.fxml"))
+            val root = loader.load<Parent>()
+            val alumnoController = loader.getController<AlumnoController>()
+            alumnoController.mostrarAlumno(alumnoSeleccionado)
+
+            val stage = Stage()
+
+            stage.scene = Scene(root)
+            stage.initModality(Modality.APPLICATION_MODAL)
+            stage.initModality(Modality.WINDOW_MODAL)
+            stage.showAndWait()
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+
     }
 }

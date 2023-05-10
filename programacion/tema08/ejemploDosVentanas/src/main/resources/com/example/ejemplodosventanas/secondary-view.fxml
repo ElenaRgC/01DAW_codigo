@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="233.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejemplodosventanas.SecondaryController">
+   <children>
+      <Label layoutX="116.0" layoutY="108.0" text="Esta es la ventana nueva" />
+   </children>
+</AnchorPane>

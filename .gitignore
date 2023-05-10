@@ -184,8 +184,4 @@ lenguajeMarcas/.embold/issues.db
 ## Added by me
 
 /entornosDesarrollo/unidad04/*
-/programacion/tema08/**/*.pom
-/programacion/tema08/**/*.yml
-/programacion/tema08/**/*.gitignore
-/programacion/tema08/**/*.txt
-/programacion/tema08/**/*.vm
+/programacion/tema08/**/apache/**/*.*

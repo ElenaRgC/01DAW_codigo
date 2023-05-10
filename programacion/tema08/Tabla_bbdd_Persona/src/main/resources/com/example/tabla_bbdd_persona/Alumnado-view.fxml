@@ -3,8 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane accessibleHelp="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabla_bbdd_persona.AlumnadoController">
+<Pane accessibleHelp="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabla_bbdd_persona.AlumnadoController">
    <children>
       <TableView fx:id="tablaAlumno" layoutX="11.0" layoutY="36.0" prefHeight="231.0" prefWidth="593.0">
         <columns>
@@ -17,6 +16,6 @@
         </columns>
       </TableView>
       <Button fx:id="btnEliminar" layoutX="88.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnEliminarPulsado" text="Eliminar" />
-      <Button layoutX="174.0" layoutY="288.0" mnemonicParsing="false" text="Alta" />
+      <Button fx:id="btnAlta" layoutX="174.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnAltaPulsado" text="Alta" />
    </children>
 </Pane>
