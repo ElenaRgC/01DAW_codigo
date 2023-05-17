@@ -1,0 +1,57 @@
+# Emociones
+
+## Pasos para completar el ejercicio
+
+[x] Crear la base de datos
+[x] Añadir el JAR
+[x] Crear la conexión a la base de datos
+[] Crear las clases para cada tabla
+[] Crear las interfaces para cada tabla con la que vayamos a trabajar
+[] Crear la clase fichero
+[] Implementar las interfaces de la base de datos
+[] Definir la cantidad de ventanas necesarias
+[] Diseñar las ventanas y definir los nombres de elementos y funciones
+[] Implementar las funciones
+
+### Opcional
+[] Añadir imágenes empleados
+[] Añadir tema variable según emoción
+[] Añadir tema variable según grupo
+
+## Clases con las que vamos a trabajar
+
+### ConexionBD
+[x] Conexion
+
+### Fichero
+[x] Escribir
+[x] Leer
+
+### Constantes
+[x] Datos BBDD
+[] Datos Empleado
+[] Datos TestEmpleado
+
+### Emocion
+[x] Clase
+[] Interfaz
+[] Implementación
+
+### Empleado
+[x] Clase
+[] Interfaz
+[] Implementación
+
+### TestEquipo
+[x] Clase
+[] Interfaz
+[] Implementación
+
+### TestEmociones
+[x] Clase
+[] Interfaz
+[] Implementación
+
+### TestJefe
+[] Realizar test
+[] Escribir en ficheros
