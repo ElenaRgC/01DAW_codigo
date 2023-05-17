@@ -8,4 +8,6 @@ module com.example.emociones {
 
     opens com.example.emociones to javafx.fxml;
     exports com.example.emociones;
+    opens com.example.emociones.Controllers to javafx.fxml;
+    exports com.example.emociones.Controllers;
 }

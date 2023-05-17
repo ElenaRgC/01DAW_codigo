@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emociones.Controllers.TestEmocionController">
+    <children>
+        <GridPane layoutX="14.0" layoutY="14.0" prefHeight="345.0" prefWidth="568.0" AnchorPane.bottomAnchor="11.599999999999966" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="14.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label fx:id="lblEmocion0" text="Label" />
+                        <TextArea fx:id="txtEmocion0" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion0" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                    <children>
+                        <Label fx:id="lblEmocion1" text="Label" />
+                        <TextArea fx:id="txtEmocion1" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion1" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                    <children>
+                        <Label fx:id="lblEmocion2" text="Label" />
+                        <TextArea fx:id="txtEmocion2" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion2" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="lblEmocion3" text="Label" />
+                        <TextArea fx:id="txtEmocion3" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion3" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="lblEmocion4" text="Label" />
+                        <TextArea fx:id="txtEmocion4" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion4" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="lblEmocion5" text="Label" />
+                        <TextArea fx:id="txtEmocion5" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion5" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                    <children>
+                        <Label fx:id="lblEmocion6" text="Label" />
+                        <TextArea fx:id="txtEmocion6" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion6" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <children>
+                        <Label fx:id="lblEmocion7" text="Label" />
+                        <TextArea fx:id="txtEmocion7" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion7" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <children>
+                        <Label fx:id="lblEmocion8" text="Label" />
+                        <TextArea fx:id="txtEmocion8" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <CheckBox fx:id="cbEmocion8" mnemonicParsing="false" />
+                    </children>
+                </VBox>
+            </children>
+        </GridPane>
+      <Button fx:id="btnEnviar" layoutX="274.0" layoutY="383.0" mnemonicParsing="false" onAction="#enviarTestEmociones" text="Enviar" />
+    </children>
+</Pane>

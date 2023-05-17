@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emociones.Controllers.PrincipalController">
+   <children>
+      <Label layoutX="77.0" layoutY="50.0" text="Nombre:" />
+      <TextField fx:id="txtNombre" layoutX="195.0" layoutY="46.0" promptText="Nombre" />
+      <Label layoutX="77.0" layoutY="87.0" text="Primer apellido:" />
+      <TextField fx:id="txtApellido1" layoutX="195.0" layoutY="83.0" promptText="Primer apellido" />
+      <Label layoutX="77.0" layoutY="124.0" text="Fecha nacimiento:" />
+      <DatePicker fx:id="dpFechaNac" layoutX="195.0" layoutY="120.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="77.0" layoutY="161.0" text="Identificador:" />
+      <TextField fx:id="txtID" alignment="CENTER_RIGHT" layoutX="195.0" layoutY="157.0" prefHeight="25.0" prefWidth="37.0" promptText="00" />
+      <Button layoutX="258.0" layoutY="157.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar Sesión" />
+      <Label fx:id="lblError" alignment="CENTER" layoutX="75.0" layoutY="206.0" prefHeight="17.0" prefWidth="278.0" />
+   </children>
+</Pane>

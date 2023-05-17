@@ -1,12 +1,10 @@
-import com.example.emociones.Const
-import java.io.BufferedReader
-import java.io.BufferedWriter
-import java.io.FileReader
-import java.io.FileWriter
+package com.example.emociones.Utilities
+
+import java.io.*
 
 class Fichero {
     companion object {
-        fun escribir(linea: String, ruta: String) {
+        fun escribirTexto(linea: String, ruta: String) {
             try {
                 val archivo = BufferedWriter(FileWriter(ruta))
                 archivo.write(linea)
@@ -17,7 +15,7 @@ class Fichero {
             }
         }
 
-        fun escribir(texto: Array<String>, ruta: String) {
+        fun escribirTexto(texto: Array<String>, ruta: String) {
             try {
                 val archivo = BufferedWriter(FileWriter(ruta))
                 for (linea in texto) {
@@ -31,7 +29,7 @@ class Fichero {
             }
         }
 
-        fun leer(rutaArchivo: String): String {
+        fun leerTexto(rutaArchivo: String): String {
             val contenido = StringBuilder()
 
             try {
@@ -52,4 +50,26 @@ class Fichero {
             return contenido.toString()
         }
     }
+
+    // Recuerda añadir la clase Serializable
+    fun escribirObjeto(objeto: Any, ruta: String) {
+        val file = File(ruta)
+        val outputStream = ObjectOutputStream(file.outputStream())
+
+        outputStream.writeObject(objeto)
+        outputStream.close()
+    }
+
+    // Modificar según el objeto que vayamos a leer
+    fun leerObjeto(ruta: String): Any {
+        val file = File(ruta)
+        val inputStream = ObjectInputStream(file.inputStream())
+
+        val objeto = inputStream.readObject() as Any
+        inputStream.close()
+
+        return objeto
+    }
+
+
 }
