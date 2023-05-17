@@ -3,8 +3,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="208.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabla_bbdd_persona.AlumnoController">
+<AnchorPane prefHeight="219.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabla_bbdd_persona.AlumnoController">
    <children>
-      <Label fx:id="lbAlumno" layoutX="33.0" layoutY="95.0" prefHeight="18.0" prefWidth="274.0" />
+      <Label fx:id="lblAlumno" layoutX="49.0" layoutY="100.0" prefHeight="18.0" prefWidth="260.0" text="toString" />
+      <Label layoutX="49.0" layoutY="40.0" text="Nombre:" />
+      <Label layoutX="49.0" layoutY="68.0" text="Edad:" />
+      <Label fx:id="lblNombre" layoutX="115.0" layoutY="40.0" prefHeight="18.0" prefWidth="164.0" text="nombre" />
+      <Label fx:id="lblEdad" layoutX="115.0" layoutY="68.0" prefHeight="18.0" prefWidth="164.0" text="edad" />
    </children>
 </AnchorPane>

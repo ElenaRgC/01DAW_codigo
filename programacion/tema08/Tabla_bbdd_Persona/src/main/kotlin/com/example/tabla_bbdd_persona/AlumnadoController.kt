@@ -35,14 +35,8 @@ class AlumnadoController: Initializable {
     private lateinit var colMatriculado: TableColumn<Alumnado, Boolean>
     @FXML
     private lateinit var colFechaString: TableColumn<Alumnado, String>
-
     @FXML
     private lateinit var tablaAlumno: TableView<Alumnado>
-
-    @FXML
-    private lateinit var btnEliminar: Button
-    @FXML
-    private lateinit var btnAlta: Button
 
     private lateinit var obLista: ObservableList<Alumnado>
     private val alumnoService = AlumnadoServicio()
@@ -94,21 +88,22 @@ class AlumnadoController: Initializable {
         }
     }
 
-    private fun btnAltaPulsado() {
+    @FXML
+    private fun btnVerPulsado() {
 
         val alumnoSeleccionado = tablaAlumno.selectionModel.selectedItem
 
         try {
-            val loader = FXMLLoader(javaClass.getResource("secondary-view.fxml"))
-            val root = loader.load<Parent>()
-            val alumnoController = loader.getController<AlumnoController>()
+            val fxmlLoader = FXMLLoader(AlumnoController::class.java.getResource("Alumno-view.fxml"))
+            val scene = Scene(fxmlLoader.load(), 320.0, 400.0)
+
+            val alumnoController = fxmlLoader.getController<AlumnoController>()
             alumnoController.mostrarAlumno(alumnoSeleccionado)
 
-            val stage = Stage()
-
-            stage.scene = Scene(root)
+            var stage = Stage()
+            stage.title = "Ver datos"
+            stage.scene = scene
             stage.initModality(Modality.APPLICATION_MODAL)
-            stage.initModality(Modality.WINDOW_MODAL)
             stage.showAndWait()
 
         } catch (e: Exception) {

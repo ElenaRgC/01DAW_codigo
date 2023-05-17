@@ -10,14 +10,20 @@ import java.util.*
 class AlumnoController: Initializable {
 
     @FXML
-    private lateinit var lbAlumno: Label
+    private lateinit var lblAlumno: Label
+    @FXML
+    private lateinit var lblNombre: Label
+    @FXML
+    private lateinit var lblEdad: Label
 
     fun mostrarAlumno(alumno: Alumnado) {
-        lbAlumno.text = alumno.toString()
+        lblAlumno.text = alumno.toString()
+        lblNombre.text = alumno.nombre
+        lblEdad.text = alumno.edad.toString()
     }
 
     override fun initialize(p0: URL?, p1: ResourceBundle?) {
-        TODO("Not yet implemented")
+        //
     }
 
 }
