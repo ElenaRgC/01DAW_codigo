@@ -37,6 +37,10 @@ class PrincipalController {
 
         var empleado2 = empleadoDAO.selectEmpleado(txtID.text.toInt())
 
+        if (empleadoDAO.sonMismoEmpleado(empleado1, empleado2)) {
+            Const.usuario = empleado2
+        }
+
         return empleadoDAO.sonMismoEmpleado(empleado1, empleado2)
     }
 

@@ -3,12 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emociones.Controllers.TestsController">
    <children>
-      <Button fx:id="btnTestEquipo" layoutX="61.0" layoutY="60.0" mnemonicParsing="false" onAction="#abrirTestEquipo" text="Ir al test de Equipo" />
-      <Button fx:id="btnTestJefe" layoutX="250.0" layoutY="60.0" mnemonicParsing="false" onAction="#irTestJefe" text="Ir al test de Jefe" />
-      <Button fx:id="btnTestEmocion" layoutX="410.0" layoutY="60.0" mnemonicParsing="false" onAction="#irTestEmocion" text="Ir al test de Emociones" />
-      <Button fx:id="btnVolver" layoutX="274.0" layoutY="126.0" mnemonicParsing="false" onAction="#irAlInicio" text="Volver" />
+      <Button layoutX="61.0" layoutY="60.0" mnemonicParsing="false" onAction="#abrirTestEquipo" text="Ir al test de Equipo" />
+      <Button layoutX="250.0" layoutY="60.0" mnemonicParsing="false" onAction="#irTestJefe" text="Ir al test de Jefe" />
+      <Button layoutX="410.0" layoutY="60.0" mnemonicParsing="false" onAction="#irTestEmocion" text="Ir al test de Emociones" />
+      <Button fx:id="btnVolver" layoutX="274.0" layoutY="126.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
    </children>
 </Pane>

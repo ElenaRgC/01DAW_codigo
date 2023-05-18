@@ -1,5 +1,7 @@
 package com.example.emociones.Utilities
 
+import com.example.emociones.Database.Empleado.Empleado
+import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -20,6 +22,13 @@ class Fun {
 
             return fechaString
         }
+
+        fun redondearDouble(numero: Double, decimales: Int): Double {
+            val patron = "#.${"0".repeat(decimales)}"
+            val decimalFormat = DecimalFormat(patron)
+            return decimalFormat.format(numero).toDouble()
+        }
+
     }
 
 

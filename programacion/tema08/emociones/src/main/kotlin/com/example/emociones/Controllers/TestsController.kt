@@ -10,14 +10,6 @@ import javafx.stage.Stage
 
 class TestsController {
 
-    private lateinit var stage: Stage
-
-    @FXML
-    private lateinit var btnTestEquipo: Button
-    @FXML
-    private lateinit var btnTestJefe: Button
-    @FXML
-    private lateinit var btnTestEmocion: Button
     @FXML
     private lateinit var btnVolver: Button
 
@@ -61,7 +53,7 @@ class TestsController {
     }
 
     @FXML
-    fun irAlInicio() {
+    fun volver() {
         val stage = btnVolver.scene.window as Stage
         stage.close()
     }

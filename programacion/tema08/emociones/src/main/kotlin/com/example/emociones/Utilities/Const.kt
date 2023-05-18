@@ -1,5 +1,7 @@
 package com.example.emociones.Utilities
 
+import com.example.emociones.Database.Empleado.Empleado
+
 class Const {
     companion object {
         // Base de Datos
@@ -15,7 +17,9 @@ class Const {
         val RUTAtestEmocion = "/com/example/emociones/test-emocion-view.fxml"
 
         // Ficheros
+        val FICjefe = "/files/"
 
-
+        // Usuario que ha iniciado sesión
+        lateinit var usuario: Empleado
     }
 }

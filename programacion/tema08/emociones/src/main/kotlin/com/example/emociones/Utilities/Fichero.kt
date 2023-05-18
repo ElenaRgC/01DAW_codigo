@@ -4,16 +4,6 @@ import java.io.*
 
 class Fichero {
     companion object {
-        fun escribirTexto(linea: String, ruta: String) {
-            try {
-                val archivo = BufferedWriter(FileWriter(ruta))
-                archivo.write(linea)
-                archivo.flush()
-                archivo.close()
-            } catch (e: Exception) {
-                println(e.message)
-            }
-        }
 
         fun escribirTexto(texto: Array<String>, ruta: String) {
             try {
@@ -22,6 +12,18 @@ class Fichero {
                     archivo.write(linea)
                     archivo.newLine()
                 }
+                archivo.flush()
+                archivo.close()
+            } catch (e: Exception) {
+                println(e.message)
+            }
+        }
+
+        fun escribirTexto(linea: String, ruta: String) {
+            try {
+                val archivo = BufferedWriter(FileWriter(ruta))
+                //archivo.write(linea)
+                archivo.append(linea + "_")
                 archivo.flush()
                 archivo.close()
             } catch (e: Exception) {
