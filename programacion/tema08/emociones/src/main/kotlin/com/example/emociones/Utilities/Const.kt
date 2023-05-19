@@ -18,6 +18,8 @@ class Const {
         val QgrupoEmpleado = "SELECT ID_grupo FROM grupo_empleado " +
                                     "WHERE ? = ID_empleado"
 
+        val QnueveEmociones = "SELECT * FROM emocion ORDER BY RAND() LIMIT 9"
+
         // Rutas
         val RUTAtests = "/com/example/emociones/tests-view.fxml"
         val RUTAtestEquipo = "/com/example/emociones/test-equipo-view.fxml"

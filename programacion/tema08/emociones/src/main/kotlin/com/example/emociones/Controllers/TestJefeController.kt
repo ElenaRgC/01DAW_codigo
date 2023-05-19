@@ -26,8 +26,7 @@ class TestJefeController {
 
     @FXML
     fun enviarTestJefe() {
-        var IDjefe = Const.usuario.ID_jefe
-        var ruta = Const.FICjefe + IDjefe +".txt"
+        var ruta = Const.FICjefe + Const.usuario.ID +".txt"
 
         var nota = txtNotaJefe.text
 

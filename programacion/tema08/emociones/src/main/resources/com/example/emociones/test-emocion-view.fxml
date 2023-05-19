@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emociones.Controllers.TestEmocionController">
     <children>
@@ -20,63 +21,90 @@
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                     <children>
                         <Label fx:id="lblEmocion0" text="Label" />
-                        <TextArea fx:id="txtEmocion0" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion0" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion0" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                     <children>
                         <Label fx:id="lblEmocion1" text="Label" />
-                        <TextArea fx:id="txtEmocion1" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion1" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion1" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                     <children>
                         <Label fx:id="lblEmocion2" text="Label" />
-                        <TextArea fx:id="txtEmocion2" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion2" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion2" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                     <children>
                         <Label fx:id="lblEmocion3" text="Label" />
-                        <TextArea fx:id="txtEmocion3" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion3" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion3" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <children>
                         <Label fx:id="lblEmocion4" text="Label" />
-                        <TextArea fx:id="txtEmocion4" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion4" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion4" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                     <children>
                         <Label fx:id="lblEmocion5" text="Label" />
-                        <TextArea fx:id="txtEmocion5" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion5" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion5" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
                     <children>
                         <Label fx:id="lblEmocion6" text="Label" />
-                        <TextArea fx:id="txtEmocion6" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion6" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion6" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <children>
                         <Label fx:id="lblEmocion7" text="Label" />
-                        <TextArea fx:id="txtEmocion7" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion7" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion7" mnemonicParsing="false" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                     <children>
                         <Label fx:id="lblEmocion8" text="Label" />
-                        <TextArea fx:id="txtEmocion8" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0" />
+                        <Label fx:id="txtEmocion8" maxWidth="-Infinity" prefHeight="70.0" prefWidth="170.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
                         <CheckBox fx:id="cbEmocion8" mnemonicParsing="false" />
                     </children>
                 </VBox>
