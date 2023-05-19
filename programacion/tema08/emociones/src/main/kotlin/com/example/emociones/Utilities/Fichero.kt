@@ -21,8 +21,8 @@ class Fichero {
 
         fun escribirTexto(linea: String, ruta: String) {
             try {
-                val archivo = BufferedWriter(FileWriter(ruta))
-                //archivo.write(linea)
+                val archivo = BufferedWriter(FileWriter(ruta, true))
+                println("Línea escrita")
                 archivo.append(linea + "_")
                 archivo.flush()
                 archivo.close()
@@ -30,6 +30,7 @@ class Fichero {
                 println(e.message)
             }
         }
+
 
         fun leerTexto(rutaArchivo: String): String {
             val contenido = StringBuilder()

@@ -2,6 +2,7 @@ package com.example.emociones.Controllers
 
 import com.example.emociones.Database.Empleado.Empleado
 import com.example.emociones.Database.Empleado.EmpleadoDAOImpl
+import com.example.emociones.Services.PrincipalService
 import com.example.emociones.Utilities.Const
 import com.example.emociones.Utilities.Fun
 import javafx.fxml.FXML
@@ -26,26 +27,10 @@ class PrincipalController {
     private lateinit var lblError: Label
 
 
-    fun comprobarUsuario(): Boolean {
-        val empleadoDAO = EmpleadoDAOImpl()
 
-        val empleado1 = Empleado(
-            txtID.text.toInt(),
-            txtNombre.text,
-            txtApellido1.text,
-            Fun.convertirFechaArray(dpFechaNac.value))
-
-        var empleado2 = empleadoDAO.selectEmpleado(txtID.text.toInt())
-
-        if (empleadoDAO.sonMismoEmpleado(empleado1, empleado2)) {
-            Const.usuario = empleado2
-        }
-
-        return empleadoDAO.sonMismoEmpleado(empleado1, empleado2)
-    }
-
+    @FXML
     fun iniciarSesion() {
-        if (comprobarUsuario()) {
+        if (PrincipalService.comprobarUsuario(txtID.text.toInt(), txtNombre.text, txtApellido1.text, dpFechaNac.value)) {
             lblError.text = "Datos correctos"
 
             val loader = FXMLLoader()

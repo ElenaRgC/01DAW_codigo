@@ -1,6 +1,8 @@
 package com.example.emociones.Utilities
 
 import com.example.emociones.Database.Empleado.Empleado
+import javafx.collections.FXCollections
+import javafx.collections.ObservableList
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 import java.time.LocalDate
@@ -24,11 +26,18 @@ class Fun {
         }
 
         fun redondearDouble(numero: Double, decimales: Int): Double {
-            val patron = "#.${"0".repeat(decimales)}"
+            val patron = if (numero.toString().contains(",")) {
+                "#,${"0".repeat(decimales)}"
+            } else {
+                "#.${"0".repeat(decimales)}"
+            }
             val decimalFormat = DecimalFormat(patron)
-            return decimalFormat.format(numero).toDouble()
+            return decimalFormat.parse(decimalFormat.format(numero)).toDouble()
         }
 
+        fun convertirAObservableList(lista: ArrayList<String>): ObservableList<String> {
+            return FXCollections.observableArrayList(lista)
+        }
     }
 
 

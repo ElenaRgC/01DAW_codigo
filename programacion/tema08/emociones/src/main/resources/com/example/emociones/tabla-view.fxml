@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emociones.Controllers.TablaController">
+   <children>
+      <TableView fx:id="tbTestEquipo" layoutX="35.0" layoutY="31.0" prefHeight="200.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="colEmpleado" prefWidth="75.0" text="Empleado" />
+          <TableColumn fx:id="colEstado" prefWidth="75.0" text="Estado" />
+            <TableColumn fx:id="colEchar" prefWidth="114.20001220703125" text="Miembro a echar" />
+            <TableColumn fx:id="colFecha" prefWidth="75.0" text="Fecha" />
+        </columns>
+      </TableView>
+      <Button layoutX="177.0" layoutY="261.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+   </children>
+</Pane>

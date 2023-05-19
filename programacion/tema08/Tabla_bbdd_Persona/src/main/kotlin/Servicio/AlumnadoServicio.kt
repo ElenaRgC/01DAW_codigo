@@ -6,7 +6,7 @@ import java.time.LocalDate
 
 
 class AlumnadoServicio {
-    private val alumnoDAO= AlumnadoDAOImpl()
+    private val alumnoDAO = AlumnadoDAOImpl()
 
     fun insertarAlumno(id: Int,nombre: String, edad: Int, fechaNacimiento: LocalDate, matriculado: Boolean): Int {
         return alumnoDAO.insertarAlumnado(Alumnado(id,nombre, edad, fechaNacimiento, matriculado))
