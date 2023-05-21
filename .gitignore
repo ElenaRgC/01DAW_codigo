@@ -176,12 +176,15 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
-*.log
-.embold/vscode-logs.log
-*.xml
-lenguajeMarcas/.embold/issues.db
-
 ## Added by me
 
 /entornosDesarrollo/unidad04/*
 /programacion/tema08/**/apache/**/*.*
+
+.embold/vscode-logs.log
+lenguajeMarcas/.embold/issues.db
+
+/programacion/**/*.log
+/entornosDesarrollo/**/*.log
+/programacion/**/*.xml
+/entornosDesarrollo/**/*.xml
