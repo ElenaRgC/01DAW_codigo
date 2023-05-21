@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulos [
+    <!ELEMENT articulos (articulo)+>
+    <!ELEMENT articulo EMPTY>
+    <!ATTLIST articulo nombre CDATA >
+    <!ATTLIST articulo color CDATA "rojo">
+]>
+
+<articulos>
+    <articulo nombre="bolígrafo" color="rojo" />
+    <articulo nombre="cuaderno" />
+    <articulo nombre="rotulador" color="amarillo" />
+</articulos>

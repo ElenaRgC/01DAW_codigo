@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title> Ejercicio 2 sindicación </title>
+    <link href="http://aguedagregori.x10.mx/Sindicacion.html" />
+    <updated>2023-02-27T09:57:12Z</updated>
+    <author>
+        <name>Elena Rodríguez Calderón</name>
+        <email>email@ejemplo.com</email>
+    </author>
+
+    <entry>
+        <updated>2023-02-27T09:58:12Z</updated>
+        <title>Item01</title>
+        <link href="https://feedreader.com/online/#/reader/category/560815/feed/24254238/" />
+        <summary>El tiempo</summary>
+    </entry>
+
+    <entry>
+        <updated>2023-02-27T09:59:12Z</updated>
+        <title>Item02</title>
+        <link href="https://feedreader.com/online/#/reader/category/560815/feed/24254238/" />
+        <summary>El marca</summary>
+    </entry>
+</feed>

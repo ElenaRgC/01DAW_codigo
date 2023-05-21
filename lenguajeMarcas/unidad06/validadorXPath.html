@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validador de XPath</title>
+    <script>
+        function validarXPath() {
+            var xmlInput = document.getElementById("xml-input").value;
+            var xpathInput = document.getElementById("xpath-input").value;
+            var resultado = document.getElementById("resultado");
+
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(xmlInput, "text/xml");
+
+            var xpathResult = xmlDoc.evaluate(xpathInput, xmlDoc, null, XPathResult.ANY_TYPE, null);
+
+            var output = "";
+            var node;
+            while (node = xpathResult.iterateNext()) {
+                output += node.textContent + "\n";
+            }
+
+            resultado.value = output;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Validador de XPath</h1>
+    <label for="xml-input">XML:</label>
+    <br>
+    <textarea id="xml-input" rows="10" cols="50"></textarea>
+    <br>
+    <label for="xpath-input">XPath:</label>
+    <br>
+    <input type="text" id="xpath-input">
+    <br>
+    <button onclick="validarXPath()">Validar</button>
+    <br>
+    <label for="resultado">Resultado:</label>
+    <br>
+    <textarea id="resultado" rows="10" cols="50" readonly></textarea>
+</body>
+
+</html>

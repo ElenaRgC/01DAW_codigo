@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validador de XML con DTD</title>
+    <script>
+        function validarXML() {
+            var xmlInput = document.getElementById("xml-input").value;
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(xmlInput, "application/xml");
+
+            var errores = xmlDoc.getElementsByTagName("parsererror");
+
+            if (errores.length === 0) {
+                document.getElementById("resultado").value = "El XML es válido.";
+            } else {
+                var mensajeError = "El XML es inválido:\n";
+                for (var i = 0; i < errores.length; i++) {
+                    mensajeError += errores[i].textContent + "\n";
+                }
+                document.getElementById("resultado").value = mensajeError;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Validador de XML con DTD</h1>
+    <label for="xml-input">XML:</label>
+    <br>
+    <textarea id="xml-input" rows="10" cols="50"></textarea>
+    <br>
+    <button onclick="validarXML()">Validar</button>
+    <br>
+    <label for="resultado">Resultado:</label>
+    <br>
+    <textarea id="resultado" rows="10" cols="50" readonly></textarea>
+</body>
+
+</html>

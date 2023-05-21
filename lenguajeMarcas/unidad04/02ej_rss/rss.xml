@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+    <channel>
+        <title>Mi página</title>
+        <link>https://www.miweb.es/</link>
+        <description>Mi página web</description>
+
+        <item>
+            <title>El
+                tiempo en Puertollano</title>
+            <link>https://www.eltiempo.es/puertollano.html</link>
+            <description>El
+                tiempo en la localidad de Puertollano (Ciudad Real).</description>
+        </item>
+
+        <item>
+            <title>Últimas noticias</title>
+            <link>https://www.marca.com/ultimas-noticias.html</link>
+            <description>Últimas noticias deportivas por marca.com</description>
+        </item>
+    </channel>
+
+</rss>
