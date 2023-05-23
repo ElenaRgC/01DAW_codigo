@@ -1,0 +1,7 @@
+Mujer Guerrera: esperanzaVida=120, nombre='Guerrera5', edad=27, inteligencia=8, fuerza=30, inventario=[], animales=[].
+Mujer Guerrera: esperanzaVida=120, nombre='Guerrera7', edad=26, inteligencia=6, fuerza=25, inventario=[], animales=[].
+Mujer Guerrera: esperanzaVida=120, nombre='Guerrera3', edad=28, inteligencia=6, fuerza=25, inventario=[], animales=[].
+Mujer Guerrera: esperanzaVida=120, nombre='Guerrera7', edad=26, inteligencia=6, fuerza=25, inventario=[], animales=[].
+
+
+
