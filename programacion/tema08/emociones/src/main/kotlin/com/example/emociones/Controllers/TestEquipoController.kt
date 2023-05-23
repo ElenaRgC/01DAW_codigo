@@ -3,7 +3,7 @@ package com.example.emociones.Controllers
 import com.example.emociones.Services.TestEquipoService
 import com.example.emociones.Utilities.Const
 import com.example.emociones.Utilities.Fun
-import com.example.emociones.Utilities.TestEquipo
+import com.example.emociones.Database.TestEquipo.TestEquipo
 import javafx.fxml.FXML
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent

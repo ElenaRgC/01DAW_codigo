@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_05_22.Controllers.InsertarController">
+   <children>
+      <Label layoutX="61.0" layoutY="64.0" text="Usuario:" />
+      <Label layoutX="61.0" layoutY="117.0" text="Destino:" />
+      <Label layoutX="61.0" layoutY="173.0" text="Fecha:" />
+      <ComboBox fx:id="cbUsuario" layoutX="150.0" layoutY="60.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbDestino" layoutX="150.0" layoutY="113.0" prefWidth="150.0" />
+      <DatePicker fx:id="dpFecha" layoutX="150.0" layoutY="169.0" prefHeight="25.0" prefWidth="150.0" />
+      <CheckBox fx:id="cbPagado" layoutX="150.0" layoutY="227.0" mnemonicParsing="false" text="Pagado" />
+      <Button layoutX="61.0" layoutY="270.0" mnemonicParsing="false" onAction="#insertarValores" text="Aceptar" />
+      <Button layoutX="238.0" layoutY="270.0" mnemonicParsing="false" onAction="#volver" text="Cancelar" />
+   </children>
+</Pane>

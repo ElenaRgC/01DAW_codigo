@@ -1,13 +1,15 @@
 package com.example.emociones.Utilities
 
-import com.example.emociones.Database.Empleado.Empleado
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
-import java.text.DecimalFormat
+import javafx.scene.Node
+import javafx.stage.Stage
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.*
+import kotlin.math.pow
+import kotlin.math.roundToInt
 
 class Fun {
     companion object {
@@ -25,18 +27,28 @@ class Fun {
             return fechaString
         }
 
-        fun redondearDouble(numero: Double, decimales: Int): Double {
-            val patron = if (numero.toString().contains(",")) {
-                "#,${"0".repeat(decimales)}"
-            } else {
-                "#.${"0".repeat(decimales)}"
-            }
-            val decimalFormat = DecimalFormat(patron)
-            return decimalFormat.parse(decimalFormat.format(numero)).toDouble()
+        fun convertirFechaDate (fecha: String): Date {
+            val formato = SimpleDateFormat("dd/MM/yyyy")
+            return formato.parse(fecha)
         }
+
+        fun redondearDouble(numero: Double, decimales: Int): Double {
+            val factor = 10.0.pow(decimales)
+            return (numero * factor).roundToInt() / factor
+        }
+
 
         fun convertirAObservableList(lista: ArrayList<String>): ObservableList<String> {
             return FXCollections.observableArrayList(lista)
+        }
+
+        fun fechaHoyString(): String {
+            return convertirFechaArray(LocalDate.now())
+        }
+
+        fun cerrarVentana(elemento: Node) {
+            val stage = elemento.scene.window as Stage
+            stage.close()
         }
     }
 

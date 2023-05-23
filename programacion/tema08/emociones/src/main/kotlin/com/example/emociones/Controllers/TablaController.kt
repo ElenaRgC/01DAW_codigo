@@ -1,16 +1,13 @@
 package com.example.emociones.Controllers
 
-import com.example.emociones.Utilities.TestEquipo
+import com.example.emociones.Database.TestEquipo.TestEquipo
 import javafx.beans.property.SimpleObjectProperty
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
 import javafx.fxml.FXML
-import javafx.fxml.Initializable
 import javafx.scene.control.TableColumn
 import javafx.scene.control.TableView
 import javafx.stage.Stage
-import java.net.URL
-import java.util.*
 
 class TablaController {
     @FXML

@@ -2,6 +2,8 @@ package com.example.emociones.Controllers
 
 import com.example.emociones.Services.TestEmocionService
 import com.example.emociones.Utilities.Alerts
+import com.example.emociones.Utilities.Const
+import com.example.emociones.Utilities.Fun
 import javafx.fxml.FXML
 import javafx.scene.control.CheckBox
 import javafx.scene.control.Label
@@ -100,6 +102,8 @@ class TestEmocionController {
     @FXML
     private lateinit var checkBoxes: List<CheckBox>
 
+    private var ID_emociones = ArrayList<Int>()
+
     fun initialize() {
         agruparElementos()
 
@@ -109,12 +113,13 @@ class TestEmocionController {
             labels[i].text = emociones[i].nombre
             textLabels[i].text = emociones[i].descripcion
             textLabels[i].isWrapText = true
+            ID_emociones.add(emociones[i].ID)
         }
 
     }
 
     fun agruparElementos() {
-        labels = listOf(
+        labels = arrayListOf(
             lblEmocion0,
             lblEmocion1,
             lblEmocion2,
@@ -125,7 +130,7 @@ class TestEmocionController {
             lblEmocion7,
             lblEmocion8
         )
-        textLabels = listOf(
+        textLabels = arrayListOf(
             txtEmocion0,
             txtEmocion1,
             txtEmocion2,
@@ -136,7 +141,7 @@ class TestEmocionController {
             txtEmocion7,
             txtEmocion8
         )
-        checkBoxes = listOf(
+        checkBoxes = arrayListOf(
             cbEmocion0,
             cbEmocion1,
             cbEmocion2,
@@ -150,23 +155,32 @@ class TestEmocionController {
     }
 
     fun enviarTestEmociones() {
-        try {
-            var seleccionados = 0
 
-            for (checkBox in checkBoxes) {
-                if (checkBox.isSelected) {
-                    seleccionados++
+        var emocionesSeleccionadas = ArrayList<Int>()
+
+        try {
+            for (i in checkBoxes.indices) {
+                if (checkBoxes[i].isSelected) {
+                    emocionesSeleccionadas.add(ID_emociones[i])
                 }
             }
 
-            if (seleccionados != 3) {
+            if (emocionesSeleccionadas.size != 3) {
+                emocionesSeleccionadas.clear()
                 throw Exception("Deben seleccionarse 3 emociones.")
+            } else {
+                TestEmocionService.insertarEmociones(Const.usuario,emocionesSeleccionadas)
+
+                Alerts.showInfoMessage("Base de datos actualizada",
+                    "Se han añadido las emociones correctamente.")
+
+                Fun.cerrarVentana(lblEmocion0)
             }
+
         } catch (e: Exception) {
             val errorMessage = e.message ?: "Error desconocido"
             Alerts.showErrorMessage("Se ha producido un error.", errorMessage)
         }
-
 
     }
 

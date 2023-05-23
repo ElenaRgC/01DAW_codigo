@@ -10,6 +10,8 @@ class Const {
         val BDpassword = ""
         val BDforname = "com.mysql.cj.jdbc.Driver"
 
+        // ACUÉRDATE DE PONER UN ESPACIO AL FINAL SI HACES SALTOS DE LÍNEA
+
         // Queries
         val QempleadosEquipo = "SELECT * FROM empleado " +
                                     "JOIN grupo_empleado ON empleado.ID = grupo_empleado.ID_empleado " +
@@ -19,6 +21,9 @@ class Const {
                                     "WHERE ? = ID_empleado"
 
         val QnueveEmociones = "SELECT * FROM emocion ORDER BY RAND() LIMIT 9"
+
+        val QinsertarEmociones = "INSERT INTO test_emociones (ID_empleado, ID_emocion, fecha) " +
+                                        "VALUES (?,?,?)"
 
         // Rutas
         val RUTAtests = "/com/example/emociones/tests-view.fxml"

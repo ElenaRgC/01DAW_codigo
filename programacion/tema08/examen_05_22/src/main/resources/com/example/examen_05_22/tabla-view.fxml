@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_05_22.Controllers.TablaController">
+   <children>
+      <TableView fx:id="tbViaje" layoutX="46.0" layoutY="51.0" prefHeight="241.0" prefWidth="490.0">
+        <columns>
+          <TableColumn fx:id="colUsuario" prefWidth="137.59998321533203" text="Usuario" />
+          <TableColumn fx:id="colDestino" prefWidth="140.60003662109375" text="Destino" />
+            <TableColumn fx:id="colFecha" prefWidth="126.5999755859375" text="Fecha" />
+            <TableColumn fx:id="colPagado" prefWidth="88.99996948242188" text="Pagado" />
+        </columns>
+      </TableView>
+      <Button layoutX="274.0" layoutY="321.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+   </children>
+</Pane>

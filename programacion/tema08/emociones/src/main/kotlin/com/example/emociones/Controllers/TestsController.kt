@@ -1,6 +1,7 @@
 package com.example.emociones.Controllers
 
 import com.example.emociones.Utilities.Const
+import com.example.emociones.Utilities.Fun
 import javafx.fxml.FXML
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
@@ -54,7 +55,6 @@ class TestsController {
 
     @FXML
     fun volver() {
-        val stage = btnVolver.scene.window as Stage
-        stage.close()
+        Fun.cerrarVentana(btnVolver)
     }
 }

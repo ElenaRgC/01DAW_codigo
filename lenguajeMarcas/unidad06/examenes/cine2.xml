@@ -4,8 +4,8 @@
     <!ELEMENT directores (director+)>
     <!ELEMENT director EMPTY>
     <!ATTLIST director nombre CDATA >
-    <!ATTLIST director fecha_nacimiento CDATA>
-    <!ATTLIST director pais_nacimiento CDATA>
+    <!ATTLIST director fecha_nacimiento CDATA >
+    <!ATTLIST director pais_nacimiento CDATA >
     <!ELEMENT peliculas (pelicula+)>
     <!ELEMENT pelicula (estreno*, titulo*, director)>
     <!ATTLIST pelicula titulo CDATA #REQUIRED>
